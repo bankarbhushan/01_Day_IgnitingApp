@@ -6,7 +6,7 @@ import useRestaurantCard from "../utils/useRestaurantCard";
 import useOffer from "../utils/useOffer";
 import { useDispatch } from "react-redux";
 import { OFFER } from "./constant";
-import { addItem } from "../utils/cartSlice";
+import { addItem } from "../utils/NewCartSlice";
 const RestaurantMenu = () => {
   const img =
     "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
