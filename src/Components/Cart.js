@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
+import useRestaurant from "../utils/useRestaurant";
+import useRestaurantCard from "../utils/useRestaurantCard";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
-import { addItem, clearCart, removeItems } from "../utils/cartSlice";
+import { addItem, clearCart, removeItems } from "../utils/NewCartSlice";
 function Cart() {
   const cartItems = useSelector((store) => store.cart.items);
   const [total, setTotal] = useState(0);
