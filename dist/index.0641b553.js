@@ -2934,393 +2934,1040 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$f79a.prelude(module);
 
 try {
-"use strict";
-var _react = _interopRequireWildcard(require("5df8ba2a41c8a9ec"));
-var _client = require("ba81b44823fa3110");
-var _Header = _interopRequireDefault(require("6fc3065aac256569"));
-var _reactRouterDom = require("86fb6e07723dcd01");
-var _About = _interopRequireDefault(require("4235dcc95211d173"));
-var _Error = _interopRequireDefault(require("2f17a249080e186c"));
-var _Footer = _interopRequireDefault(require("c94d082ee29be376"));
-var _Contact = _interopRequireDefault(require("598c81216d861c3e"));
-var _RestaurantMenu = _interopRequireDefault(require("22bc91ad84fa11f8"));
-var _Reg = _interopRequireDefault(require("644b84cc4430b386"));
-var _Profile = _interopRequireDefault(require("d350b16c0bcfc9ff"));
-var _MainBody = _interopRequireDefault(require("c542003793f74b81"));
-var _userContext = _interopRequireDefault(require("dffc1446c5b8ffd0"));
-var _Simmer = _interopRequireDefault(require("5e02c591408ae"));
-var _reactRedux = require("1a5fcc9ced33ad07");
-var _Store = _interopRequireDefault(require("bffa700f04363d70"));
-var _jsxRuntime = require("1efd84cd67f32d27");
-function _interopRequireDefault(e) {
-    return e && e.__esModule ? e : {
-        default: e
-    };
-}
-function _getRequireWildcardCache(e) {
-    if ("function" != typeof WeakMap) return null;
-    var r = new WeakMap(), t = new WeakMap();
-    return (_getRequireWildcardCache = function(e) {
-        return e ? t : r;
-    })(e);
-}
-function _interopRequireWildcard(e, r) {
-    if (!r && e && e.__esModule) return e;
-    if (null === e || "object" != typeof e && "function" != typeof e) return {
-        default: e
-    };
-    var t = _getRequireWildcardCache(r);
-    if (t && t.has(e)) return t.get(e);
-    var n = {
-        __proto__: null
-    }, a = Object.defineProperty && Object.getOwnPropertyDescriptor;
-    for(var u in e)if ("default" !== u && ({}).hasOwnProperty.call(e, u)) {
-        var i = a ? Object.getOwnPropertyDescriptor(e, u) : null;
-        i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u];
-    }
-    return n.default = e, t && t.set(e, n), n;
-}
-const Cart = /*#__PURE__*/ (0, _react.lazy)(()=>Promise.resolve().then(function() {
-        return require("82499497bf936839");
-    }).then((res)=>_interopRequireWildcard(res)));
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _client = require("react-dom/client");
+var _header = require("./Components/Header");
+var _headerDefault = parcelHelpers.interopDefault(_header);
+var _reactRouterDom = require("react-router-dom");
+var _about = require("./Components/About");
+var _aboutDefault = parcelHelpers.interopDefault(_about);
+var _error = require("./Components/Error");
+var _errorDefault = parcelHelpers.interopDefault(_error);
+var _footer = require("./Components/Footer");
+var _footerDefault = parcelHelpers.interopDefault(_footer);
+var _contact = require("./Components/Contact");
+var _contactDefault = parcelHelpers.interopDefault(_contact);
+var _restaurantMenu = require("./Components/RestaurantMenu");
+var _restaurantMenuDefault = parcelHelpers.interopDefault(_restaurantMenu);
+var _reg = require("./Components/Reg");
+var _regDefault = parcelHelpers.interopDefault(_reg);
+var _profile = require("./Components/Profile");
+var _profileDefault = parcelHelpers.interopDefault(_profile);
+var _mainBody = require("./Components/MainBody");
+var _mainBodyDefault = parcelHelpers.interopDefault(_mainBody);
+var _userContext = require("./utils/userContext");
+var _userContextDefault = parcelHelpers.interopDefault(_userContext);
+var _simmer = require("./Components/Simmer");
+var _simmerDefault = parcelHelpers.interopDefault(_simmer);
+var _reactRedux = require("react-redux");
+var _store = require("./utils/Store");
+var _storeDefault = parcelHelpers.interopDefault(_store);
+var _s = $RefreshSig$();
+const Cart = /*#__PURE__*/ (0, _react.lazy)(()=>require("82499497bf936839"));
+_c = Cart;
 // Main layout of the app with Header, dynamic content, and Footer
 const AppLayout = ()=>{
+    _s();
     const [user, setUser] = (0, _react.useState)({
         name: "bhushan"
     });
-    return /*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRedux.Provider, {
-        store: _Store.default,
-        children: /*#__PURE__*/ (0, _jsxRuntime.jsxs)(_userContext.default.Provider, {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRedux.Provider), {
+        store: (0, _storeDefault.default),
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userContextDefault.default).Provider, {
             value: {
                 user: user
             },
             children: [
-                /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Header.default, {}),
-                /*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.Outlet, {}),
-                /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Footer.default, {})
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
+                    fileName: "src/app.js",
+                    lineNumber: 30,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
+                    fileName: "src/app.js",
+                    lineNumber: 31,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
+                    fileName: "src/app.js",
+                    lineNumber: 32,
+                    columnNumber: 9
+                }, undefined)
             ]
-        })
-    });
+        }, void 0, true, {
+            fileName: "src/app.js",
+            lineNumber: 29,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/app.js",
+        lineNumber: 26,
+        columnNumber: 5
+    }, undefined);
 };
-_c = AppLayout;
+_s(AppLayout, "MDb8yyizzMoCSt0KJzge0z+HLUA=");
+_c1 = AppLayout;
 // Defining routes for the application
 const AppRouter = (0, _reactRouterDom.createBrowserRouter)([
     {
         path: "/",
-        // Base route for the layout
-        element: /*#__PURE__*/ (0, _jsxRuntime.jsx)(AppLayout, {}),
-        // AppLayout renders Header, Footer, and dynamic content in between
-        errorElement: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Error.default, {}),
-        // This page will be shown for any invalid route
+        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
+            fileName: "src/app.js",
+            lineNumber: 42,
+            columnNumber: 14
+        }, undefined),
+        errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
+            fileName: "src/app.js",
+            lineNumber: 43,
+            columnNumber: 19
+        }, undefined),
         children: [
             {
                 path: "/",
-                // When the user visits the base URL
-                element: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_MainBody.default, {
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _mainBodyDefault.default), {
                     user: {
                         name: "Food Villa"
                     }
-                }) // The Body component will be displayed
+                }, void 0, false, {
+                    fileName: "src/app.js",
+                    lineNumber: 47,
+                    columnNumber: 18
+                }, undefined)
             },
             {
                 path: "/About",
-                // When the user visits /About
-                element: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_About.default, {}),
-                // The About component will be displayed
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
+                    fileName: "src/app.js",
+                    lineNumber: 51,
+                    columnNumber: 18
+                }, undefined),
                 children: [
                     {
                         path: "/About/Profile",
-                        element: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Profile.default, {})
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileDefault.default), {}, void 0, false, {
+                            fileName: "src/app.js",
+                            lineNumber: 55,
+                            columnNumber: 22
+                        }, undefined)
                     }
                 ]
             },
             {
                 path: "/Contact",
-                // When the user visits /Contact
-                element: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Contact.default, {}) // The Contact component will be displayed
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
+                    fileName: "src/app.js",
+                    lineNumber: 61,
+                    columnNumber: 18
+                }, undefined)
             },
             {
                 path: "/restaurant/:id",
-                // When the user visits /restaurant/:id
-                element: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_RestaurantMenu.default, {}) // The RestaurantMenu component will be displayed
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantMenuDefault.default), {}, void 0, false, {
+                    fileName: "src/app.js",
+                    lineNumber: 65,
+                    columnNumber: 18
+                }, undefined)
             },
             {
                 path: "/reg",
-                // When the user visits /reg
-                element: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Reg.default, {}) // The Reg component will be displayed
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _regDefault.default), {}, void 0, false, {
+                    fileName: "src/app.js",
+                    lineNumber: 69,
+                    columnNumber: 18
+                }, undefined)
             },
             {
-                path: "/cart",
-                element: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_react.Suspense, {
-                    fallback: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Simmer.default, {}),
-                    children: /*#__PURE__*/ (0, _jsxRuntime.jsx)(Cart, {})
-                })
+                path: "/cart/",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Suspense), {
+                    fallback: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _simmerDefault.default), {}, void 0, false, {
+                        fileName: "src/app.js",
+                        lineNumber: 76,
+                        columnNumber: 31
+                    }, void 0),
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Cart, {}, void 0, false, {
+                        fileName: "src/app.js",
+                        lineNumber: 77,
+                        columnNumber: 13
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/app.js",
+                    lineNumber: 76,
+                    columnNumber: 11
+                }, undefined)
             }
         ]
     }
 ]);
 const root = (0, _client.createRoot)(document.getElementById("root"));
 // Render the RouterProvider with the router configuration (AppRouter)
-root.render(/*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.RouterProvider, {
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterProvider), {
     router: AppRouter
-}));
-var _c;
-$RefreshReg$(_c, "AppLayout");
+}, void 0, false, {
+    fileName: "src/app.js",
+    lineNumber: 88,
+    columnNumber: 13
+}, undefined));
+var _c, _c1;
+$RefreshReg$(_c, "Cart");
+$RefreshReg$(_c1, "AppLayout");
 
   $parcel$ReactRefreshHelpers$f79a.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"82499497bf936839":"eUuB8","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","5df8ba2a41c8a9ec":"21dqq","ba81b44823fa3110":"lOjBx","6fc3065aac256569":"9Dt2F","86fb6e07723dcd01":"9xmpe","4235dcc95211d173":"19tXb","2f17a249080e186c":"iQH4s","c94d082ee29be376":"eUZ6J","598c81216d861c3e":"66EYZ","22bc91ad84fa11f8":"7pgwL","644b84cc4430b386":"bE5lv","d350b16c0bcfc9ff":"g4h0w","c542003793f74b81":"32flk","dffc1446c5b8ffd0":"eBA1b","1a5fcc9ced33ad07":"62sf7","bffa700f04363d70":"kN9jh","1efd84cd67f32d27":"6AEwr","5e02c591408ae":"1Of73"}],"eUuB8":[function(require,module,exports,__globalThis) {
-module.exports = require("27d955aa4f4e8e29")(require("9b26381e843107ca").getBundleURL('lPpKD') + "Cart.a0ad8882.js" + "?" + Date.now()).catch((err)=>{
-    delete module.bundle.cache[module.id];
-    throw err;
-}).then(()=>module.bundle.root('c9G2d'));
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./Components/Header":"9Dt2F","react-router-dom":"9xmpe","./Components/About":"19tXb","./Components/Error":"iQH4s","./Components/Footer":"eUZ6J","./Components/Contact":"66EYZ","./Components/RestaurantMenu":"7pgwL","./Components/Reg":"bE5lv","./Components/Profile":"g4h0w","./Components/MainBody":"32flk","./utils/userContext":"eBA1b","./Components/Simmer":"1Of73","react-redux":"62sf7","./utils/Store":"kN9jh","82499497bf936839":"eUuB8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports,__globalThis) {
+'use strict';
+module.exports = require("ee51401569654d91");
 
-},{"27d955aa4f4e8e29":"61B45","9b26381e843107ca":"lgJ39"}],"61B45":[function(require,module,exports,__globalThis) {
-"use strict";
-var cacheLoader = require("ca2a84f7fa4a3bb0");
-module.exports = cacheLoader(function(bundle) {
-    return new Promise(function(resolve, reject) {
-        // Don't insert the same script twice (e.g. if it was already in the HTML)
-        var existingScripts = document.getElementsByTagName('script');
-        if ([].concat(existingScripts).some(function(script) {
-            return script.src === bundle;
-        })) {
-            resolve();
-            return;
+},{"ee51401569654d91":"48uCM"}],"48uCM":[function(require,module,exports,__globalThis) {
+/**
+ * @license React
+ * react-jsx-dev-runtime.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ 'use strict';
+(function() {
+    'use strict';
+    var React = require("58362d9d82be395f");
+    // ATTENTION
+    // When adding new symbols to this file,
+    // Please consider also adding to 'react-devtools-shared/src/backend/ReactSymbols'
+    // The Symbol used to tag the ReactElement-like types.
+    var REACT_ELEMENT_TYPE = Symbol.for('react.element');
+    var REACT_PORTAL_TYPE = Symbol.for('react.portal');
+    var REACT_FRAGMENT_TYPE = Symbol.for('react.fragment');
+    var REACT_STRICT_MODE_TYPE = Symbol.for('react.strict_mode');
+    var REACT_PROFILER_TYPE = Symbol.for('react.profiler');
+    var REACT_PROVIDER_TYPE = Symbol.for('react.provider');
+    var REACT_CONTEXT_TYPE = Symbol.for('react.context');
+    var REACT_FORWARD_REF_TYPE = Symbol.for('react.forward_ref');
+    var REACT_SUSPENSE_TYPE = Symbol.for('react.suspense');
+    var REACT_SUSPENSE_LIST_TYPE = Symbol.for('react.suspense_list');
+    var REACT_MEMO_TYPE = Symbol.for('react.memo');
+    var REACT_LAZY_TYPE = Symbol.for('react.lazy');
+    var REACT_OFFSCREEN_TYPE = Symbol.for('react.offscreen');
+    var MAYBE_ITERATOR_SYMBOL = Symbol.iterator;
+    var FAUX_ITERATOR_SYMBOL = '@@iterator';
+    function getIteratorFn(maybeIterable) {
+        if (maybeIterable === null || typeof maybeIterable !== 'object') return null;
+        var maybeIterator = MAYBE_ITERATOR_SYMBOL && maybeIterable[MAYBE_ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL];
+        if (typeof maybeIterator === 'function') return maybeIterator;
+        return null;
+    }
+    var ReactSharedInternals = React.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+    function error(format) {
+        for(var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++)args[_key2 - 1] = arguments[_key2];
+        printWarning('error', format, args);
+    }
+    function printWarning(level, format, args) {
+        var ReactDebugCurrentFrame = ReactSharedInternals.ReactDebugCurrentFrame;
+        var stack = ReactDebugCurrentFrame.getStackAddendum();
+        if (stack !== '') {
+            format += '%s';
+            args = args.concat([
+                stack
+            ]);
+        } // eslint-disable-next-line react-internal/safe-string-coercion
+        var argsWithFormat = args.map(function(item) {
+            return String(item);
+        }); // Careful: RN currently depends on this prefix
+        argsWithFormat.unshift('Warning: ' + format); // We intentionally don't use spread (or .apply) directly because it
+        // breaks IE9: https://github.com/facebook/react/issues/13610
+        // eslint-disable-next-line react-internal/no-production-logging
+        Function.prototype.apply.call(console[level], console, argsWithFormat);
+    }
+    // -----------------------------------------------------------------------------
+    var enableScopeAPI = false; // Experimental Create Event Handle API.
+    var enableCacheElement = false;
+    var enableTransitionTracing = false; // No known bugs, but needs performance testing
+    var enableLegacyHidden = false; // Enables unstable_avoidThisFallback feature in Fiber
+    // stuff. Intended to enable React core members to more easily debug scheduling
+    // issues in DEV builds.
+    var enableDebugTracing = false; // Track which Fiber(s) schedule render work.
+    var REACT_MODULE_REFERENCE;
+    REACT_MODULE_REFERENCE = Symbol.for('react.module.reference');
+    function isValidElementType(type) {
+        if (typeof type === 'string' || typeof type === 'function') return true;
+         // Note: typeof might be other than 'symbol' or 'number' (e.g. if it's a polyfill).
+        if (type === REACT_FRAGMENT_TYPE || type === REACT_PROFILER_TYPE || enableDebugTracing || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || enableLegacyHidden || type === REACT_OFFSCREEN_TYPE || enableScopeAPI || enableCacheElement || enableTransitionTracing) return true;
+        if (typeof type === 'object' && type !== null) {
+            if (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || // This needs to include all possible module reference object
+            // types supported by any Flight configuration anywhere since
+            // we don't know which Flight build this will end up being used
+            // with.
+            type.$$typeof === REACT_MODULE_REFERENCE || type.getModuleId !== undefined) return true;
         }
-        var preloadLink = document.createElement('link');
-        preloadLink.href = bundle;
-        preloadLink.rel = 'preload';
-        preloadLink.as = 'script';
-        document.head.appendChild(preloadLink);
-        var script = document.createElement('script');
-        script.async = true;
-        script.type = 'text/javascript';
-        script.src = bundle;
-        script.onerror = function(e) {
-            var error = new TypeError("Failed to fetch dynamically imported module: ".concat(bundle, ". Error: ").concat(e.message));
-            script.onerror = script.onload = null;
-            script.remove();
-            reject(error);
-        };
-        script.onload = function() {
-            script.onerror = script.onload = null;
-            resolve();
-        };
-        document.getElementsByTagName('head')[0].appendChild(script);
-    });
-});
-
-},{"ca2a84f7fa4a3bb0":"j49pS"}],"j49pS":[function(require,module,exports,__globalThis) {
-"use strict";
-var cachedBundles = {};
-var cachedPreloads = {};
-var cachedPrefetches = {};
-function getCache(type) {
-    switch(type){
-        case 'preload':
-            return cachedPreloads;
-        case 'prefetch':
-            return cachedPrefetches;
-        default:
-            return cachedBundles;
+        return false;
     }
-}
-module.exports = function(loader, type) {
-    return function(bundle) {
-        var cache = getCache(type);
-        if (cache[bundle]) return cache[bundle];
-        return cache[bundle] = loader.apply(null, arguments).catch(function(e) {
-            delete cache[bundle];
-            throw e;
-        });
-    };
-};
-
-},{}],"lgJ39":[function(require,module,exports,__globalThis) {
-"use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
+    function getWrappedName(outerType, innerType, wrapperName) {
+        var displayName = outerType.displayName;
+        if (displayName) return displayName;
+        var functionName = innerType.displayName || innerType.name || '';
+        return functionName !== '' ? wrapperName + "(" + functionName + ")" : wrapperName;
+    } // Keep in sync with react-reconciler/getComponentNameFromFiber
+    function getContextName(type) {
+        return type.displayName || 'Context';
+    } // Note that the reconciler package should generally prefer to use getComponentNameFromFiber() instead.
+    function getComponentNameFromType(type) {
+        if (type == null) // Host root, text node or just invalid type.
+        return null;
+        if (typeof type.tag === 'number') error("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue.");
+        if (typeof type === 'function') return type.displayName || type.name || null;
+        if (typeof type === 'string') return type;
+        switch(type){
+            case REACT_FRAGMENT_TYPE:
+                return 'Fragment';
+            case REACT_PORTAL_TYPE:
+                return 'Portal';
+            case REACT_PROFILER_TYPE:
+                return 'Profiler';
+            case REACT_STRICT_MODE_TYPE:
+                return 'StrictMode';
+            case REACT_SUSPENSE_TYPE:
+                return 'Suspense';
+            case REACT_SUSPENSE_LIST_TYPE:
+                return 'SuspenseList';
+        }
+        if (typeof type === 'object') switch(type.$$typeof){
+            case REACT_CONTEXT_TYPE:
+                var context = type;
+                return getContextName(context) + '.Consumer';
+            case REACT_PROVIDER_TYPE:
+                var provider = type;
+                return getContextName(provider._context) + '.Provider';
+            case REACT_FORWARD_REF_TYPE:
+                return getWrappedName(type, type.render, 'ForwardRef');
+            case REACT_MEMO_TYPE:
+                var outerName = type.displayName || null;
+                if (outerName !== null) return outerName;
+                return getComponentNameFromType(type.type) || 'Memo';
+            case REACT_LAZY_TYPE:
+                var lazyComponent = type;
+                var payload = lazyComponent._payload;
+                var init = lazyComponent._init;
+                try {
+                    return getComponentNameFromType(init(payload));
+                } catch (x) {
+                    return null;
+                }
+        }
+        return null;
     }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ('' + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
+    var assign = Object.assign;
+    // Helpers to patch console.logs to avoid logging during side-effect free
+    // replaying on render function. This currently only patches the object
+    // lazily which won't cover if the log function was extracted eagerly.
+    // We could also eagerly patch the method.
+    var disabledDepth = 0;
+    var prevLog;
+    var prevInfo;
+    var prevWarn;
+    var prevError;
+    var prevGroup;
+    var prevGroupCollapsed;
+    var prevGroupEnd;
+    function disabledLog() {}
+    disabledLog.__reactDisabledLog = true;
+    function disableLogs() {
+        if (disabledDepth === 0) {
+            /* eslint-disable react-internal/no-production-logging */ prevLog = console.log;
+            prevInfo = console.info;
+            prevWarn = console.warn;
+            prevError = console.error;
+            prevGroup = console.group;
+            prevGroupCollapsed = console.groupCollapsed;
+            prevGroupEnd = console.groupEnd; // https://github.com/facebook/react/issues/19099
+            var props = {
+                configurable: true,
+                enumerable: true,
+                value: disabledLog,
+                writable: true
+            }; // $FlowFixMe Flow thinks console is immutable.
+            Object.defineProperties(console, {
+                info: props,
+                log: props,
+                warn: props,
+                error: props,
+                group: props,
+                groupCollapsed: props,
+                groupEnd: props
+            });
+        /* eslint-enable react-internal/no-production-logging */ }
+        disabledDepth++;
     }
-    return '/';
-}
-function getBaseURL(url) {
-    return ('' + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
-}
-// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ('' + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error('Origin not found');
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
-
-},{}],"km3Ru":[function(require,module,exports,__globalThis) {
-"use strict";
-var Refresh = require("7422ead32dcc1e6b");
-var { version } = require("630b62916b1ae0e7");
-function debounce(func, delay) {
-    {
-        let timeout = undefined;
-        let lastTime = 0;
-        return function(args) {
-            // Call immediately if last call was more than the delay ago.
-            // Otherwise, set a timeout. This means the first call is fast
-            // (for the common case of a single update), and subsequent updates
-            // are batched.
-            let now = Date.now();
-            if (now - lastTime > delay) {
-                lastTime = now;
-                func.call(null, args);
+    function reenableLogs() {
+        disabledDepth--;
+        if (disabledDepth === 0) {
+            /* eslint-disable react-internal/no-production-logging */ var props = {
+                configurable: true,
+                enumerable: true,
+                writable: true
+            }; // $FlowFixMe Flow thinks console is immutable.
+            Object.defineProperties(console, {
+                log: assign({}, props, {
+                    value: prevLog
+                }),
+                info: assign({}, props, {
+                    value: prevInfo
+                }),
+                warn: assign({}, props, {
+                    value: prevWarn
+                }),
+                error: assign({}, props, {
+                    value: prevError
+                }),
+                group: assign({}, props, {
+                    value: prevGroup
+                }),
+                groupCollapsed: assign({}, props, {
+                    value: prevGroupCollapsed
+                }),
+                groupEnd: assign({}, props, {
+                    value: prevGroupEnd
+                })
+            });
+        /* eslint-enable react-internal/no-production-logging */ }
+        if (disabledDepth < 0) error("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
+    }
+    var ReactCurrentDispatcher = ReactSharedInternals.ReactCurrentDispatcher;
+    var prefix;
+    function describeBuiltInComponentFrame(name, source, ownerFn) {
+        if (prefix === undefined) // Extract the VM specific prefix used by each line.
+        try {
+            throw Error();
+        } catch (x) {
+            var match = x.stack.trim().match(/\n( *(at )?)/);
+            prefix = match && match[1] || '';
+        }
+         // We use the prefix to ensure our stacks line up with native stack frames.
+        return '\n' + prefix + name;
+    }
+    var reentry = false;
+    var componentFrameCache;
+    var PossiblyWeakMap = typeof WeakMap === 'function' ? WeakMap : Map;
+    componentFrameCache = new PossiblyWeakMap();
+    function describeNativeComponentFrame(fn, construct) {
+        // If something asked for a stack inside a fake render, it should get ignored.
+        if (!fn || reentry) return '';
+        var frame = componentFrameCache.get(fn);
+        if (frame !== undefined) return frame;
+        var control;
+        reentry = true;
+        var previousPrepareStackTrace = Error.prepareStackTrace; // $FlowFixMe It does accept undefined.
+        Error.prepareStackTrace = undefined;
+        var previousDispatcher;
+        previousDispatcher = ReactCurrentDispatcher.current; // Set the dispatcher in DEV because this might be call in the render function
+        // for warnings.
+        ReactCurrentDispatcher.current = null;
+        disableLogs();
+        try {
+            // This should throw.
+            if (construct) {
+                // Something should be setting the props in the constructor.
+                var Fake = function() {
+                    throw Error();
+                }; // $FlowFixMe
+                Object.defineProperty(Fake.prototype, 'props', {
+                    set: function() {
+                        // We use a throwing setter instead of frozen or non-writable props
+                        // because that won't throw in a non-strict mode function.
+                        throw Error();
+                    }
+                });
+                if (typeof Reflect === 'object' && Reflect.construct) {
+                    // We construct a different control for this case to include any extra
+                    // frames added by the construct call.
+                    try {
+                        Reflect.construct(Fake, []);
+                    } catch (x) {
+                        control = x;
+                    }
+                    Reflect.construct(fn, [], Fake);
+                } else {
+                    try {
+                        Fake.call();
+                    } catch (x) {
+                        control = x;
+                    }
+                    fn.call(Fake.prototype);
+                }
             } else {
-                clearTimeout(timeout);
-                timeout = setTimeout(function() {
-                    timeout = undefined;
-                    lastTime = Date.now();
-                    func.call(null, args);
-                }, delay);
+                try {
+                    throw Error();
+                } catch (x) {
+                    control = x;
+                }
+                fn();
+            }
+        } catch (sample) {
+            // This is inlined manually because closure doesn't do it for us.
+            if (sample && control && typeof sample.stack === 'string') {
+                // This extracts the first frame from the sample that isn't also in the control.
+                // Skipping one frame that we assume is the frame that calls the two.
+                var sampleLines = sample.stack.split('\n');
+                var controlLines = control.stack.split('\n');
+                var s = sampleLines.length - 1;
+                var c = controlLines.length - 1;
+                while(s >= 1 && c >= 0 && sampleLines[s] !== controlLines[c])// We expect at least one stack frame to be shared.
+                // Typically this will be the root most one. However, stack frames may be
+                // cut off due to maximum stack limits. In this case, one maybe cut off
+                // earlier than the other. We assume that the sample is longer or the same
+                // and there for cut off earlier. So we should find the root most frame in
+                // the sample somewhere in the control.
+                c--;
+                for(; s >= 1 && c >= 0; s--, c--)// Next we find the first one that isn't the same which should be the
+                // frame that called our sample function and the control.
+                if (sampleLines[s] !== controlLines[c]) {
+                    // In V8, the first line is describing the message but other VMs don't.
+                    // If we're about to return the first line, and the control is also on the same
+                    // line, that's a pretty good indicator that our sample threw at same line as
+                    // the control. I.e. before we entered the sample frame. So we ignore this result.
+                    // This can happen if you passed a class to function component, or non-function.
+                    if (s !== 1 || c !== 1) do {
+                        s--;
+                        c--; // We may still have similar intermediate frames from the construct call.
+                        // The next one that isn't the same should be our match though.
+                        if (c < 0 || sampleLines[s] !== controlLines[c]) {
+                            // V8 adds a "new" prefix for native classes. Let's remove it to make it prettier.
+                            var _frame = '\n' + sampleLines[s].replace(' at new ', ' at '); // If our component frame is labeled "<anonymous>"
+                            // but we have a user-provided "displayName"
+                            // splice it in to make the stack more readable.
+                            if (fn.displayName && _frame.includes('<anonymous>')) _frame = _frame.replace('<anonymous>', fn.displayName);
+                            if (typeof fn === 'function') componentFrameCache.set(fn, _frame);
+                            return _frame;
+                        }
+                    }while (s >= 1 && c >= 0);
+                    break;
+                }
+            }
+        } finally{
+            reentry = false;
+            ReactCurrentDispatcher.current = previousDispatcher;
+            reenableLogs();
+            Error.prepareStackTrace = previousPrepareStackTrace;
+        } // Fallback to just using the name if we couldn't make it throw.
+        var name = fn ? fn.displayName || fn.name : '';
+        var syntheticFrame = name ? describeBuiltInComponentFrame(name) : '';
+        if (typeof fn === 'function') componentFrameCache.set(fn, syntheticFrame);
+        return syntheticFrame;
+    }
+    function describeFunctionComponentFrame(fn, source, ownerFn) {
+        return describeNativeComponentFrame(fn, false);
+    }
+    function shouldConstruct(Component) {
+        var prototype = Component.prototype;
+        return !!(prototype && prototype.isReactComponent);
+    }
+    function describeUnknownElementTypeFrameInDEV(type, source, ownerFn) {
+        if (type == null) return '';
+        if (typeof type === 'function') return describeNativeComponentFrame(type, shouldConstruct(type));
+        if (typeof type === 'string') return describeBuiltInComponentFrame(type);
+        switch(type){
+            case REACT_SUSPENSE_TYPE:
+                return describeBuiltInComponentFrame('Suspense');
+            case REACT_SUSPENSE_LIST_TYPE:
+                return describeBuiltInComponentFrame('SuspenseList');
+        }
+        if (typeof type === 'object') switch(type.$$typeof){
+            case REACT_FORWARD_REF_TYPE:
+                return describeFunctionComponentFrame(type.render);
+            case REACT_MEMO_TYPE:
+                // Memo may contain any component type so we recursively resolve it.
+                return describeUnknownElementTypeFrameInDEV(type.type, source, ownerFn);
+            case REACT_LAZY_TYPE:
+                var lazyComponent = type;
+                var payload = lazyComponent._payload;
+                var init = lazyComponent._init;
+                try {
+                    // Lazy may contain any component type so we recursively resolve it.
+                    return describeUnknownElementTypeFrameInDEV(init(payload), source, ownerFn);
+                } catch (x) {}
+        }
+        return '';
+    }
+    var hasOwnProperty = Object.prototype.hasOwnProperty;
+    var loggedTypeFailures = {};
+    var ReactDebugCurrentFrame = ReactSharedInternals.ReactDebugCurrentFrame;
+    function setCurrentlyValidatingElement(element) {
+        if (element) {
+            var owner = element._owner;
+            var stack = describeUnknownElementTypeFrameInDEV(element.type, element._source, owner ? owner.type : null);
+            ReactDebugCurrentFrame.setExtraStackFrame(stack);
+        } else ReactDebugCurrentFrame.setExtraStackFrame(null);
+    }
+    function checkPropTypes(typeSpecs, values, location, componentName, element) {
+        // $FlowFixMe This is okay but Flow doesn't know it.
+        var has = Function.call.bind(hasOwnProperty);
+        for(var typeSpecName in typeSpecs)if (has(typeSpecs, typeSpecName)) {
+            var error$1 = void 0; // Prop type validation may throw. In case they do, we don't want to
+            // fail the render phase where it didn't fail before. So we log it.
+            // After these have been cleaned up, we'll let them throw.
+            try {
+                // This is intentionally an invariant that gets caught. It's the same
+                // behavior as without this statement except with a better message.
+                if (typeof typeSpecs[typeSpecName] !== 'function') {
+                    // eslint-disable-next-line react-internal/prod-error-codes
+                    var err = Error((componentName || 'React class') + ': ' + location + ' type `' + typeSpecName + '` is invalid; ' + 'it must be a function, usually from the `prop-types` package, but received `' + typeof typeSpecs[typeSpecName] + '`.' + 'This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.');
+                    err.name = 'Invariant Violation';
+                    throw err;
+                }
+                error$1 = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED');
+            } catch (ex) {
+                error$1 = ex;
+            }
+            if (error$1 && !(error$1 instanceof Error)) {
+                setCurrentlyValidatingElement(element);
+                error("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", componentName || 'React class', location, typeSpecName, typeof error$1);
+                setCurrentlyValidatingElement(null);
+            }
+            if (error$1 instanceof Error && !(error$1.message in loggedTypeFailures)) {
+                // Only monitor this failure once because there tends to be a lot of the
+                // same error.
+                loggedTypeFailures[error$1.message] = true;
+                setCurrentlyValidatingElement(element);
+                error('Failed %s type: %s', location, error$1.message);
+                setCurrentlyValidatingElement(null);
+            }
+        }
+    }
+    var isArrayImpl = Array.isArray; // eslint-disable-next-line no-redeclare
+    function isArray(a) {
+        return isArrayImpl(a);
+    }
+    /*
+ * The `'' + value` pattern (used in in perf-sensitive code) throws for Symbol
+ * and Temporal.* types. See https://github.com/facebook/react/pull/22064.
+ *
+ * The functions in this module will throw an easier-to-understand,
+ * easier-to-debug exception with a clear errors message message explaining the
+ * problem. (Instead of a confusing exception thrown inside the implementation
+ * of the `value` object).
+ */ // $FlowFixMe only called in DEV, so void return is not possible.
+    function typeName(value) {
+        // toStringTag is needed for namespaced types like Temporal.Instant
+        var hasToStringTag = typeof Symbol === 'function' && Symbol.toStringTag;
+        var type = hasToStringTag && value[Symbol.toStringTag] || value.constructor.name || 'Object';
+        return type;
+    } // $FlowFixMe only called in DEV, so void return is not possible.
+    function willCoercionThrow(value) {
+        try {
+            testStringCoercion(value);
+            return false;
+        } catch (e) {
+            return true;
+        }
+    }
+    function testStringCoercion(value) {
+        // If you ended up here by following an exception call stack, here's what's
+        // happened: you supplied an object or symbol value to React (as a prop, key,
+        // DOM attribute, CSS property, string ref, etc.) and when React tried to
+        // coerce it to a string using `'' + value`, an exception was thrown.
+        //
+        // The most common types that will cause this exception are `Symbol` instances
+        // and Temporal objects like `Temporal.Instant`. But any object that has a
+        // `valueOf` or `[Symbol.toPrimitive]` method that throws will also cause this
+        // exception. (Library authors do this to prevent users from using built-in
+        // numeric operators like `+` or comparison operators like `>=` because custom
+        // methods are needed to perform accurate arithmetic or comparison.)
+        //
+        // To fix the problem, coerce this object or symbol value to a string before
+        // passing it to React. The most reliable way is usually `String(value)`.
+        //
+        // To find which value is throwing, check the browser or debugger console.
+        // Before this exception was thrown, there should be `console.error` output
+        // that shows the type (Symbol, Temporal.PlainDate, etc.) that caused the
+        // problem and how that type was used: key, atrribute, input value prop, etc.
+        // In most cases, this console output also shows the component and its
+        // ancestor components where the exception happened.
+        //
+        // eslint-disable-next-line react-internal/safe-string-coercion
+        return '' + value;
+    }
+    function checkKeyStringCoercion(value) {
+        if (willCoercionThrow(value)) {
+            error("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", typeName(value));
+            return testStringCoercion(value); // throw (to help callers find troubleshooting comments)
+        }
+    }
+    var ReactCurrentOwner = ReactSharedInternals.ReactCurrentOwner;
+    var RESERVED_PROPS = {
+        key: true,
+        ref: true,
+        __self: true,
+        __source: true
+    };
+    var specialPropKeyWarningShown;
+    var specialPropRefWarningShown;
+    var didWarnAboutStringRefs;
+    didWarnAboutStringRefs = {};
+    function hasValidRef(config) {
+        if (hasOwnProperty.call(config, 'ref')) {
+            var getter = Object.getOwnPropertyDescriptor(config, 'ref').get;
+            if (getter && getter.isReactWarning) return false;
+        }
+        return config.ref !== undefined;
+    }
+    function hasValidKey(config) {
+        if (hasOwnProperty.call(config, 'key')) {
+            var getter = Object.getOwnPropertyDescriptor(config, 'key').get;
+            if (getter && getter.isReactWarning) return false;
+        }
+        return config.key !== undefined;
+    }
+    function warnIfStringRefCannotBeAutoConverted(config, self) {
+        if (typeof config.ref === 'string' && ReactCurrentOwner.current && self && ReactCurrentOwner.current.stateNode !== self) {
+            var componentName = getComponentNameFromType(ReactCurrentOwner.current.type);
+            if (!didWarnAboutStringRefs[componentName]) {
+                error('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', getComponentNameFromType(ReactCurrentOwner.current.type), config.ref);
+                didWarnAboutStringRefs[componentName] = true;
+            }
+        }
+    }
+    function defineKeyPropWarningGetter(props, displayName) {
+        var warnAboutAccessingKey = function() {
+            if (!specialPropKeyWarningShown) {
+                specialPropKeyWarningShown = true;
+                error("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", displayName);
             }
         };
+        warnAboutAccessingKey.isReactWarning = true;
+        Object.defineProperty(props, 'key', {
+            get: warnAboutAccessingKey,
+            configurable: true
+        });
     }
-}
-var enqueueUpdate = debounce(function() {
-    Refresh.performReactRefresh();
-}, 30);
-// Everything below is either adapted or copied from
-// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
-// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
-module.exports.prelude = function(module1) {
-    window.__REACT_REFRESH_VERSION_TRANSFORMER = version;
-    window.$RefreshReg$ = function(type, id) {
-        if (window.__REACT_REFRESH_VERSION_TRANSFORMER && window.__REACT_REFRESH_VERSION_RUNTIME && window.__REACT_REFRESH_VERSION_TRANSFORMER !== window.__REACT_REFRESH_VERSION_RUNTIME) // Both versions were set and they did not match
-        throw new Error(`react-refresh versions did not match between transformer and runtime. Please check your dependencies. Transformer: ${window.__REACT_REFRESH_VERSION_TRANSFORMER}, Runtime: ${window.__REACT_REFRESH_VERSION_RUNTIME}`);
-        Refresh.register(type, module1.id + ' ' + id);
+    function defineRefPropWarningGetter(props, displayName) {
+        var warnAboutAccessingRef = function() {
+            if (!specialPropRefWarningShown) {
+                specialPropRefWarningShown = true;
+                error("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", displayName);
+            }
+        };
+        warnAboutAccessingRef.isReactWarning = true;
+        Object.defineProperty(props, 'ref', {
+            get: warnAboutAccessingRef,
+            configurable: true
+        });
+    }
+    /**
+ * Factory method to create a new React element. This no longer adheres to
+ * the class pattern, so do not use new to call it. Also, instanceof check
+ * will not work. Instead test $$typeof field against Symbol.for('react.element') to check
+ * if something is a React Element.
+ *
+ * @param {*} type
+ * @param {*} props
+ * @param {*} key
+ * @param {string|object} ref
+ * @param {*} owner
+ * @param {*} self A *temporary* helper to detect places where `this` is
+ * different from the `owner` when React.createElement is called, so that we
+ * can warn. We want to get rid of owner and replace string `ref`s with arrow
+ * functions, and as long as `this` and owner are the same, there will be no
+ * change in behavior.
+ * @param {*} source An annotation object (added by a transpiler or otherwise)
+ * indicating filename, line number, and/or other information.
+ * @internal
+ */ var ReactElement = function(type, key, ref, self, source, owner, props) {
+        var element = {
+            // This tag allows us to uniquely identify this as a React Element
+            $$typeof: REACT_ELEMENT_TYPE,
+            // Built-in properties that belong on the element
+            type: type,
+            key: key,
+            ref: ref,
+            props: props,
+            // Record the component responsible for creating this element.
+            _owner: owner
+        };
+        // The validation flag is currently mutative. We put it on
+        // an external backing store so that we can freeze the whole object.
+        // This can be replaced with a WeakMap once they are implemented in
+        // commonly used development environments.
+        element._store = {}; // To make comparing ReactElements easier for testing purposes, we make
+        // the validation flag non-enumerable (where possible, which should
+        // include every environment we run tests in), so the test framework
+        // ignores it.
+        Object.defineProperty(element._store, 'validated', {
+            configurable: false,
+            enumerable: false,
+            writable: true,
+            value: false
+        }); // self and source are DEV only properties.
+        Object.defineProperty(element, '_self', {
+            configurable: false,
+            enumerable: false,
+            writable: false,
+            value: self
+        }); // Two elements created in two different places should be considered
+        // equal for testing purposes and therefore we hide it from enumeration.
+        Object.defineProperty(element, '_source', {
+            configurable: false,
+            enumerable: false,
+            writable: false,
+            value: source
+        });
+        if (Object.freeze) {
+            Object.freeze(element.props);
+            Object.freeze(element);
+        }
+        return element;
     };
-    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
-};
-module.exports.postlude = function(module1) {
-    if (isReactRefreshBoundary(module1.exports)) {
-        registerExportsForReactRefresh(module1);
-        if (module1.hot) {
-            module1.hot.dispose(function(data) {
-                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
-                data.prevExports = module1.exports;
-            });
-            module1.hot.accept(function(getParents) {
-                var prevExports = module1.hot.data.prevExports;
-                var nextExports = module1.exports;
-                // Since we just executed the code for it, it's possible
-                // that the new exports make it ineligible for being a boundary.
-                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports);
-                // It can also become ineligible if its exports are incompatible
-                // with the previous exports.
-                // For example, if you add/remove/change exports, we'll want
-                // to re-execute the importing modules, and force those components
-                // to re-render. Similarly, if you convert a class component
-                // to a function, we want to invalidate the boundary.
-                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
-                if (isNoLongerABoundary || didInvalidate) {
-                    // We'll be conservative. The only case in which we won't do a full
-                    // reload is if all parent modules are also refresh boundaries.
-                    // In that case we'll add them to the current queue.
-                    var parents = getParents();
-                    if (parents.length === 0) {
-                        // Looks like we bubbled to the root. Can't recover from that.
-                        window.location.reload();
-                        return;
-                    }
-                    return parents;
+    /**
+ * https://github.com/reactjs/rfcs/pull/107
+ * @param {*} type
+ * @param {object} props
+ * @param {string} key
+ */ function jsxDEV(type, config, maybeKey, source, self) {
+        var propName; // Reserved names are extracted
+        var props = {};
+        var key = null;
+        var ref = null; // Currently, key can be spread in as a prop. This causes a potential
+        // issue if key is also explicitly declared (ie. <div {...props} key="Hi" />
+        // or <div key="Hi" {...props} /> ). We want to deprecate key spread,
+        // but as an intermediary step, we will use jsxDEV for everything except
+        // <div {...props} key="Hi" />, because we aren't currently able to tell if
+        // key is explicitly declared to be undefined or not.
+        if (maybeKey !== undefined) {
+            checkKeyStringCoercion(maybeKey);
+            key = '' + maybeKey;
+        }
+        if (hasValidKey(config)) {
+            checkKeyStringCoercion(config.key);
+            key = '' + config.key;
+        }
+        if (hasValidRef(config)) {
+            ref = config.ref;
+            warnIfStringRefCannotBeAutoConverted(config, self);
+        } // Remaining properties are added to a new props object
+        for(propName in config)if (hasOwnProperty.call(config, propName) && !RESERVED_PROPS.hasOwnProperty(propName)) props[propName] = config[propName];
+         // Resolve default props
+        if (type && type.defaultProps) {
+            var defaultProps = type.defaultProps;
+            for(propName in defaultProps)if (props[propName] === undefined) props[propName] = defaultProps[propName];
+        }
+        if (key || ref) {
+            var displayName = typeof type === 'function' ? type.displayName || type.name || 'Unknown' : type;
+            if (key) defineKeyPropWarningGetter(props, displayName);
+            if (ref) defineRefPropWarningGetter(props, displayName);
+        }
+        return ReactElement(type, key, ref, self, source, ReactCurrentOwner.current, props);
+    }
+    var ReactCurrentOwner$1 = ReactSharedInternals.ReactCurrentOwner;
+    var ReactDebugCurrentFrame$1 = ReactSharedInternals.ReactDebugCurrentFrame;
+    function setCurrentlyValidatingElement$1(element) {
+        if (element) {
+            var owner = element._owner;
+            var stack = describeUnknownElementTypeFrameInDEV(element.type, element._source, owner ? owner.type : null);
+            ReactDebugCurrentFrame$1.setExtraStackFrame(stack);
+        } else ReactDebugCurrentFrame$1.setExtraStackFrame(null);
+    }
+    var propTypesMisspellWarningShown;
+    propTypesMisspellWarningShown = false;
+    /**
+ * Verifies the object is a ReactElement.
+ * See https://reactjs.org/docs/react-api.html#isvalidelement
+ * @param {?object} object
+ * @return {boolean} True if `object` is a ReactElement.
+ * @final
+ */ function isValidElement(object) {
+        return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
+    }
+    function getDeclarationErrorAddendum() {
+        if (ReactCurrentOwner$1.current) {
+            var name = getComponentNameFromType(ReactCurrentOwner$1.current.type);
+            if (name) return '\n\nCheck the render method of `' + name + '`.';
+        }
+        return '';
+    }
+    function getSourceInfoErrorAddendum(source) {
+        if (source !== undefined) {
+            var fileName = source.fileName.replace(/^.*[\\\/]/, '');
+            var lineNumber = source.lineNumber;
+            return '\n\nCheck your code at ' + fileName + ':' + lineNumber + '.';
+        }
+        return '';
+    }
+    /**
+ * Warn if there's no key explicitly set on dynamic arrays of children or
+ * object keys are not valid. This allows us to keep track of children between
+ * updates.
+ */ var ownerHasKeyUseWarning = {};
+    function getCurrentComponentErrorInfo(parentType) {
+        var info = getDeclarationErrorAddendum();
+        if (!info) {
+            var parentName = typeof parentType === 'string' ? parentType : parentType.displayName || parentType.name;
+            if (parentName) info = "\n\nCheck the top-level render call using <" + parentName + ">.";
+        }
+        return info;
+    }
+    /**
+ * Warn if the element doesn't have an explicit key assigned to it.
+ * This element is in an array. The array could grow and shrink or be
+ * reordered. All children that haven't already been validated are required to
+ * have a "key" property assigned to it. Error statuses are cached so a warning
+ * will only be shown once.
+ *
+ * @internal
+ * @param {ReactElement} element Element that requires a key.
+ * @param {*} parentType element's parent's type.
+ */ function validateExplicitKey(element, parentType) {
+        if (!element._store || element._store.validated || element.key != null) return;
+        element._store.validated = true;
+        var currentComponentErrorInfo = getCurrentComponentErrorInfo(parentType);
+        if (ownerHasKeyUseWarning[currentComponentErrorInfo]) return;
+        ownerHasKeyUseWarning[currentComponentErrorInfo] = true; // Usually the current owner is the offender, but if it accepts children as a
+        // property, it may be the creator of the child that's responsible for
+        // assigning it a key.
+        var childOwner = '';
+        if (element && element._owner && element._owner !== ReactCurrentOwner$1.current) // Give the component that originally created this child.
+        childOwner = " It was passed a child from " + getComponentNameFromType(element._owner.type) + ".";
+        setCurrentlyValidatingElement$1(element);
+        error('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', currentComponentErrorInfo, childOwner);
+        setCurrentlyValidatingElement$1(null);
+    }
+    /**
+ * Ensure that every element either is passed in a static location, in an
+ * array with an explicit keys property defined, or in an object literal
+ * with valid key property.
+ *
+ * @internal
+ * @param {ReactNode} node Statically passed child of any type.
+ * @param {*} parentType node's parent's type.
+ */ function validateChildKeys(node, parentType) {
+        if (typeof node !== 'object') return;
+        if (isArray(node)) for(var i = 0; i < node.length; i++){
+            var child = node[i];
+            if (isValidElement(child)) validateExplicitKey(child, parentType);
+        }
+        else if (isValidElement(node)) // This element was passed in a valid location.
+        {
+            if (node._store) node._store.validated = true;
+        } else if (node) {
+            var iteratorFn = getIteratorFn(node);
+            if (typeof iteratorFn === 'function') // Entry iterators used to provide implicit keys,
+            // but now we print a separate warning for them later.
+            {
+                if (iteratorFn !== node.entries) {
+                    var iterator = iteratorFn.call(node);
+                    var step;
+                    while(!(step = iterator.next()).done)if (isValidElement(step.value)) validateExplicitKey(step.value, parentType);
                 }
-                enqueueUpdate();
-            });
+            }
         }
     }
-};
-function isReactRefreshBoundary(exports) {
-    if (Refresh.isLikelyComponentType(exports)) return true;
-    if (exports == null || typeof exports !== 'object') // Exit if we can't iterate over exports.
-    return false;
-    var hasExports = false;
-    var areAllExportsComponents = true;
-    let isESM = '__esModule' in exports;
-    for(var key in exports){
-        hasExports = true;
-        if (key === '__esModule') continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
-        return false;
-        var exportValue = exports[key];
-        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
+    /**
+ * Given an element, validate that its props follow the propTypes definition,
+ * provided by the type.
+ *
+ * @param {ReactElement} element
+ */ function validatePropTypes(element) {
+        var type = element.type;
+        if (type === null || type === undefined || typeof type === 'string') return;
+        var propTypes;
+        if (typeof type === 'function') propTypes = type.propTypes;
+        else if (typeof type === 'object' && (type.$$typeof === REACT_FORWARD_REF_TYPE || // Note: Memo only checks outer props here.
+        // Inner props are checked in the reconciler.
+        type.$$typeof === REACT_MEMO_TYPE)) propTypes = type.propTypes;
+        else return;
+        if (propTypes) {
+            // Intentionally inside to avoid triggering lazy initializers:
+            var name = getComponentNameFromType(type);
+            checkPropTypes(propTypes, element.props, 'prop', name, element);
+        } else if (type.PropTypes !== undefined && !propTypesMisspellWarningShown) {
+            propTypesMisspellWarningShown = true; // Intentionally inside to avoid triggering lazy initializers:
+            var _name = getComponentNameFromType(type);
+            error('Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?', _name || 'Unknown');
+        }
+        if (typeof type.getDefaultProps === 'function' && !type.getDefaultProps.isReactClassApproved) error("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
     }
-    return hasExports && areAllExportsComponents;
-}
-function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
-    var prevSignature = getRefreshBoundarySignature(prevExports);
-    var nextSignature = getRefreshBoundarySignature(nextExports);
-    if (prevSignature.length !== nextSignature.length) return true;
-    for(var i = 0; i < nextSignature.length; i++){
-        if (prevSignature[i] !== nextSignature[i]) return true;
+    /**
+ * Given a fragment, validate that it can only be provided with fragment props
+ * @param {ReactElement} fragment
+ */ function validateFragmentProps(fragment) {
+        var keys = Object.keys(fragment.props);
+        for(var i = 0; i < keys.length; i++){
+            var key = keys[i];
+            if (key !== 'children' && key !== 'key') {
+                setCurrentlyValidatingElement$1(fragment);
+                error("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", key);
+                setCurrentlyValidatingElement$1(null);
+                break;
+            }
+        }
+        if (fragment.ref !== null) {
+            setCurrentlyValidatingElement$1(fragment);
+            error('Invalid attribute `ref` supplied to `React.Fragment`.');
+            setCurrentlyValidatingElement$1(null);
+        }
     }
-    return false;
-}
-// When this signature changes, it's unsafe to stop at this refresh boundary.
-function getRefreshBoundarySignature(exports) {
-    var signature = [];
-    signature.push(Refresh.getFamilyByType(exports));
-    if (exports == null || typeof exports !== 'object') // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return signature;
-    let isESM = '__esModule' in exports;
-    for(var key in exports){
-        if (key === '__esModule') continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        signature.push(key);
-        signature.push(Refresh.getFamilyByType(exportValue));
-    }
-    return signature;
-}
-function registerExportsForReactRefresh(module1) {
-    var exports = module1.exports, id = module1.id;
-    Refresh.register(exports, id + ' %exports%');
-    if (exports == null || typeof exports !== 'object') // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return;
-    let isESM = '__esModule' in exports;
-    for(var key in exports){
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        var typeID = id + ' %exports% ' + key;
-        Refresh.register(exportValue, typeID);
-    }
-}
+    var didWarnAboutKeySpread = {};
+    function jsxWithValidation(type, props, key, isStaticChildren, source, self) {
+        var validType = isValidElementType(type); // We warn in this case but don't throw. We expect the element creation to
+        // succeed and there will likely be errors in render.
+        if (!validType) {
+            var info = '';
+            if (type === undefined || typeof type === 'object' && type !== null && Object.keys(type).length === 0) info += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.";
+            var sourceInfo = getSourceInfoErrorAddendum(source);
+            if (sourceInfo) info += sourceInfo;
+            else info += getDeclarationErrorAddendum();
+            var typeString;
+            if (type === null) typeString = 'null';
+            else if (isArray(type)) typeString = 'array';
+            else if (type !== undefined && type.$$typeof === REACT_ELEMENT_TYPE) {
+                typeString = "<" + (getComponentNameFromType(type.type) || 'Unknown') + " />";
+                info = ' Did you accidentally export a JSX literal instead of a component?';
+            } else typeString = typeof type;
+            error("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", typeString, info);
+        }
+        var element = jsxDEV(type, props, key, source, self); // The result can be nullish if a mock or a custom function is used.
+        // TODO: Drop this when these are no longer allowed as the type argument.
+        if (element == null) return element;
+         // Skip key warning if the type isn't valid since our key validation logic
+        // doesn't expect a non-string/function type and can throw confusing errors.
+        // We don't want exception behavior to differ between dev and prod.
+        // (Rendering will throw with a helpful message and as soon as the type is
+        // fixed, the key warnings will appear.)
+        if (validType) {
+            var children = props.children;
+            if (children !== undefined) {
+                if (isStaticChildren) {
+                    if (isArray(children)) {
+                        for(var i = 0; i < children.length; i++)validateChildKeys(children[i], type);
+                        if (Object.freeze) Object.freeze(children);
+                    } else error("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
+                } else validateChildKeys(children, type);
+            }
+        }
+        if (hasOwnProperty.call(props, 'key')) {
+            var componentName = getComponentNameFromType(type);
+            var keys = Object.keys(props).filter(function(k) {
+                return k !== 'key';
+            });
+            var beforeExample = keys.length > 0 ? '{key: someKey, ' + keys.join(': ..., ') + ': ...}' : '{key: someKey}';
+            if (!didWarnAboutKeySpread[componentName + beforeExample]) {
+                var afterExample = keys.length > 0 ? '{' + keys.join(': ..., ') + ': ...}' : '{}';
+                error('A props object containing a "key" prop is being spread into JSX:\n  let props = %s;\n  <%s {...props} />\nReact keys must be passed directly to JSX without using spread:\n  let props = %s;\n  <%s key={someKey} {...props} />', beforeExample, componentName, afterExample, componentName);
+                didWarnAboutKeySpread[componentName + beforeExample] = true;
+            }
+        }
+        if (type === REACT_FRAGMENT_TYPE) validateFragmentProps(element);
+        else validatePropTypes(element);
+        return element;
+    } // These two functions exist to still get child warnings in dev
+    var jsxDEV$1 = jsxWithValidation;
+    exports.Fragment = REACT_FRAGMENT_TYPE;
+    exports.jsxDEV = jsxDEV$1;
+})();
 
-},{"7422ead32dcc1e6b":"786KC","630b62916b1ae0e7":"4SQxb"}],"4SQxb":[function(require,module,exports,__globalThis) {
-module.exports = JSON.parse("{\"name\":\"react-refresh\",\"description\":\"React is a JavaScript library for building user interfaces.\",\"keywords\":[\"react\"],\"version\":\"0.14.2\",\"homepage\":\"https://reactjs.org/\",\"bugs\":\"https://github.com/facebook/react/issues\",\"license\":\"MIT\",\"files\":[\"LICENSE\",\"README.md\",\"babel.js\",\"runtime.js\",\"cjs/\",\"umd/\"],\"main\":\"runtime.js\",\"exports\":{\".\":\"./runtime.js\",\"./runtime\":\"./runtime.js\",\"./babel\":\"./babel.js\",\"./package.json\":\"./package.json\"},\"repository\":{\"type\":\"git\",\"url\":\"https://github.com/facebook/react.git\",\"directory\":\"packages/react\"},\"engines\":{\"node\":\">=0.10.0\"},\"devDependencies\":{\"react-16-8\":\"npm:react@16.8.0\",\"react-dom-16-8\":\"npm:react-dom@16.8.0\",\"scheduler-0-13\":\"npm:scheduler@0.13.0\"}}");
-
-},{}],"21dqq":[function(require,module,exports,__globalThis) {
+},{"58362d9d82be395f":"21dqq"}],"21dqq":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("a569817e6ea559f6");
 
@@ -26722,60 +27369,86 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$2a62.prelude(module);
 
 try {
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = void 0;
-var _react = require("9ba60092848f3447");
-var _reactRouterDom = require("1bc3c65d0881f27e");
-var _userContext = _interopRequireDefault(require("3e8274c34a1d3031"));
-var _reactRedux = require("d3987bbb938d3ce1");
-var _Title = _interopRequireDefault(require("889d1aa1075498b8"));
-var _useNetworkStatus = _interopRequireDefault(require("c1ff88756511760f"));
-var _jsxRuntime = require("20a4d07014581b7f");
-function _interopRequireDefault(e) {
-    return e && e.__esModule ? e : {
-        default: e
-    };
-}
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactRouterDom = require("react-router-dom");
+var _userContext = require("../utils/userContext");
+var _userContextDefault = parcelHelpers.interopDefault(_userContext);
+var _reactRedux = require("react-redux");
+var _title = require("./Title");
+var _titleDefault = parcelHelpers.interopDefault(_title);
+var _useNetworkStatus = require("../utils/useNetworkStatus");
+var _useNetworkStatusDefault = parcelHelpers.interopDefault(_useNetworkStatus);
+var _s = $RefreshSig$();
 const HeaderComponent = ()=>{
+    _s();
     const cartItems = (0, _reactRedux.useSelector)((store)=>store.cart.items);
-    console.log(cartItems);
-    const { user } = (0, _react.useContext)(_userContext.default);
-    const isOnline = (0, _useNetworkStatus.default)();
+    // console.log(cartItems);
+    const { user } = (0, _react.useContext)((0, _userContextDefault.default));
+    const { id } = (0, _reactRouterDom.useParams)();
+    const isOnline = (0, _useNetworkStatusDefault.default)();
     // we destructure the object extracting the user obj from userContext
     const [isLoggedIn, setIsLoggedIn] = (0, _react.useState)(false);
-    return /*#__PURE__*/ (0, _jsxRuntime.jsx)(_jsxRuntime.Fragment, {
-        children: /*#__PURE__*/ (0, _jsxRuntime.jsxs)("nav", {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
             className: "nav-bar",
             children: [
-                /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Title.default, {}),
-                /*#__PURE__*/ (0, _jsxRuntime.jsxs)("ul", {
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _titleDefault.default), {}, void 0, false, {
+                    fileName: "src/Components/Header.jsx",
+                    lineNumber: 20,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                     children: [
-                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("li", {
-                            children: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.Link, {
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/",
                                 className: "link",
                                 children: "Home"
-                            })
-                        }),
-                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("li", {
-                            children: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.Link, {
+                            }, void 0, false, {
+                                fileName: "src/Components/Header.jsx",
+                                lineNumber: 24,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/Components/Header.jsx",
+                            lineNumber: 23,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/About",
                                 className: "link",
                                 children: "About"
-                            })
-                        }),
-                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("li", {
-                            children: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.Link, {
+                            }, void 0, false, {
+                                fileName: "src/Components/Header.jsx",
+                                lineNumber: 29,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/Components/Header.jsx",
+                            lineNumber: 28,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/Contact",
                                 className: "link",
-                                children: "Contact"
-                            })
-                        }),
-                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("li", {
-                            children: /*#__PURE__*/ (0, _jsxRuntime.jsxs)(_reactRouterDom.Link, {
+                                children: "FAQ"
+                            }, void 0, false, {
+                                fileName: "src/Components/Header.jsx",
+                                lineNumber: 34,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/Components/Header.jsx",
+                            lineNumber: 33,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/Cart",
                                 className: "cart-btn link",
                                 "data-testid": "cartItem",
@@ -26783,46 +27456,104 @@ const HeaderComponent = ()=>{
                                     "Cart - ",
                                     cartItems.length
                                 ]
-                            })
-                        }),
-                        /*#__PURE__*/ (0, _jsxRuntime.jsxs)("li", {
+                            }, void 0, true, {
+                                fileName: "src/Components/Header.jsx",
+                                lineNumber: 40,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/Components/Header.jsx",
+                            lineNumber: 39,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: [
-                                /*#__PURE__*/ (0, _jsxRuntime.jsx)("span", {
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                     "data-testid": "user",
                                     children: user.name
-                                }),
-                                /*#__PURE__*/ (0, _jsxRuntime.jsx)("span", {
+                                }, void 0, false, {
+                                    fileName: "src/Components/Header.jsx",
+                                    lineNumber: 45,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                     "data-testid": "isOnline",
                                     className: "ml-1",
                                     children: isOnline ? " \u2705 " : " \uD83D\uDD34 "
-                                })
+                                }, void 0, false, {
+                                    fileName: "src/Components/Header.jsx",
+                                    lineNumber: 46,
+                                    columnNumber: 13
+                                }, undefined)
                             ]
-                        })
+                        }, void 0, true, {
+                            fileName: "src/Components/Header.jsx",
+                            lineNumber: 44,
+                            columnNumber: 11
+                        }, undefined)
                     ]
-                }),
-                /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
-                    children: isLoggedIn ? /*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.Link, {
+                }, void 0, true, {
+                    fileName: "src/Components/Header.jsx",
+                    lineNumber: 22,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "text-white font-bold",
+                    children: isLoggedIn ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "/reg",
                         className: "link",
-                        children: /*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                             onClick: ()=>setIsLoggedIn(false),
+                            className: "text-white",
                             children: "LogOut"
-                        })
-                    }) : /*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.Link, {
+                        }, void 0, false, {
+                            fileName: "src/Components/Header.jsx",
+                            lineNumber: 55,
+                            columnNumber: 15
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/Components/Header.jsx",
+                        lineNumber: 54,
+                        columnNumber: 13
+                    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "/reg",
                         className: "link",
-                        children: /*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                             onClick: ()=>setIsLoggedIn(true),
+                            className: "text-white",
                             children: "LogIn"
-                        })
-                    })
-                })
+                        }, void 0, false, {
+                            fileName: "src/Components/Header.jsx",
+                            lineNumber: 64,
+                            columnNumber: 15
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/Components/Header.jsx",
+                        lineNumber: 63,
+                        columnNumber: 13
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/Components/Header.jsx",
+                    lineNumber: 52,
+                    columnNumber: 9
+                }, undefined)
             ]
-        })
-    });
+        }, void 0, true, {
+            fileName: "src/Components/Header.jsx",
+            lineNumber: 19,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false);
 };
+_s(HeaderComponent, "F47X5qkVXscaxhEGms49HUh5Xwo=", false, function() {
+    return [
+        (0, _reactRedux.useSelector),
+        (0, _reactRouterDom.useParams),
+        (0, _useNetworkStatusDefault.default)
+    ];
+});
 _c = HeaderComponent;
-var _default = exports.default = HeaderComponent;
+exports.default = HeaderComponent;
 var _c;
 $RefreshReg$(_c, "HeaderComponent");
 
@@ -26831,7 +27562,7 @@ $RefreshReg$(_c, "HeaderComponent");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"9ba60092848f3447":"21dqq","1bc3c65d0881f27e":"9xmpe","3e8274c34a1d3031":"eBA1b","d3987bbb938d3ce1":"62sf7","889d1aa1075498b8":"3cUdb","c1ff88756511760f":"5GewO","20a4d07014581b7f":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../utils/userContext":"eBA1b","react-redux":"62sf7","./Title":"3cUdb","../utils/useNetworkStatus":"5GewO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports,__globalThis) {
 /**
  * React Router DOM v6.28.0
  *
@@ -34075,25 +34806,167 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$268f.prelude(module);
 
 try {
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = void 0;
-var _react = require("7ffdd72b32759df0");
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
 const userContext = /*#__PURE__*/ (0, _react.createContext)({
     user: {
         name: "Dummy"
     }
 });
-var _default = exports.default = userContext;
+exports.default = userContext;
 
   $parcel$ReactRefreshHelpers$268f.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"7ffdd72b32759df0":"21dqq","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"62sf7":[function(require,module,exports,__globalThis) {
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"km3Ru":[function(require,module,exports,__globalThis) {
+"use strict";
+var Refresh = require("7422ead32dcc1e6b");
+var { version } = require("630b62916b1ae0e7");
+function debounce(func, delay) {
+    {
+        let timeout = undefined;
+        let lastTime = 0;
+        return function(args) {
+            // Call immediately if last call was more than the delay ago.
+            // Otherwise, set a timeout. This means the first call is fast
+            // (for the common case of a single update), and subsequent updates
+            // are batched.
+            let now = Date.now();
+            if (now - lastTime > delay) {
+                lastTime = now;
+                func.call(null, args);
+            } else {
+                clearTimeout(timeout);
+                timeout = setTimeout(function() {
+                    timeout = undefined;
+                    lastTime = Date.now();
+                    func.call(null, args);
+                }, delay);
+            }
+        };
+    }
+}
+var enqueueUpdate = debounce(function() {
+    Refresh.performReactRefresh();
+}, 30);
+// Everything below is either adapted or copied from
+// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
+// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
+module.exports.prelude = function(module1) {
+    window.__REACT_REFRESH_VERSION_TRANSFORMER = version;
+    window.$RefreshReg$ = function(type, id) {
+        if (window.__REACT_REFRESH_VERSION_TRANSFORMER && window.__REACT_REFRESH_VERSION_RUNTIME && window.__REACT_REFRESH_VERSION_TRANSFORMER !== window.__REACT_REFRESH_VERSION_RUNTIME) // Both versions were set and they did not match
+        throw new Error(`react-refresh versions did not match between transformer and runtime. Please check your dependencies. Transformer: ${window.__REACT_REFRESH_VERSION_TRANSFORMER}, Runtime: ${window.__REACT_REFRESH_VERSION_RUNTIME}`);
+        Refresh.register(type, module1.id + ' ' + id);
+    };
+    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
+};
+module.exports.postlude = function(module1) {
+    if (isReactRefreshBoundary(module1.exports)) {
+        registerExportsForReactRefresh(module1);
+        if (module1.hot) {
+            module1.hot.dispose(function(data) {
+                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
+                data.prevExports = module1.exports;
+            });
+            module1.hot.accept(function(getParents) {
+                var prevExports = module1.hot.data.prevExports;
+                var nextExports = module1.exports;
+                // Since we just executed the code for it, it's possible
+                // that the new exports make it ineligible for being a boundary.
+                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports);
+                // It can also become ineligible if its exports are incompatible
+                // with the previous exports.
+                // For example, if you add/remove/change exports, we'll want
+                // to re-execute the importing modules, and force those components
+                // to re-render. Similarly, if you convert a class component
+                // to a function, we want to invalidate the boundary.
+                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
+                if (isNoLongerABoundary || didInvalidate) {
+                    // We'll be conservative. The only case in which we won't do a full
+                    // reload is if all parent modules are also refresh boundaries.
+                    // In that case we'll add them to the current queue.
+                    var parents = getParents();
+                    if (parents.length === 0) {
+                        // Looks like we bubbled to the root. Can't recover from that.
+                        window.location.reload();
+                        return;
+                    }
+                    return parents;
+                }
+                enqueueUpdate();
+            });
+        }
+    }
+};
+function isReactRefreshBoundary(exports) {
+    if (Refresh.isLikelyComponentType(exports)) return true;
+    if (exports == null || typeof exports !== 'object') // Exit if we can't iterate over exports.
+    return false;
+    var hasExports = false;
+    var areAllExportsComponents = true;
+    let isESM = '__esModule' in exports;
+    for(var key in exports){
+        hasExports = true;
+        if (key === '__esModule') continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
+        return false;
+        var exportValue = exports[key];
+        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
+    }
+    return hasExports && areAllExportsComponents;
+}
+function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
+    var prevSignature = getRefreshBoundarySignature(prevExports);
+    var nextSignature = getRefreshBoundarySignature(nextExports);
+    if (prevSignature.length !== nextSignature.length) return true;
+    for(var i = 0; i < nextSignature.length; i++){
+        if (prevSignature[i] !== nextSignature[i]) return true;
+    }
+    return false;
+}
+// When this signature changes, it's unsafe to stop at this refresh boundary.
+function getRefreshBoundarySignature(exports) {
+    var signature = [];
+    signature.push(Refresh.getFamilyByType(exports));
+    if (exports == null || typeof exports !== 'object') // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return signature;
+    let isESM = '__esModule' in exports;
+    for(var key in exports){
+        if (key === '__esModule') continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        signature.push(key);
+        signature.push(Refresh.getFamilyByType(exportValue));
+    }
+    return signature;
+}
+function registerExportsForReactRefresh(module1) {
+    var exports = module1.exports, id = module1.id;
+    Refresh.register(exports, id + ' %exports%');
+    if (exports == null || typeof exports !== 'object') // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return;
+    let isESM = '__esModule' in exports;
+    for(var key in exports){
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        var typeID = id + ' %exports% ' + key;
+        Refresh.register(exportValue, typeID);
+    }
+}
+
+},{"7422ead32dcc1e6b":"786KC","630b62916b1ae0e7":"4SQxb"}],"4SQxb":[function(require,module,exports,__globalThis) {
+module.exports = JSON.parse("{\"name\":\"react-refresh\",\"description\":\"React is a JavaScript library for building user interfaces.\",\"keywords\":[\"react\"],\"version\":\"0.14.2\",\"homepage\":\"https://reactjs.org/\",\"bugs\":\"https://github.com/facebook/react/issues\",\"license\":\"MIT\",\"files\":[\"LICENSE\",\"README.md\",\"babel.js\",\"runtime.js\",\"cjs/\",\"umd/\"],\"main\":\"runtime.js\",\"exports\":{\".\":\"./runtime.js\",\"./runtime\":\"./runtime.js\",\"./babel\":\"./babel.js\",\"./package.json\":\"./package.json\"},\"repository\":{\"type\":\"git\",\"url\":\"https://github.com/facebook/react.git\",\"directory\":\"packages/react\"},\"engines\":{\"node\":\">=0.10.0\"},\"devDependencies\":{\"react-16-8\":\"npm:react@16.8.0\",\"react-dom-16-8\":\"npm:react-dom@16.8.0\",\"scheduler-0-13\":\"npm:scheduler@0.13.0\"}}");
+
+},{}],"62sf7":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Provider", ()=>Provider_default);
@@ -34107,8 +34980,9 @@ parcelHelpers.export(exports, "shallowEqual", ()=>shallowEqual);
 parcelHelpers.export(exports, "useDispatch", ()=>useDispatch);
 parcelHelpers.export(exports, "useSelector", ()=>useSelector);
 parcelHelpers.export(exports, "useStore", ()=>useStore);
-// src/index.ts
+// src/utils/react.ts
 var _react = require("react");
+// src/hooks/useSelector.ts
 var _withSelectorJs = require("use-sync-external-store/with-selector.js");
 var __defProp = Object.defineProperty;
 var __defProps = Object.defineProperties;
@@ -34138,181 +35012,59 @@ var __objRest = (source, exclude)=>{
     }
     return target;
 };
-var React = // prettier-ignore
-// @ts-ignore
-"default" in _react ? _react["default"] : _react;
-// src/components/Context.ts
-var ContextKey = Symbol.for(`react-redux-context`);
-var gT = typeof globalThis !== "undefined" ? globalThis : /* fall back to a per-module scope (pre-8.1 behaviour) if `globalThis` is not available */ {};
-function getContext() {
-    var _a;
-    if (!React.createContext) return {};
-    const contextMap = (_a = gT[ContextKey]) != null ? _a : gT[ContextKey] = /* @__PURE__ */ new Map();
-    let realContext = contextMap.get(React.createContext);
-    if (!realContext) {
-        realContext = React.createContext(null);
-        realContext.displayName = "ReactRedux";
-        contextMap.set(React.createContext, realContext);
-    }
-    return realContext;
-}
-var ReactReduxContext = /* @__PURE__ */ getContext();
-// src/utils/useSyncExternalStore.ts
-var notInitialized = ()=>{
-    throw new Error("uSES not initialized!");
-};
-// src/hooks/useReduxContext.ts
-function createReduxContextHook(context = ReactReduxContext) {
-    return function useReduxContext2() {
-        const contextValue = React.useContext(context);
-        if (!contextValue) throw new Error("could not find react-redux context value; please ensure the component is wrapped in a <Provider>");
-        return contextValue;
-    };
-}
-var useReduxContext = /* @__PURE__ */ createReduxContextHook();
-// src/hooks/useSelector.ts
-var useSyncExternalStoreWithSelector = notInitialized;
-var initializeUseSelector = (fn)=>{
-    useSyncExternalStoreWithSelector = fn;
-};
-var refEquality = (a, b)=>a === b;
-function createSelectorHook(context = ReactReduxContext) {
-    const useReduxContext2 = context === ReactReduxContext ? useReduxContext : createReduxContextHook(context);
-    const useSelector2 = (selector, equalityFnOrOptions = {})=>{
-        const { equalityFn = refEquality, devModeChecks = {} } = typeof equalityFnOrOptions === "function" ? {
-            equalityFn: equalityFnOrOptions
-        } : equalityFnOrOptions;
-        if (!selector) throw new Error(`You must pass a selector to useSelector`);
-        if (typeof selector !== "function") throw new Error(`You must pass a function as a selector to useSelector`);
-        if (typeof equalityFn !== "function") throw new Error(`You must pass a function as an equality function to useSelector`);
-        const { store, subscription, getServerState, stabilityCheck, identityFunctionCheck } = useReduxContext2();
-        const firstRun = React.useRef(true);
-        const wrappedSelector = React.useCallback({
-            [selector.name] (state) {
-                const selected = selector(state);
-                {
-                    const { identityFunctionCheck: finalIdentityFunctionCheck, stabilityCheck: finalStabilityCheck } = __spreadValues({
-                        stabilityCheck,
-                        identityFunctionCheck
-                    }, devModeChecks);
-                    if (finalStabilityCheck === "always" || finalStabilityCheck === "once" && firstRun.current) {
-                        const toCompare = selector(state);
-                        if (!equalityFn(selected, toCompare)) {
-                            let stack = void 0;
-                            try {
-                                throw new Error();
-                            } catch (e) {
-                                ({ stack } = e);
-                            }
-                            console.warn("Selector " + (selector.name || "unknown") + " returned a different result when called with the same parameters. This can lead to unnecessary rerenders.\nSelectors that return a new reference (such as an object or an array) should be memoized: https://redux.js.org/usage/deriving-data-selectors#optimizing-selectors-with-memoization", {
-                                state,
-                                selected,
-                                selected2: toCompare,
-                                stack
-                            });
-                        }
-                    }
-                    if (finalIdentityFunctionCheck === "always" || finalIdentityFunctionCheck === "once" && firstRun.current) {
-                        if (selected === state) {
-                            let stack = void 0;
-                            try {
-                                throw new Error();
-                            } catch (e) {
-                                ({ stack } = e);
-                            }
-                            console.warn("Selector " + (selector.name || "unknown") + " returned the root state when called. This can lead to unnecessary rerenders.\nSelectors that return the entire state are almost certainly a mistake, as they will cause a rerender whenever *anything* in state changes.", {
-                                stack
-                            });
-                        }
-                    }
-                    if (firstRun.current) firstRun.current = false;
-                }
-                return selected;
-            }
-        }[selector.name], [
-            selector,
-            stabilityCheck,
-            devModeChecks.stabilityCheck
-        ]);
-        const selectedState = useSyncExternalStoreWithSelector(subscription.addNestedSub, store.getState, getServerState || store.getState, wrappedSelector, equalityFn);
-        React.useDebugValue(selectedState);
-        return selectedState;
-    };
-    Object.assign(useSelector2, {
-        withTypes: ()=>useSelector2
-    });
-    return useSelector2;
-}
-var useSelector = /* @__PURE__ */ createSelectorHook();
 // src/utils/react-is.ts
-var REACT_ELEMENT_TYPE = Symbol.for("react.element");
-var REACT_PORTAL_TYPE = Symbol.for("react.portal");
-var REACT_FRAGMENT_TYPE = Symbol.for("react.fragment");
-var REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode");
-var REACT_PROFILER_TYPE = Symbol.for("react.profiler");
-var REACT_PROVIDER_TYPE = Symbol.for("react.provider");
-var REACT_CONTEXT_TYPE = Symbol.for("react.context");
-var REACT_SERVER_CONTEXT_TYPE = Symbol.for("react.server_context");
-var REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref");
-var REACT_SUSPENSE_TYPE = Symbol.for("react.suspense");
-var REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list");
-var REACT_MEMO_TYPE = Symbol.for("react.memo");
-var REACT_LAZY_TYPE = Symbol.for("react.lazy");
-var REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen");
-var REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference");
+var IS_REACT_19 = /* @__PURE__ */ _react.version.startsWith("19");
+var REACT_ELEMENT_TYPE = /* @__PURE__ */ Symbol.for(IS_REACT_19 ? "react.transitional.element" : "react.element");
+var REACT_PORTAL_TYPE = /* @__PURE__ */ Symbol.for("react.portal");
+var REACT_FRAGMENT_TYPE = /* @__PURE__ */ Symbol.for("react.fragment");
+var REACT_STRICT_MODE_TYPE = /* @__PURE__ */ Symbol.for("react.strict_mode");
+var REACT_PROFILER_TYPE = /* @__PURE__ */ Symbol.for("react.profiler");
+var REACT_CONSUMER_TYPE = /* @__PURE__ */ Symbol.for("react.consumer");
+var REACT_CONTEXT_TYPE = /* @__PURE__ */ Symbol.for("react.context");
+var REACT_FORWARD_REF_TYPE = /* @__PURE__ */ Symbol.for("react.forward_ref");
+var REACT_SUSPENSE_TYPE = /* @__PURE__ */ Symbol.for("react.suspense");
+var REACT_SUSPENSE_LIST_TYPE = /* @__PURE__ */ Symbol.for("react.suspense_list");
+var REACT_MEMO_TYPE = /* @__PURE__ */ Symbol.for("react.memo");
+var REACT_LAZY_TYPE = /* @__PURE__ */ Symbol.for("react.lazy");
+var REACT_OFFSCREEN_TYPE = /* @__PURE__ */ Symbol.for("react.offscreen");
+var REACT_CLIENT_REFERENCE = /* @__PURE__ */ Symbol.for("react.client.reference");
 var ForwardRef = REACT_FORWARD_REF_TYPE;
 var Memo = REACT_MEMO_TYPE;
 function isValidElementType(type) {
-    if (typeof type === "string" || typeof type === "function") return true;
-    if (type === REACT_FRAGMENT_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || type === REACT_OFFSCREEN_TYPE) return true;
-    if (typeof type === "object" && type !== null) {
-        if (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || // This needs to include all possible module reference object
-        // types supported by any Flight configuration anywhere since
-        // we don't know which Flight build this will end up being used
-        // with.
-        type.$$typeof === REACT_CLIENT_REFERENCE || type.getModuleId !== void 0) return true;
-    }
-    return false;
+    return typeof type === "string" || typeof type === "function" || type === REACT_FRAGMENT_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || type === REACT_OFFSCREEN_TYPE || typeof type === "object" && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_CONSUMER_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_CLIENT_REFERENCE || type.getModuleId !== void 0) ? true : false;
 }
 function typeOf(object) {
     if (typeof object === "object" && object !== null) {
-        const $$typeof = object.$$typeof;
+        const { $$typeof } = object;
         switch($$typeof){
             case REACT_ELEMENT_TYPE:
-                {
-                    const type = object.type;
-                    switch(type){
-                        case REACT_FRAGMENT_TYPE:
-                        case REACT_PROFILER_TYPE:
-                        case REACT_STRICT_MODE_TYPE:
-                        case REACT_SUSPENSE_TYPE:
-                        case REACT_SUSPENSE_LIST_TYPE:
-                            return type;
-                        default:
-                            {
-                                const $$typeofType = type && type.$$typeof;
-                                switch($$typeofType){
-                                    case REACT_SERVER_CONTEXT_TYPE:
-                                    case REACT_CONTEXT_TYPE:
-                                    case REACT_FORWARD_REF_TYPE:
-                                    case REACT_LAZY_TYPE:
-                                    case REACT_MEMO_TYPE:
-                                    case REACT_PROVIDER_TYPE:
-                                        return $$typeofType;
-                                    default:
-                                        return $$typeof;
-                                }
-                            }
-                    }
+                switch(object = object.type, object){
+                    case REACT_FRAGMENT_TYPE:
+                    case REACT_PROFILER_TYPE:
+                    case REACT_STRICT_MODE_TYPE:
+                    case REACT_SUSPENSE_TYPE:
+                    case REACT_SUSPENSE_LIST_TYPE:
+                        return object;
+                    default:
+                        switch(object = object && object.$$typeof, object){
+                            case REACT_CONTEXT_TYPE:
+                            case REACT_FORWARD_REF_TYPE:
+                            case REACT_LAZY_TYPE:
+                            case REACT_MEMO_TYPE:
+                                return object;
+                            case REACT_CONSUMER_TYPE:
+                                return object;
+                            default:
+                                return $$typeof;
+                        }
                 }
             case REACT_PORTAL_TYPE:
                 return $$typeof;
         }
     }
-    return void 0;
 }
 function isContextConsumer(object) {
-    return typeOf(object) === REACT_CONTEXT_TYPE;
+    return IS_REACT_19 ? typeOf(object) === REACT_CONSUMER_TYPE : typeOf(object) === REACT_CONTEXT_TYPE;
 }
 function isMemo(object) {
     return typeOf(object) === REACT_MEMO_TYPE;
@@ -34619,9 +35371,12 @@ function createSubscription(store, parentSub) {
     return subscription;
 }
 // src/utils/useIsomorphicLayoutEffect.ts
-var canUseDOM = !!(typeof window !== "undefined" && typeof window.document !== "undefined" && typeof window.document.createElement !== "undefined");
-var isReactNative = typeof navigator !== "undefined" && navigator.product === "ReactNative";
-var useIsomorphicLayoutEffect = canUseDOM || isReactNative ? React.useLayoutEffect : React.useEffect;
+var canUseDOM = ()=>!!(typeof window !== "undefined" && typeof window.document !== "undefined" && typeof window.document.createElement !== "undefined");
+var isDOM = /* @__PURE__ */ canUseDOM();
+var isRunningInReactNative = ()=>typeof navigator !== "undefined" && navigator.product === "ReactNative";
+var isReactNative = /* @__PURE__ */ isRunningInReactNative();
+var getUseIsomorphicLayoutEffect = ()=>isDOM || isReactNative ? _react.useLayoutEffect : _react.useEffect;
+var useIsomorphicLayoutEffect = /* @__PURE__ */ getUseIsomorphicLayoutEffect();
 // src/utils/shallowEqual.ts
 function is(x, y) {
     if (x === y) return x !== 0 || y !== 0 || 1 / x === 1 / y;
@@ -34712,11 +35467,23 @@ function hoistNonReactStatics(targetComponent, sourceComponent) {
     }
     return targetComponent;
 }
+// src/components/Context.ts
+var ContextKey = /* @__PURE__ */ Symbol.for(`react-redux-context`);
+var gT = typeof globalThis !== "undefined" ? globalThis : /* fall back to a per-module scope (pre-8.1 behaviour) if `globalThis` is not available */ {};
+function getContext() {
+    var _a;
+    if (!_react.createContext) return {};
+    const contextMap = (_a = gT[ContextKey]) != null ? _a : gT[ContextKey] = /* @__PURE__ */ new Map();
+    let realContext = contextMap.get(_react.createContext);
+    if (!realContext) {
+        realContext = _react.createContext(null);
+        realContext.displayName = "ReactRedux";
+        contextMap.set(_react.createContext, realContext);
+    }
+    return realContext;
+}
+var ReactReduxContext = /* @__PURE__ */ getContext();
 // src/components/connect.tsx
-var useSyncExternalStore = notInitialized;
-var initializeConnect = (fn)=>{
-    useSyncExternalStore = fn;
-};
 var NO_SUBSCRIPTION_ARRAY = [
     null,
     null
@@ -34806,7 +35573,6 @@ context = ReactReduxContext } = {}) {
             WrappedComponent,
             // @ts-ignore
             initMapStateToProps,
-            // @ts-ignore
             initMapDispatchToProps,
             initMergeProps,
             areStatesEqual,
@@ -34815,7 +35581,7 @@ context = ReactReduxContext } = {}) {
             areMergedPropsEqual
         };
         function ConnectFunction(props) {
-            const [propsContext, reactReduxForwardedRef, wrapperProps] = React.useMemo(()=>{
+            const [propsContext, reactReduxForwardedRef, wrapperProps] = _react.useMemo(()=>{
                 const _a = props, { reactReduxForwardedRef: reactReduxForwardedRef2 } = _a, wrapperProps2 = __objRest(_a, [
                     "reactReduxForwardedRef"
                 ]);
@@ -34827,11 +35593,11 @@ context = ReactReduxContext } = {}) {
             }, [
                 props
             ]);
-            const ContextToUse = React.useMemo(()=>{
+            const ContextToUse = _react.useMemo(()=>{
                 let ResultContext = Context;
                 if (propsContext == null ? void 0 : propsContext.Consumer) {
                     const isValid = /* @__PURE__ */ isContextConsumer(// @ts-ignore
-                    /* @__PURE__ */ React.createElement(propsContext.Consumer, null));
+                    /* @__PURE__ */ _react.createElement(propsContext.Consumer, null));
                     if (!isValid) throw new Error("You must pass a valid React context consumer as `props.context`");
                     ResultContext = propsContext;
                 }
@@ -34840,18 +35606,18 @@ context = ReactReduxContext } = {}) {
                 propsContext,
                 Context
             ]);
-            const contextValue = React.useContext(ContextToUse);
+            const contextValue = _react.useContext(ContextToUse);
             const didStoreComeFromProps = Boolean(props.store) && Boolean(props.store.getState) && Boolean(props.store.dispatch);
             const didStoreComeFromContext = Boolean(contextValue) && Boolean(contextValue.store);
             if (!didStoreComeFromProps && !didStoreComeFromContext) throw new Error(`Could not find "store" in the context of "${displayName}". Either wrap the root component in a <Provider>, or pass a custom React context provider to <Provider> and the corresponding React context consumer to ${displayName} in connect options.`);
             const store = didStoreComeFromProps ? props.store : contextValue.store;
             const getServerState = didStoreComeFromContext ? contextValue.getServerState : store.getState;
-            const childPropsSelector = React.useMemo(()=>{
+            const childPropsSelector = _react.useMemo(()=>{
                 return finalPropsSelectorFactory(store.dispatch, selectorFactoryOptions);
             }, [
                 store
             ]);
-            const [subscription, notifyNestedSubs] = React.useMemo(()=>{
+            const [subscription, notifyNestedSubs] = _react.useMemo(()=>{
                 if (!shouldHandleStateChanges) return NO_SUBSCRIPTION_ARRAY;
                 const subscription2 = createSubscription(store, didStoreComeFromProps ? void 0 : contextValue.subscription);
                 const notifyNestedSubs2 = subscription2.notifyNestedSubs.bind(subscription2);
@@ -34864,7 +35630,7 @@ context = ReactReduxContext } = {}) {
                 didStoreComeFromProps,
                 contextValue
             ]);
-            const overriddenContextValue = React.useMemo(()=>{
+            const overriddenContextValue = _react.useMemo(()=>{
                 if (didStoreComeFromProps) return contextValue;
                 return __spreadProps(__spreadValues({}, contextValue), {
                     subscription
@@ -34874,19 +35640,19 @@ context = ReactReduxContext } = {}) {
                 contextValue,
                 subscription
             ]);
-            const lastChildProps = React.useRef(void 0);
-            const lastWrapperProps = React.useRef(wrapperProps);
-            const childPropsFromStoreUpdate = React.useRef(void 0);
-            const renderIsScheduled = React.useRef(false);
-            const isMounted = React.useRef(false);
-            const latestSubscriptionCallbackError = React.useRef(void 0);
+            const lastChildProps = _react.useRef(void 0);
+            const lastWrapperProps = _react.useRef(wrapperProps);
+            const childPropsFromStoreUpdate = _react.useRef(void 0);
+            const renderIsScheduled = _react.useRef(false);
+            const isMounted = _react.useRef(false);
+            const latestSubscriptionCallbackError = _react.useRef(void 0);
             useIsomorphicLayoutEffect(()=>{
                 isMounted.current = true;
                 return ()=>{
                     isMounted.current = false;
                 };
             }, []);
-            const actualChildPropsSelector = React.useMemo(()=>{
+            const actualChildPropsSelector = _react.useMemo(()=>{
                 const selector = ()=>{
                     if (childPropsFromStoreUpdate.current && wrapperProps === lastWrapperProps.current) return childPropsFromStoreUpdate.current;
                     return childPropsSelector(store.getState(), wrapperProps);
@@ -34896,7 +35662,7 @@ context = ReactReduxContext } = {}) {
                 store,
                 wrapperProps
             ]);
-            const subscribeForReact = React.useMemo(()=>{
+            const subscribeForReact = _react.useMemo(()=>{
                 const subscribe = (reactListener)=>{
                     if (!subscription) return ()=>{};
                     return subscribeUpdates(shouldHandleStateChanges, store, subscription, // @ts-ignore
@@ -34916,7 +35682,7 @@ context = ReactReduxContext } = {}) {
             ]);
             let actualChildProps;
             try {
-                actualChildProps = useSyncExternalStore(// TODO We're passing through a big wrapper that does a bunch of extra side effects besides subscribing
+                actualChildProps = _react.useSyncExternalStore(// TODO We're passing through a big wrapper that does a bunch of extra side effects besides subscribing
                 subscribeForReact, // TODO This is incredibly hacky. We've already processed the store update and calculated new child props,
                 // TODO and we're just passing that through so it triggers a re-render for us rather than relying on `uSES`.
                 actualChildPropsSelector, getServerState ? ()=>childPropsSelector(getServerState(), wrapperProps) : actualChildPropsSelector);
@@ -34933,9 +35699,9 @@ ${latestSubscriptionCallbackError.current.stack}
                 childPropsFromStoreUpdate.current = void 0;
                 lastChildProps.current = actualChildProps;
             });
-            const renderedWrappedComponent = React.useMemo(()=>{
+            const renderedWrappedComponent = _react.useMemo(()=>{
                 return(// @ts-ignore
-                /* @__PURE__ */ React.createElement(WrappedComponent, __spreadProps(__spreadValues({}, actualChildProps), {
+                /* @__PURE__ */ _react.createElement(WrappedComponent, __spreadProps(__spreadValues({}, actualChildProps), {
                     ref: reactReduxForwardedRef
                 })));
             }, [
@@ -34943,8 +35709,8 @@ ${latestSubscriptionCallbackError.current.stack}
                 WrappedComponent,
                 actualChildProps
             ]);
-            const renderedChild = React.useMemo(()=>{
-                if (shouldHandleStateChanges) return /* @__PURE__ */ React.createElement(ContextToUse.Provider, {
+            const renderedChild = _react.useMemo(()=>{
+                if (shouldHandleStateChanges) return /* @__PURE__ */ _react.createElement(ContextToUse.Provider, {
                     value: overriddenContextValue
                 }, renderedWrappedComponent);
                 return renderedWrappedComponent;
@@ -34955,13 +35721,13 @@ ${latestSubscriptionCallbackError.current.stack}
             ]);
             return renderedChild;
         }
-        const _Connect = React.memo(ConnectFunction);
+        const _Connect = _react.memo(ConnectFunction);
         const Connect = _Connect;
         Connect.WrappedComponent = WrappedComponent;
         Connect.displayName = ConnectFunction.displayName = displayName;
         if (forwardRef) {
-            const _forwarded = React.forwardRef(function forwardConnectRef(props, ref) {
-                return /* @__PURE__ */ React.createElement(Connect, __spreadProps(__spreadValues({}, props), {
+            const _forwarded = _react.forwardRef(function forwardConnectRef(props, ref) {
+                return /* @__PURE__ */ _react.createElement(Connect, __spreadProps(__spreadValues({}, props), {
                     reactReduxForwardedRef: ref
                 }));
             });
@@ -34976,23 +35742,27 @@ ${latestSubscriptionCallbackError.current.stack}
 }
 var connect_default = connect;
 // src/components/Provider.tsx
-function Provider({ store, context, children, serverState, stabilityCheck = "once", identityFunctionCheck = "once" }) {
-    const contextValue = React.useMemo(()=>{
+function Provider(providerProps) {
+    const { children, context, serverState, store } = providerProps;
+    const contextValue = _react.useMemo(()=>{
         const subscription = createSubscription(store);
-        return {
+        const baseContextValue = {
             store,
             subscription,
-            getServerState: serverState ? ()=>serverState : void 0,
-            stabilityCheck,
-            identityFunctionCheck
+            getServerState: serverState ? ()=>serverState : void 0
         };
+        {
+            const { identityFunctionCheck = "once", stabilityCheck = "once" } = providerProps;
+            return /* @__PURE__ */ Object.assign(baseContextValue, {
+                stabilityCheck,
+                identityFunctionCheck
+            });
+        }
     }, [
         store,
-        serverState,
-        stabilityCheck,
-        identityFunctionCheck
+        serverState
     ]);
-    const previousState = React.useMemo(()=>store.getState(), [
+    const previousState = _react.useMemo(()=>store.getState(), [
         store
     ]);
     useIsomorphicLayoutEffect(()=>{
@@ -35009,11 +35779,20 @@ function Provider({ store, context, children, serverState, stabilityCheck = "onc
         previousState
     ]);
     const Context = context || ReactReduxContext;
-    return /* @__PURE__ */ React.createElement(Context.Provider, {
+    return /* @__PURE__ */ _react.createElement(Context.Provider, {
         value: contextValue
     }, children);
 }
 var Provider_default = Provider;
+// src/hooks/useReduxContext.ts
+function createReduxContextHook(context = ReactReduxContext) {
+    return function useReduxContext2() {
+        const contextValue = _react.useContext(context);
+        if (!contextValue) throw new Error("could not find react-redux context value; please ensure the component is wrapped in a <Provider>");
+        return contextValue;
+    };
+}
+var useReduxContext = /* @__PURE__ */ createReduxContextHook();
 // src/hooks/useStore.ts
 function createStoreHook(context = ReactReduxContext) {
     const useReduxContext2 = context === ReactReduxContext ? useReduxContext : // @ts-ignore
@@ -35041,11 +35820,78 @@ function createDispatchHook(context = ReactReduxContext) {
     return useDispatch2;
 }
 var useDispatch = /* @__PURE__ */ createDispatchHook();
+var refEquality = (a, b)=>a === b;
+function createSelectorHook(context = ReactReduxContext) {
+    const useReduxContext2 = context === ReactReduxContext ? useReduxContext : createReduxContextHook(context);
+    const useSelector2 = (selector, equalityFnOrOptions = {})=>{
+        const { equalityFn = refEquality } = typeof equalityFnOrOptions === "function" ? {
+            equalityFn: equalityFnOrOptions
+        } : equalityFnOrOptions;
+        if (!selector) throw new Error(`You must pass a selector to useSelector`);
+        if (typeof selector !== "function") throw new Error(`You must pass a function as a selector to useSelector`);
+        if (typeof equalityFn !== "function") throw new Error(`You must pass a function as an equality function to useSelector`);
+        const reduxContext = useReduxContext2();
+        const { store, subscription, getServerState } = reduxContext;
+        const firstRun = _react.useRef(true);
+        const wrappedSelector = _react.useCallback({
+            [selector.name] (state) {
+                const selected = selector(state);
+                {
+                    const { devModeChecks = {} } = typeof equalityFnOrOptions === "function" ? {} : equalityFnOrOptions;
+                    const { identityFunctionCheck, stabilityCheck } = reduxContext;
+                    const { identityFunctionCheck: finalIdentityFunctionCheck, stabilityCheck: finalStabilityCheck } = __spreadValues({
+                        stabilityCheck,
+                        identityFunctionCheck
+                    }, devModeChecks);
+                    if (finalStabilityCheck === "always" || finalStabilityCheck === "once" && firstRun.current) {
+                        const toCompare = selector(state);
+                        if (!equalityFn(selected, toCompare)) {
+                            let stack = void 0;
+                            try {
+                                throw new Error();
+                            } catch (e) {
+                                ({ stack } = e);
+                            }
+                            console.warn("Selector " + (selector.name || "unknown") + " returned a different result when called with the same parameters. This can lead to unnecessary rerenders.\nSelectors that return a new reference (such as an object or an array) should be memoized: https://redux.js.org/usage/deriving-data-selectors#optimizing-selectors-with-memoization", {
+                                state,
+                                selected,
+                                selected2: toCompare,
+                                stack
+                            });
+                        }
+                    }
+                    if (finalIdentityFunctionCheck === "always" || finalIdentityFunctionCheck === "once" && firstRun.current) {
+                        if (selected === state) {
+                            let stack = void 0;
+                            try {
+                                throw new Error();
+                            } catch (e) {
+                                ({ stack } = e);
+                            }
+                            console.warn("Selector " + (selector.name || "unknown") + " returned the root state when called. This can lead to unnecessary rerenders.\nSelectors that return the entire state are almost certainly a mistake, as they will cause a rerender whenever *anything* in state changes.", {
+                                stack
+                            });
+                        }
+                    }
+                    if (firstRun.current) firstRun.current = false;
+                }
+                return selected;
+            }
+        }[selector.name], [
+            selector
+        ]);
+        const selectedState = (0, _withSelectorJs.useSyncExternalStoreWithSelector)(subscription.addNestedSub, store.getState, getServerState || store.getState, wrappedSelector, equalityFn);
+        _react.useDebugValue(selectedState);
+        return selectedState;
+    };
+    Object.assign(useSelector2, {
+        withTypes: ()=>useSelector2
+    });
+    return useSelector2;
+}
+var useSelector = /* @__PURE__ */ createSelectorHook();
 // src/exports.ts
 var batch = defaultNoopBatch;
-// src/index.ts
-initializeUseSelector((0, _withSelectorJs.useSyncExternalStoreWithSelector));
-initializeConnect(_react.useSyncExternalStore);
 
 },{"react":"21dqq","use-sync-external-store/with-selector.js":"3eYnG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3eYnG":[function(require,module,exports,__globalThis) {
 'use strict';
@@ -35056,116 +35902,71 @@ module.exports = require("374a059340689e89");
  * @license React
  * use-sync-external-store-with-selector.development.js
  *
- * Copyright (c) Facebook, Inc. and its affiliates.
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */ 'use strict';
+ */ "use strict";
 (function() {
-    'use strict';
-    /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== 'undefined' && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart === 'function') __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
-    var React = require("8b38fc6c74f16e20");
-    /**
- * inlined Object.is polyfill to avoid requiring consumers ship their own
- * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
- */ function is(x, y) {
-        return x === y && (x !== 0 || 1 / x === 1 / y) || x !== x && y !== y // eslint-disable-line no-self-compare
-        ;
+    function is(x, y) {
+        return x === y && (0 !== x || 1 / x === 1 / y) || x !== x && y !== y;
     }
-    var objectIs = typeof Object.is === 'function' ? Object.is : is;
-    var useSyncExternalStore = React.useSyncExternalStore;
-    // for CommonJS interop.
-    var useRef = React.useRef, useEffect = React.useEffect, useMemo = React.useMemo, useDebugValue = React.useDebugValue; // Same as useSyncExternalStore, but supports selector and isEqual arguments.
-    function useSyncExternalStoreWithSelector(subscribe, getSnapshot, getServerSnapshot, selector, isEqual) {
-        // Use this to track the rendered snapshot.
+    "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(Error());
+    var React = require("8b38fc6c74f16e20"), objectIs = "function" === typeof Object.is ? Object.is : is, useSyncExternalStore = React.useSyncExternalStore, useRef = React.useRef, useEffect = React.useEffect, useMemo = React.useMemo, useDebugValue = React.useDebugValue;
+    exports.useSyncExternalStoreWithSelector = function(subscribe, getSnapshot, getServerSnapshot, selector, isEqual) {
         var instRef = useRef(null);
-        var inst;
-        if (instRef.current === null) {
-            inst = {
-                hasValue: false,
+        if (null === instRef.current) {
+            var inst = {
+                hasValue: !1,
                 value: null
             };
             instRef.current = inst;
         } else inst = instRef.current;
-        var _useMemo = useMemo(function() {
-            // Track the memoized state using closure variables that are local to this
-            // memoized instance of a getSnapshot function. Intentionally not using a
-            // useRef hook, because that state would be shared across all concurrent
-            // copies of the hook/component.
-            var hasMemo = false;
-            var memoizedSnapshot;
-            var memoizedSelection;
-            var memoizedSelector = function(nextSnapshot) {
+        instRef = useMemo(function() {
+            function memoizedSelector(nextSnapshot) {
                 if (!hasMemo) {
-                    // The first time the hook is called, there is no memoized result.
-                    hasMemo = true;
+                    hasMemo = !0;
                     memoizedSnapshot = nextSnapshot;
-                    var _nextSelection = selector(nextSnapshot);
-                    if (isEqual !== undefined) // Even if the selector has changed, the currently rendered selection
-                    // may be equal to the new selection. We should attempt to reuse the
-                    // current value if possible, to preserve downstream memoizations.
-                    {
-                        if (inst.hasValue) {
-                            var currentSelection = inst.value;
-                            if (isEqual(currentSelection, _nextSelection)) {
-                                memoizedSelection = currentSelection;
-                                return currentSelection;
-                            }
-                        }
+                    nextSnapshot = selector(nextSnapshot);
+                    if (void 0 !== isEqual && inst.hasValue) {
+                        var currentSelection = inst.value;
+                        if (isEqual(currentSelection, nextSnapshot)) return memoizedSelection = currentSelection;
                     }
-                    memoizedSelection = _nextSelection;
-                    return _nextSelection;
-                } // We may be able to reuse the previous invocation's result.
-                // We may be able to reuse the previous invocation's result.
-                var prevSnapshot = memoizedSnapshot;
-                var prevSelection = memoizedSelection;
-                if (objectIs(prevSnapshot, nextSnapshot)) // The snapshot is the same as last time. Reuse the previous selection.
-                return prevSelection;
-                 // The snapshot has changed, so we need to compute a new selection.
-                // The snapshot has changed, so we need to compute a new selection.
-                var nextSelection = selector(nextSnapshot); // If a custom isEqual function is provided, use that to check if the data
-                // has changed. If it hasn't, return the previous selection. That signals
-                // to React that the selections are conceptually equal, and we can bail
-                // out of rendering.
-                // If a custom isEqual function is provided, use that to check if the data
-                // has changed. If it hasn't, return the previous selection. That signals
-                // to React that the selections are conceptually equal, and we can bail
-                // out of rendering.
-                if (isEqual !== undefined && isEqual(prevSelection, nextSelection)) return prevSelection;
+                    return memoizedSelection = nextSnapshot;
+                }
+                currentSelection = memoizedSelection;
+                if (objectIs(memoizedSnapshot, nextSnapshot)) return currentSelection;
+                var nextSelection = selector(nextSnapshot);
+                if (void 0 !== isEqual && isEqual(currentSelection, nextSelection)) return memoizedSnapshot = nextSnapshot, currentSelection;
                 memoizedSnapshot = nextSnapshot;
-                memoizedSelection = nextSelection;
-                return nextSelection;
-            }; // Assigning this to a constant so that Flow knows it can't change.
-            // Assigning this to a constant so that Flow knows it can't change.
-            var maybeGetServerSnapshot = getServerSnapshot === undefined ? null : getServerSnapshot;
-            var getSnapshotWithSelector = function() {
-                return memoizedSelector(getSnapshot());
-            };
-            var getServerSnapshotWithSelector = maybeGetServerSnapshot === null ? undefined : function() {
-                return memoizedSelector(maybeGetServerSnapshot());
-            };
+                return memoizedSelection = nextSelection;
+            }
+            var hasMemo = !1, memoizedSnapshot, memoizedSelection, maybeGetServerSnapshot = void 0 === getServerSnapshot ? null : getServerSnapshot;
             return [
-                getSnapshotWithSelector,
-                getServerSnapshotWithSelector
+                function() {
+                    return memoizedSelector(getSnapshot());
+                },
+                null === maybeGetServerSnapshot ? void 0 : function() {
+                    return memoizedSelector(maybeGetServerSnapshot());
+                }
             ];
         }, [
             getSnapshot,
             getServerSnapshot,
             selector,
             isEqual
-        ]), getSelection = _useMemo[0], getServerSelection = _useMemo[1];
-        var value = useSyncExternalStore(subscribe, getSelection, getServerSelection);
+        ]);
+        var value = useSyncExternalStore(subscribe, instRef[0], instRef[1]);
         useEffect(function() {
-            inst.hasValue = true;
+            inst.hasValue = !0;
             inst.value = value;
         }, [
             value
         ]);
         useDebugValue(value);
         return value;
-    }
-    exports.useSyncExternalStoreWithSelector = useSyncExternalStoreWithSelector;
-    /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== 'undefined' && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === 'function') __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
+    };
+    "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(Error());
 })();
 
 },{"8b38fc6c74f16e20":"21dqq"}],"3cUdb":[function(require,module,exports,__globalThis) {
@@ -35175,32 +35976,32 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$d01b.prelude(module);
 
 try {
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = void 0;
-var _react = _interopRequireDefault(require("c25c1f610c1f1a82"));
-var _dummy = _interopRequireDefault(require("d5bd4e4ccdf01b64"));
-var _jsxRuntime = require("e5d5ab8bdb6695e7");
-function _interopRequireDefault(e) {
-    return e && e.__esModule ? e : {
-        default: e
-    };
-}
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _dummy = require("../Mocks/dummy");
+var _dummyDefault = parcelHelpers.interopDefault(_dummy);
+var _constant = require("./constant");
 const Title = ()=>{
-    return /*#__PURE__*/ (0, _jsxRuntime.jsx)(_jsxRuntime.Fragment, {
-        children: /*#__PURE__*/ (0, _jsxRuntime.jsx)("img", {
-            src: "https://assets.foodhub.com/static/48a74dec2132bcc4600f97a38937be05/img/1632762945phpx7NP9L.jpg",
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+            src: (0, _constant.LOGO),
+            // src={logo}
             alt: "logo",
             className: "logo",
             id: "logo",
             "data-testid": "logo"
-        })
-    });
+        }, void 0, false, {
+            fileName: "src/Components/Title.js",
+            lineNumber: 8,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false);
 };
 _c = Title;
-var _default = exports.default = Title;
+exports.default = Title;
 var _c;
 $RefreshReg$(_c, "Title");
 
@@ -35209,888 +36010,82 @@ $RefreshReg$(_c, "Title");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"c25c1f610c1f1a82":"21dqq","d5bd4e4ccdf01b64":"lyr6K","e5d5ab8bdb6695e7":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lyr6K":[function(require,module,exports,__globalThis) {
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = void 0;
-var _default = exports.default = "dummy.png";
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../Mocks/dummy":"lyr6K","./constant":"bV0CE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lyr6K":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+exports.default = "dummy.png";
 
-},{}],"6AEwr":[function(require,module,exports,__globalThis) {
-'use strict';
-module.exports = require("c4c10cbba9862d5f");
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bV0CE":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "IMG_CDN_URL", ()=>IMG_CDN_URL);
+parcelHelpers.export(exports, "FETCH_MENU_URL", ()=>FETCH_MENU_URL);
+parcelHelpers.export(exports, "FETCH_MENU_URL_END", ()=>FETCH_MENU_URL_END);
+parcelHelpers.export(exports, "BANNER_LEFT_IMG", ()=>BANNER_LEFT_IMG);
+parcelHelpers.export(exports, "BANNER_RIGHT_IMG", ()=>BANNER_RIGHT_IMG);
+parcelHelpers.export(exports, "LOGO", ()=>LOGO);
+parcelHelpers.export(exports, "GREEN_ICON", ()=>GREEN_ICON);
+parcelHelpers.export(exports, "OFFER", ()=>OFFER);
+parcelHelpers.export(exports, "GET_APP", ()=>GET_APP);
+parcelHelpers.export(exports, "PLAY_STORE", ()=>PLAY_STORE);
+parcelHelpers.export(exports, "APPLE_STORE", ()=>APPLE_STORE);
+parcelHelpers.export(exports, "MISSION", ()=>MISSION);
+parcelHelpers.export(exports, "C_1", ()=>C_1);
+parcelHelpers.export(exports, "C_2", ()=>C_2);
+parcelHelpers.export(exports, "C_3", ()=>C_3);
+parcelHelpers.export(exports, "C_4", ()=>C_4);
+parcelHelpers.export(exports, "C_5", ()=>C_5);
+parcelHelpers.export(exports, "CENTER_LOGO", ()=>CENTER_LOGO);
+parcelHelpers.export(exports, "VIDEO", ()=>VIDEO);
+parcelHelpers.export(exports, "MAN", ()=>MAN);
+parcelHelpers.export(exports, "PEOPLES", ()=>PEOPLES);
+parcelHelpers.export(exports, "BARGER", ()=>BARGER);
+parcelHelpers.export(exports, "HERO_1", ()=>HERO_1);
+parcelHelpers.export(exports, "HERO_2", ()=>HERO_2);
+parcelHelpers.export(exports, "HERO_3", ()=>HERO_3);
+parcelHelpers.export(exports, "HERO_4", ()=>HERO_4);
+parcelHelpers.export(exports, "EMTY_CART", ()=>EMTY_CART);
+const IMG_CDN_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
+const FETCH_MENU_URL = "https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.5203896&lng=73.8567005&restaurantId=";
+const FETCH_MENU_URL_END = "&submitAction=ENTER";
+const BANNER_LEFT_IMG = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Veggies_new.png";
+const BANNER_RIGHT_IMG = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Sushi_replace.png";
+const LOGO = "https://res.cloudinary.com/dutdah0l9/image/upload/v1720058694/Swiggy_logo_bml6he.png";
+const GREEN_ICON = "https://www.iconsdb.com/icons/preview/green/rating-xxl.png";
+const OFFER = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_96,h_96/offers/deal-of-day";
+const GET_APP = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/seo/App_download_banner.png";
+const PLAY_STORE = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200,h_65/icon-GooglePlay_1_zixjxl";
+const APPLE_STORE = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200,h_65/icon-AppStore_lg30tv";
+const MISSION = "https://www.swiggy.com/corporate/wp-content/uploads/2024/10/Mission.png";
+const C_1 = "https://www.swiggy.com/corporate/wp-content/uploads/2024/10/instamart-1-282x300.webp";
+const C_2 = "https://www.swiggy.com/corporate/wp-content/uploads/2024/10/genie-1-283x300.webp";
+const C_3 = "https://www.swiggy.com/corporate/wp-content/uploads/2024/10/dineout-282x300.webp";
+const C_4 = "https://www.swiggy.com/corporate/wp-content/uploads/2024/10/instamart-1-282x300.webp";
+const C_5 = "https://www.swiggy.com/corporate/wp-content/uploads/2024/10/food.webp";
+const CENTER_LOGO = "https://www.swiggy.com/corporate/wp-content/uploads/2024/10/swiggy-sign-198x300.webp";
+const VIDEO = "https://www.swiggy.com/corporate/wp-content/uploads/2024/11/WhatsApp-Video-2024-11-18-at-15.49.51.mp4";
+const MAN = "https://www.swiggy.com/corporate/wp-content/uploads/2024/11/Group-1116602947-768x507.webp";
+const PEOPLES = "https://www.swiggy.com/corporate/wp-content/uploads/2024/10/career-at-swiggy-768x504.webp";
+const BARGER = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/DINEOUT_ALL_RESTAURANTS/IMAGES/RESTAURANT_IMAGE_SERVICE/2024/12/12/2df4e7e8-cc48-462f-9dd0-856da6011946_image7528db5d2b3dd445eacf3661c2707ffdb.JPG";
+const HERO_1 = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/8/7/899e2fa8-8d1d-4851-af41-6e1fea193d90_Upto60Off.png";
+const HERO_2 = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/8/24/d6b0cd55-fa6c-41c2-998f-c32feb33fb47_310.png";
+const HERO_3 = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/30/7b58bd17-6cd7-404e-a651-3a2fe3bb6ee9_a5208a79457f4a2f8368a386d47fa4f2341.png";
+const HERO_4 = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/12/12/2b44b0ae-067d-4dc7-b8a0-43ac8ea32dcc_3x3.png";
+const EMTY_CART = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/6/19/ca322ced-2d4f-4a43-a8c6-b7e07de76bfa_DEmweb.png";
 
-},{"c4c10cbba9862d5f":"kujY4"}],"kujY4":[function(require,module,exports,__globalThis) {
-/**
- * @license React
- * react-jsx-runtime.development.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ 'use strict';
-(function() {
-    'use strict';
-    var React = require("593632ccebda0d3a");
-    // ATTENTION
-    // When adding new symbols to this file,
-    // Please consider also adding to 'react-devtools-shared/src/backend/ReactSymbols'
-    // The Symbol used to tag the ReactElement-like types.
-    var REACT_ELEMENT_TYPE = Symbol.for('react.element');
-    var REACT_PORTAL_TYPE = Symbol.for('react.portal');
-    var REACT_FRAGMENT_TYPE = Symbol.for('react.fragment');
-    var REACT_STRICT_MODE_TYPE = Symbol.for('react.strict_mode');
-    var REACT_PROFILER_TYPE = Symbol.for('react.profiler');
-    var REACT_PROVIDER_TYPE = Symbol.for('react.provider');
-    var REACT_CONTEXT_TYPE = Symbol.for('react.context');
-    var REACT_FORWARD_REF_TYPE = Symbol.for('react.forward_ref');
-    var REACT_SUSPENSE_TYPE = Symbol.for('react.suspense');
-    var REACT_SUSPENSE_LIST_TYPE = Symbol.for('react.suspense_list');
-    var REACT_MEMO_TYPE = Symbol.for('react.memo');
-    var REACT_LAZY_TYPE = Symbol.for('react.lazy');
-    var REACT_OFFSCREEN_TYPE = Symbol.for('react.offscreen');
-    var MAYBE_ITERATOR_SYMBOL = Symbol.iterator;
-    var FAUX_ITERATOR_SYMBOL = '@@iterator';
-    function getIteratorFn(maybeIterable) {
-        if (maybeIterable === null || typeof maybeIterable !== 'object') return null;
-        var maybeIterator = MAYBE_ITERATOR_SYMBOL && maybeIterable[MAYBE_ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL];
-        if (typeof maybeIterator === 'function') return maybeIterator;
-        return null;
-    }
-    var ReactSharedInternals = React.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
-    function error(format) {
-        for(var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++)args[_key2 - 1] = arguments[_key2];
-        printWarning('error', format, args);
-    }
-    function printWarning(level, format, args) {
-        var ReactDebugCurrentFrame = ReactSharedInternals.ReactDebugCurrentFrame;
-        var stack = ReactDebugCurrentFrame.getStackAddendum();
-        if (stack !== '') {
-            format += '%s';
-            args = args.concat([
-                stack
-            ]);
-        } // eslint-disable-next-line react-internal/safe-string-coercion
-        var argsWithFormat = args.map(function(item) {
-            return String(item);
-        }); // Careful: RN currently depends on this prefix
-        argsWithFormat.unshift('Warning: ' + format); // We intentionally don't use spread (or .apply) directly because it
-        // breaks IE9: https://github.com/facebook/react/issues/13610
-        // eslint-disable-next-line react-internal/no-production-logging
-        Function.prototype.apply.call(console[level], console, argsWithFormat);
-    }
-    // -----------------------------------------------------------------------------
-    var enableScopeAPI = false; // Experimental Create Event Handle API.
-    var enableCacheElement = false;
-    var enableTransitionTracing = false; // No known bugs, but needs performance testing
-    var enableLegacyHidden = false; // Enables unstable_avoidThisFallback feature in Fiber
-    // stuff. Intended to enable React core members to more easily debug scheduling
-    // issues in DEV builds.
-    var enableDebugTracing = false; // Track which Fiber(s) schedule render work.
-    var REACT_MODULE_REFERENCE;
-    REACT_MODULE_REFERENCE = Symbol.for('react.module.reference');
-    function isValidElementType(type) {
-        if (typeof type === 'string' || typeof type === 'function') return true;
-         // Note: typeof might be other than 'symbol' or 'number' (e.g. if it's a polyfill).
-        if (type === REACT_FRAGMENT_TYPE || type === REACT_PROFILER_TYPE || enableDebugTracing || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || enableLegacyHidden || type === REACT_OFFSCREEN_TYPE || enableScopeAPI || enableCacheElement || enableTransitionTracing) return true;
-        if (typeof type === 'object' && type !== null) {
-            if (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || // This needs to include all possible module reference object
-            // types supported by any Flight configuration anywhere since
-            // we don't know which Flight build this will end up being used
-            // with.
-            type.$$typeof === REACT_MODULE_REFERENCE || type.getModuleId !== undefined) return true;
-        }
-        return false;
-    }
-    function getWrappedName(outerType, innerType, wrapperName) {
-        var displayName = outerType.displayName;
-        if (displayName) return displayName;
-        var functionName = innerType.displayName || innerType.name || '';
-        return functionName !== '' ? wrapperName + "(" + functionName + ")" : wrapperName;
-    } // Keep in sync with react-reconciler/getComponentNameFromFiber
-    function getContextName(type) {
-        return type.displayName || 'Context';
-    } // Note that the reconciler package should generally prefer to use getComponentNameFromFiber() instead.
-    function getComponentNameFromType(type) {
-        if (type == null) // Host root, text node or just invalid type.
-        return null;
-        if (typeof type.tag === 'number') error("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue.");
-        if (typeof type === 'function') return type.displayName || type.name || null;
-        if (typeof type === 'string') return type;
-        switch(type){
-            case REACT_FRAGMENT_TYPE:
-                return 'Fragment';
-            case REACT_PORTAL_TYPE:
-                return 'Portal';
-            case REACT_PROFILER_TYPE:
-                return 'Profiler';
-            case REACT_STRICT_MODE_TYPE:
-                return 'StrictMode';
-            case REACT_SUSPENSE_TYPE:
-                return 'Suspense';
-            case REACT_SUSPENSE_LIST_TYPE:
-                return 'SuspenseList';
-        }
-        if (typeof type === 'object') switch(type.$$typeof){
-            case REACT_CONTEXT_TYPE:
-                var context = type;
-                return getContextName(context) + '.Consumer';
-            case REACT_PROVIDER_TYPE:
-                var provider = type;
-                return getContextName(provider._context) + '.Provider';
-            case REACT_FORWARD_REF_TYPE:
-                return getWrappedName(type, type.render, 'ForwardRef');
-            case REACT_MEMO_TYPE:
-                var outerName = type.displayName || null;
-                if (outerName !== null) return outerName;
-                return getComponentNameFromType(type.type) || 'Memo';
-            case REACT_LAZY_TYPE:
-                var lazyComponent = type;
-                var payload = lazyComponent._payload;
-                var init = lazyComponent._init;
-                try {
-                    return getComponentNameFromType(init(payload));
-                } catch (x) {
-                    return null;
-                }
-        }
-        return null;
-    }
-    var assign = Object.assign;
-    // Helpers to patch console.logs to avoid logging during side-effect free
-    // replaying on render function. This currently only patches the object
-    // lazily which won't cover if the log function was extracted eagerly.
-    // We could also eagerly patch the method.
-    var disabledDepth = 0;
-    var prevLog;
-    var prevInfo;
-    var prevWarn;
-    var prevError;
-    var prevGroup;
-    var prevGroupCollapsed;
-    var prevGroupEnd;
-    function disabledLog() {}
-    disabledLog.__reactDisabledLog = true;
-    function disableLogs() {
-        if (disabledDepth === 0) {
-            /* eslint-disable react-internal/no-production-logging */ prevLog = console.log;
-            prevInfo = console.info;
-            prevWarn = console.warn;
-            prevError = console.error;
-            prevGroup = console.group;
-            prevGroupCollapsed = console.groupCollapsed;
-            prevGroupEnd = console.groupEnd; // https://github.com/facebook/react/issues/19099
-            var props = {
-                configurable: true,
-                enumerable: true,
-                value: disabledLog,
-                writable: true
-            }; // $FlowFixMe Flow thinks console is immutable.
-            Object.defineProperties(console, {
-                info: props,
-                log: props,
-                warn: props,
-                error: props,
-                group: props,
-                groupCollapsed: props,
-                groupEnd: props
-            });
-        /* eslint-enable react-internal/no-production-logging */ }
-        disabledDepth++;
-    }
-    function reenableLogs() {
-        disabledDepth--;
-        if (disabledDepth === 0) {
-            /* eslint-disable react-internal/no-production-logging */ var props = {
-                configurable: true,
-                enumerable: true,
-                writable: true
-            }; // $FlowFixMe Flow thinks console is immutable.
-            Object.defineProperties(console, {
-                log: assign({}, props, {
-                    value: prevLog
-                }),
-                info: assign({}, props, {
-                    value: prevInfo
-                }),
-                warn: assign({}, props, {
-                    value: prevWarn
-                }),
-                error: assign({}, props, {
-                    value: prevError
-                }),
-                group: assign({}, props, {
-                    value: prevGroup
-                }),
-                groupCollapsed: assign({}, props, {
-                    value: prevGroupCollapsed
-                }),
-                groupEnd: assign({}, props, {
-                    value: prevGroupEnd
-                })
-            });
-        /* eslint-enable react-internal/no-production-logging */ }
-        if (disabledDepth < 0) error("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
-    }
-    var ReactCurrentDispatcher = ReactSharedInternals.ReactCurrentDispatcher;
-    var prefix;
-    function describeBuiltInComponentFrame(name, source, ownerFn) {
-        if (prefix === undefined) // Extract the VM specific prefix used by each line.
-        try {
-            throw Error();
-        } catch (x) {
-            var match = x.stack.trim().match(/\n( *(at )?)/);
-            prefix = match && match[1] || '';
-        }
-         // We use the prefix to ensure our stacks line up with native stack frames.
-        return '\n' + prefix + name;
-    }
-    var reentry = false;
-    var componentFrameCache;
-    var PossiblyWeakMap = typeof WeakMap === 'function' ? WeakMap : Map;
-    componentFrameCache = new PossiblyWeakMap();
-    function describeNativeComponentFrame(fn, construct) {
-        // If something asked for a stack inside a fake render, it should get ignored.
-        if (!fn || reentry) return '';
-        var frame = componentFrameCache.get(fn);
-        if (frame !== undefined) return frame;
-        var control;
-        reentry = true;
-        var previousPrepareStackTrace = Error.prepareStackTrace; // $FlowFixMe It does accept undefined.
-        Error.prepareStackTrace = undefined;
-        var previousDispatcher;
-        previousDispatcher = ReactCurrentDispatcher.current; // Set the dispatcher in DEV because this might be call in the render function
-        // for warnings.
-        ReactCurrentDispatcher.current = null;
-        disableLogs();
-        try {
-            // This should throw.
-            if (construct) {
-                // Something should be setting the props in the constructor.
-                var Fake = function() {
-                    throw Error();
-                }; // $FlowFixMe
-                Object.defineProperty(Fake.prototype, 'props', {
-                    set: function() {
-                        // We use a throwing setter instead of frozen or non-writable props
-                        // because that won't throw in a non-strict mode function.
-                        throw Error();
-                    }
-                });
-                if (typeof Reflect === 'object' && Reflect.construct) {
-                    // We construct a different control for this case to include any extra
-                    // frames added by the construct call.
-                    try {
-                        Reflect.construct(Fake, []);
-                    } catch (x) {
-                        control = x;
-                    }
-                    Reflect.construct(fn, [], Fake);
-                } else {
-                    try {
-                        Fake.call();
-                    } catch (x) {
-                        control = x;
-                    }
-                    fn.call(Fake.prototype);
-                }
-            } else {
-                try {
-                    throw Error();
-                } catch (x) {
-                    control = x;
-                }
-                fn();
-            }
-        } catch (sample) {
-            // This is inlined manually because closure doesn't do it for us.
-            if (sample && control && typeof sample.stack === 'string') {
-                // This extracts the first frame from the sample that isn't also in the control.
-                // Skipping one frame that we assume is the frame that calls the two.
-                var sampleLines = sample.stack.split('\n');
-                var controlLines = control.stack.split('\n');
-                var s = sampleLines.length - 1;
-                var c = controlLines.length - 1;
-                while(s >= 1 && c >= 0 && sampleLines[s] !== controlLines[c])// We expect at least one stack frame to be shared.
-                // Typically this will be the root most one. However, stack frames may be
-                // cut off due to maximum stack limits. In this case, one maybe cut off
-                // earlier than the other. We assume that the sample is longer or the same
-                // and there for cut off earlier. So we should find the root most frame in
-                // the sample somewhere in the control.
-                c--;
-                for(; s >= 1 && c >= 0; s--, c--)// Next we find the first one that isn't the same which should be the
-                // frame that called our sample function and the control.
-                if (sampleLines[s] !== controlLines[c]) {
-                    // In V8, the first line is describing the message but other VMs don't.
-                    // If we're about to return the first line, and the control is also on the same
-                    // line, that's a pretty good indicator that our sample threw at same line as
-                    // the control. I.e. before we entered the sample frame. So we ignore this result.
-                    // This can happen if you passed a class to function component, or non-function.
-                    if (s !== 1 || c !== 1) do {
-                        s--;
-                        c--; // We may still have similar intermediate frames from the construct call.
-                        // The next one that isn't the same should be our match though.
-                        if (c < 0 || sampleLines[s] !== controlLines[c]) {
-                            // V8 adds a "new" prefix for native classes. Let's remove it to make it prettier.
-                            var _frame = '\n' + sampleLines[s].replace(' at new ', ' at '); // If our component frame is labeled "<anonymous>"
-                            // but we have a user-provided "displayName"
-                            // splice it in to make the stack more readable.
-                            if (fn.displayName && _frame.includes('<anonymous>')) _frame = _frame.replace('<anonymous>', fn.displayName);
-                            if (typeof fn === 'function') componentFrameCache.set(fn, _frame);
-                            return _frame;
-                        }
-                    }while (s >= 1 && c >= 0);
-                    break;
-                }
-            }
-        } finally{
-            reentry = false;
-            ReactCurrentDispatcher.current = previousDispatcher;
-            reenableLogs();
-            Error.prepareStackTrace = previousPrepareStackTrace;
-        } // Fallback to just using the name if we couldn't make it throw.
-        var name = fn ? fn.displayName || fn.name : '';
-        var syntheticFrame = name ? describeBuiltInComponentFrame(name) : '';
-        if (typeof fn === 'function') componentFrameCache.set(fn, syntheticFrame);
-        return syntheticFrame;
-    }
-    function describeFunctionComponentFrame(fn, source, ownerFn) {
-        return describeNativeComponentFrame(fn, false);
-    }
-    function shouldConstruct(Component) {
-        var prototype = Component.prototype;
-        return !!(prototype && prototype.isReactComponent);
-    }
-    function describeUnknownElementTypeFrameInDEV(type, source, ownerFn) {
-        if (type == null) return '';
-        if (typeof type === 'function') return describeNativeComponentFrame(type, shouldConstruct(type));
-        if (typeof type === 'string') return describeBuiltInComponentFrame(type);
-        switch(type){
-            case REACT_SUSPENSE_TYPE:
-                return describeBuiltInComponentFrame('Suspense');
-            case REACT_SUSPENSE_LIST_TYPE:
-                return describeBuiltInComponentFrame('SuspenseList');
-        }
-        if (typeof type === 'object') switch(type.$$typeof){
-            case REACT_FORWARD_REF_TYPE:
-                return describeFunctionComponentFrame(type.render);
-            case REACT_MEMO_TYPE:
-                // Memo may contain any component type so we recursively resolve it.
-                return describeUnknownElementTypeFrameInDEV(type.type, source, ownerFn);
-            case REACT_LAZY_TYPE:
-                var lazyComponent = type;
-                var payload = lazyComponent._payload;
-                var init = lazyComponent._init;
-                try {
-                    // Lazy may contain any component type so we recursively resolve it.
-                    return describeUnknownElementTypeFrameInDEV(init(payload), source, ownerFn);
-                } catch (x) {}
-        }
-        return '';
-    }
-    var hasOwnProperty = Object.prototype.hasOwnProperty;
-    var loggedTypeFailures = {};
-    var ReactDebugCurrentFrame = ReactSharedInternals.ReactDebugCurrentFrame;
-    function setCurrentlyValidatingElement(element) {
-        if (element) {
-            var owner = element._owner;
-            var stack = describeUnknownElementTypeFrameInDEV(element.type, element._source, owner ? owner.type : null);
-            ReactDebugCurrentFrame.setExtraStackFrame(stack);
-        } else ReactDebugCurrentFrame.setExtraStackFrame(null);
-    }
-    function checkPropTypes(typeSpecs, values, location, componentName, element) {
-        // $FlowFixMe This is okay but Flow doesn't know it.
-        var has = Function.call.bind(hasOwnProperty);
-        for(var typeSpecName in typeSpecs)if (has(typeSpecs, typeSpecName)) {
-            var error$1 = void 0; // Prop type validation may throw. In case they do, we don't want to
-            // fail the render phase where it didn't fail before. So we log it.
-            // After these have been cleaned up, we'll let them throw.
-            try {
-                // This is intentionally an invariant that gets caught. It's the same
-                // behavior as without this statement except with a better message.
-                if (typeof typeSpecs[typeSpecName] !== 'function') {
-                    // eslint-disable-next-line react-internal/prod-error-codes
-                    var err = Error((componentName || 'React class') + ': ' + location + ' type `' + typeSpecName + '` is invalid; ' + 'it must be a function, usually from the `prop-types` package, but received `' + typeof typeSpecs[typeSpecName] + '`.' + 'This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.');
-                    err.name = 'Invariant Violation';
-                    throw err;
-                }
-                error$1 = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED');
-            } catch (ex) {
-                error$1 = ex;
-            }
-            if (error$1 && !(error$1 instanceof Error)) {
-                setCurrentlyValidatingElement(element);
-                error("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", componentName || 'React class', location, typeSpecName, typeof error$1);
-                setCurrentlyValidatingElement(null);
-            }
-            if (error$1 instanceof Error && !(error$1.message in loggedTypeFailures)) {
-                // Only monitor this failure once because there tends to be a lot of the
-                // same error.
-                loggedTypeFailures[error$1.message] = true;
-                setCurrentlyValidatingElement(element);
-                error('Failed %s type: %s', location, error$1.message);
-                setCurrentlyValidatingElement(null);
-            }
-        }
-    }
-    var isArrayImpl = Array.isArray; // eslint-disable-next-line no-redeclare
-    function isArray(a) {
-        return isArrayImpl(a);
-    }
-    /*
- * The `'' + value` pattern (used in in perf-sensitive code) throws for Symbol
- * and Temporal.* types. See https://github.com/facebook/react/pull/22064.
- *
- * The functions in this module will throw an easier-to-understand,
- * easier-to-debug exception with a clear errors message message explaining the
- * problem. (Instead of a confusing exception thrown inside the implementation
- * of the `value` object).
- */ // $FlowFixMe only called in DEV, so void return is not possible.
-    function typeName(value) {
-        // toStringTag is needed for namespaced types like Temporal.Instant
-        var hasToStringTag = typeof Symbol === 'function' && Symbol.toStringTag;
-        var type = hasToStringTag && value[Symbol.toStringTag] || value.constructor.name || 'Object';
-        return type;
-    } // $FlowFixMe only called in DEV, so void return is not possible.
-    function willCoercionThrow(value) {
-        try {
-            testStringCoercion(value);
-            return false;
-        } catch (e) {
-            return true;
-        }
-    }
-    function testStringCoercion(value) {
-        // If you ended up here by following an exception call stack, here's what's
-        // happened: you supplied an object or symbol value to React (as a prop, key,
-        // DOM attribute, CSS property, string ref, etc.) and when React tried to
-        // coerce it to a string using `'' + value`, an exception was thrown.
-        //
-        // The most common types that will cause this exception are `Symbol` instances
-        // and Temporal objects like `Temporal.Instant`. But any object that has a
-        // `valueOf` or `[Symbol.toPrimitive]` method that throws will also cause this
-        // exception. (Library authors do this to prevent users from using built-in
-        // numeric operators like `+` or comparison operators like `>=` because custom
-        // methods are needed to perform accurate arithmetic or comparison.)
-        //
-        // To fix the problem, coerce this object or symbol value to a string before
-        // passing it to React. The most reliable way is usually `String(value)`.
-        //
-        // To find which value is throwing, check the browser or debugger console.
-        // Before this exception was thrown, there should be `console.error` output
-        // that shows the type (Symbol, Temporal.PlainDate, etc.) that caused the
-        // problem and how that type was used: key, atrribute, input value prop, etc.
-        // In most cases, this console output also shows the component and its
-        // ancestor components where the exception happened.
-        //
-        // eslint-disable-next-line react-internal/safe-string-coercion
-        return '' + value;
-    }
-    function checkKeyStringCoercion(value) {
-        if (willCoercionThrow(value)) {
-            error("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", typeName(value));
-            return testStringCoercion(value); // throw (to help callers find troubleshooting comments)
-        }
-    }
-    var ReactCurrentOwner = ReactSharedInternals.ReactCurrentOwner;
-    var RESERVED_PROPS = {
-        key: true,
-        ref: true,
-        __self: true,
-        __source: true
-    };
-    var specialPropKeyWarningShown;
-    var specialPropRefWarningShown;
-    var didWarnAboutStringRefs;
-    didWarnAboutStringRefs = {};
-    function hasValidRef(config) {
-        if (hasOwnProperty.call(config, 'ref')) {
-            var getter = Object.getOwnPropertyDescriptor(config, 'ref').get;
-            if (getter && getter.isReactWarning) return false;
-        }
-        return config.ref !== undefined;
-    }
-    function hasValidKey(config) {
-        if (hasOwnProperty.call(config, 'key')) {
-            var getter = Object.getOwnPropertyDescriptor(config, 'key').get;
-            if (getter && getter.isReactWarning) return false;
-        }
-        return config.key !== undefined;
-    }
-    function warnIfStringRefCannotBeAutoConverted(config, self) {
-        if (typeof config.ref === 'string' && ReactCurrentOwner.current && self && ReactCurrentOwner.current.stateNode !== self) {
-            var componentName = getComponentNameFromType(ReactCurrentOwner.current.type);
-            if (!didWarnAboutStringRefs[componentName]) {
-                error('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', getComponentNameFromType(ReactCurrentOwner.current.type), config.ref);
-                didWarnAboutStringRefs[componentName] = true;
-            }
-        }
-    }
-    function defineKeyPropWarningGetter(props, displayName) {
-        var warnAboutAccessingKey = function() {
-            if (!specialPropKeyWarningShown) {
-                specialPropKeyWarningShown = true;
-                error("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", displayName);
-            }
-        };
-        warnAboutAccessingKey.isReactWarning = true;
-        Object.defineProperty(props, 'key', {
-            get: warnAboutAccessingKey,
-            configurable: true
-        });
-    }
-    function defineRefPropWarningGetter(props, displayName) {
-        var warnAboutAccessingRef = function() {
-            if (!specialPropRefWarningShown) {
-                specialPropRefWarningShown = true;
-                error("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", displayName);
-            }
-        };
-        warnAboutAccessingRef.isReactWarning = true;
-        Object.defineProperty(props, 'ref', {
-            get: warnAboutAccessingRef,
-            configurable: true
-        });
-    }
-    /**
- * Factory method to create a new React element. This no longer adheres to
- * the class pattern, so do not use new to call it. Also, instanceof check
- * will not work. Instead test $$typeof field against Symbol.for('react.element') to check
- * if something is a React Element.
- *
- * @param {*} type
- * @param {*} props
- * @param {*} key
- * @param {string|object} ref
- * @param {*} owner
- * @param {*} self A *temporary* helper to detect places where `this` is
- * different from the `owner` when React.createElement is called, so that we
- * can warn. We want to get rid of owner and replace string `ref`s with arrow
- * functions, and as long as `this` and owner are the same, there will be no
- * change in behavior.
- * @param {*} source An annotation object (added by a transpiler or otherwise)
- * indicating filename, line number, and/or other information.
- * @internal
- */ var ReactElement = function(type, key, ref, self, source, owner, props) {
-        var element = {
-            // This tag allows us to uniquely identify this as a React Element
-            $$typeof: REACT_ELEMENT_TYPE,
-            // Built-in properties that belong on the element
-            type: type,
-            key: key,
-            ref: ref,
-            props: props,
-            // Record the component responsible for creating this element.
-            _owner: owner
-        };
-        // The validation flag is currently mutative. We put it on
-        // an external backing store so that we can freeze the whole object.
-        // This can be replaced with a WeakMap once they are implemented in
-        // commonly used development environments.
-        element._store = {}; // To make comparing ReactElements easier for testing purposes, we make
-        // the validation flag non-enumerable (where possible, which should
-        // include every environment we run tests in), so the test framework
-        // ignores it.
-        Object.defineProperty(element._store, 'validated', {
-            configurable: false,
-            enumerable: false,
-            writable: true,
-            value: false
-        }); // self and source are DEV only properties.
-        Object.defineProperty(element, '_self', {
-            configurable: false,
-            enumerable: false,
-            writable: false,
-            value: self
-        }); // Two elements created in two different places should be considered
-        // equal for testing purposes and therefore we hide it from enumeration.
-        Object.defineProperty(element, '_source', {
-            configurable: false,
-            enumerable: false,
-            writable: false,
-            value: source
-        });
-        if (Object.freeze) {
-            Object.freeze(element.props);
-            Object.freeze(element);
-        }
-        return element;
-    };
-    /**
- * https://github.com/reactjs/rfcs/pull/107
- * @param {*} type
- * @param {object} props
- * @param {string} key
- */ function jsxDEV(type, config, maybeKey, source, self) {
-        var propName; // Reserved names are extracted
-        var props = {};
-        var key = null;
-        var ref = null; // Currently, key can be spread in as a prop. This causes a potential
-        // issue if key is also explicitly declared (ie. <div {...props} key="Hi" />
-        // or <div key="Hi" {...props} /> ). We want to deprecate key spread,
-        // but as an intermediary step, we will use jsxDEV for everything except
-        // <div {...props} key="Hi" />, because we aren't currently able to tell if
-        // key is explicitly declared to be undefined or not.
-        if (maybeKey !== undefined) {
-            checkKeyStringCoercion(maybeKey);
-            key = '' + maybeKey;
-        }
-        if (hasValidKey(config)) {
-            checkKeyStringCoercion(config.key);
-            key = '' + config.key;
-        }
-        if (hasValidRef(config)) {
-            ref = config.ref;
-            warnIfStringRefCannotBeAutoConverted(config, self);
-        } // Remaining properties are added to a new props object
-        for(propName in config)if (hasOwnProperty.call(config, propName) && !RESERVED_PROPS.hasOwnProperty(propName)) props[propName] = config[propName];
-         // Resolve default props
-        if (type && type.defaultProps) {
-            var defaultProps = type.defaultProps;
-            for(propName in defaultProps)if (props[propName] === undefined) props[propName] = defaultProps[propName];
-        }
-        if (key || ref) {
-            var displayName = typeof type === 'function' ? type.displayName || type.name || 'Unknown' : type;
-            if (key) defineKeyPropWarningGetter(props, displayName);
-            if (ref) defineRefPropWarningGetter(props, displayName);
-        }
-        return ReactElement(type, key, ref, self, source, ReactCurrentOwner.current, props);
-    }
-    var ReactCurrentOwner$1 = ReactSharedInternals.ReactCurrentOwner;
-    var ReactDebugCurrentFrame$1 = ReactSharedInternals.ReactDebugCurrentFrame;
-    function setCurrentlyValidatingElement$1(element) {
-        if (element) {
-            var owner = element._owner;
-            var stack = describeUnknownElementTypeFrameInDEV(element.type, element._source, owner ? owner.type : null);
-            ReactDebugCurrentFrame$1.setExtraStackFrame(stack);
-        } else ReactDebugCurrentFrame$1.setExtraStackFrame(null);
-    }
-    var propTypesMisspellWarningShown;
-    propTypesMisspellWarningShown = false;
-    /**
- * Verifies the object is a ReactElement.
- * See https://reactjs.org/docs/react-api.html#isvalidelement
- * @param {?object} object
- * @return {boolean} True if `object` is a ReactElement.
- * @final
- */ function isValidElement(object) {
-        return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
-    }
-    function getDeclarationErrorAddendum() {
-        if (ReactCurrentOwner$1.current) {
-            var name = getComponentNameFromType(ReactCurrentOwner$1.current.type);
-            if (name) return '\n\nCheck the render method of `' + name + '`.';
-        }
-        return '';
-    }
-    function getSourceInfoErrorAddendum(source) {
-        if (source !== undefined) {
-            var fileName = source.fileName.replace(/^.*[\\\/]/, '');
-            var lineNumber = source.lineNumber;
-            return '\n\nCheck your code at ' + fileName + ':' + lineNumber + '.';
-        }
-        return '';
-    }
-    /**
- * Warn if there's no key explicitly set on dynamic arrays of children or
- * object keys are not valid. This allows us to keep track of children between
- * updates.
- */ var ownerHasKeyUseWarning = {};
-    function getCurrentComponentErrorInfo(parentType) {
-        var info = getDeclarationErrorAddendum();
-        if (!info) {
-            var parentName = typeof parentType === 'string' ? parentType : parentType.displayName || parentType.name;
-            if (parentName) info = "\n\nCheck the top-level render call using <" + parentName + ">.";
-        }
-        return info;
-    }
-    /**
- * Warn if the element doesn't have an explicit key assigned to it.
- * This element is in an array. The array could grow and shrink or be
- * reordered. All children that haven't already been validated are required to
- * have a "key" property assigned to it. Error statuses are cached so a warning
- * will only be shown once.
- *
- * @internal
- * @param {ReactElement} element Element that requires a key.
- * @param {*} parentType element's parent's type.
- */ function validateExplicitKey(element, parentType) {
-        if (!element._store || element._store.validated || element.key != null) return;
-        element._store.validated = true;
-        var currentComponentErrorInfo = getCurrentComponentErrorInfo(parentType);
-        if (ownerHasKeyUseWarning[currentComponentErrorInfo]) return;
-        ownerHasKeyUseWarning[currentComponentErrorInfo] = true; // Usually the current owner is the offender, but if it accepts children as a
-        // property, it may be the creator of the child that's responsible for
-        // assigning it a key.
-        var childOwner = '';
-        if (element && element._owner && element._owner !== ReactCurrentOwner$1.current) // Give the component that originally created this child.
-        childOwner = " It was passed a child from " + getComponentNameFromType(element._owner.type) + ".";
-        setCurrentlyValidatingElement$1(element);
-        error('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', currentComponentErrorInfo, childOwner);
-        setCurrentlyValidatingElement$1(null);
-    }
-    /**
- * Ensure that every element either is passed in a static location, in an
- * array with an explicit keys property defined, or in an object literal
- * with valid key property.
- *
- * @internal
- * @param {ReactNode} node Statically passed child of any type.
- * @param {*} parentType node's parent's type.
- */ function validateChildKeys(node, parentType) {
-        if (typeof node !== 'object') return;
-        if (isArray(node)) for(var i = 0; i < node.length; i++){
-            var child = node[i];
-            if (isValidElement(child)) validateExplicitKey(child, parentType);
-        }
-        else if (isValidElement(node)) // This element was passed in a valid location.
-        {
-            if (node._store) node._store.validated = true;
-        } else if (node) {
-            var iteratorFn = getIteratorFn(node);
-            if (typeof iteratorFn === 'function') // Entry iterators used to provide implicit keys,
-            // but now we print a separate warning for them later.
-            {
-                if (iteratorFn !== node.entries) {
-                    var iterator = iteratorFn.call(node);
-                    var step;
-                    while(!(step = iterator.next()).done)if (isValidElement(step.value)) validateExplicitKey(step.value, parentType);
-                }
-            }
-        }
-    }
-    /**
- * Given an element, validate that its props follow the propTypes definition,
- * provided by the type.
- *
- * @param {ReactElement} element
- */ function validatePropTypes(element) {
-        var type = element.type;
-        if (type === null || type === undefined || typeof type === 'string') return;
-        var propTypes;
-        if (typeof type === 'function') propTypes = type.propTypes;
-        else if (typeof type === 'object' && (type.$$typeof === REACT_FORWARD_REF_TYPE || // Note: Memo only checks outer props here.
-        // Inner props are checked in the reconciler.
-        type.$$typeof === REACT_MEMO_TYPE)) propTypes = type.propTypes;
-        else return;
-        if (propTypes) {
-            // Intentionally inside to avoid triggering lazy initializers:
-            var name = getComponentNameFromType(type);
-            checkPropTypes(propTypes, element.props, 'prop', name, element);
-        } else if (type.PropTypes !== undefined && !propTypesMisspellWarningShown) {
-            propTypesMisspellWarningShown = true; // Intentionally inside to avoid triggering lazy initializers:
-            var _name = getComponentNameFromType(type);
-            error('Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?', _name || 'Unknown');
-        }
-        if (typeof type.getDefaultProps === 'function' && !type.getDefaultProps.isReactClassApproved) error("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
-    }
-    /**
- * Given a fragment, validate that it can only be provided with fragment props
- * @param {ReactElement} fragment
- */ function validateFragmentProps(fragment) {
-        var keys = Object.keys(fragment.props);
-        for(var i = 0; i < keys.length; i++){
-            var key = keys[i];
-            if (key !== 'children' && key !== 'key') {
-                setCurrentlyValidatingElement$1(fragment);
-                error("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", key);
-                setCurrentlyValidatingElement$1(null);
-                break;
-            }
-        }
-        if (fragment.ref !== null) {
-            setCurrentlyValidatingElement$1(fragment);
-            error('Invalid attribute `ref` supplied to `React.Fragment`.');
-            setCurrentlyValidatingElement$1(null);
-        }
-    }
-    var didWarnAboutKeySpread = {};
-    function jsxWithValidation(type, props, key, isStaticChildren, source, self) {
-        var validType = isValidElementType(type); // We warn in this case but don't throw. We expect the element creation to
-        // succeed and there will likely be errors in render.
-        if (!validType) {
-            var info = '';
-            if (type === undefined || typeof type === 'object' && type !== null && Object.keys(type).length === 0) info += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.";
-            var sourceInfo = getSourceInfoErrorAddendum(source);
-            if (sourceInfo) info += sourceInfo;
-            else info += getDeclarationErrorAddendum();
-            var typeString;
-            if (type === null) typeString = 'null';
-            else if (isArray(type)) typeString = 'array';
-            else if (type !== undefined && type.$$typeof === REACT_ELEMENT_TYPE) {
-                typeString = "<" + (getComponentNameFromType(type.type) || 'Unknown') + " />";
-                info = ' Did you accidentally export a JSX literal instead of a component?';
-            } else typeString = typeof type;
-            error("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", typeString, info);
-        }
-        var element = jsxDEV(type, props, key, source, self); // The result can be nullish if a mock or a custom function is used.
-        // TODO: Drop this when these are no longer allowed as the type argument.
-        if (element == null) return element;
-         // Skip key warning if the type isn't valid since our key validation logic
-        // doesn't expect a non-string/function type and can throw confusing errors.
-        // We don't want exception behavior to differ between dev and prod.
-        // (Rendering will throw with a helpful message and as soon as the type is
-        // fixed, the key warnings will appear.)
-        if (validType) {
-            var children = props.children;
-            if (children !== undefined) {
-                if (isStaticChildren) {
-                    if (isArray(children)) {
-                        for(var i = 0; i < children.length; i++)validateChildKeys(children[i], type);
-                        if (Object.freeze) Object.freeze(children);
-                    } else error("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
-                } else validateChildKeys(children, type);
-            }
-        }
-        if (hasOwnProperty.call(props, 'key')) {
-            var componentName = getComponentNameFromType(type);
-            var keys = Object.keys(props).filter(function(k) {
-                return k !== 'key';
-            });
-            var beforeExample = keys.length > 0 ? '{key: someKey, ' + keys.join(': ..., ') + ': ...}' : '{key: someKey}';
-            if (!didWarnAboutKeySpread[componentName + beforeExample]) {
-                var afterExample = keys.length > 0 ? '{' + keys.join(': ..., ') + ': ...}' : '{}';
-                error('A props object containing a "key" prop is being spread into JSX:\n  let props = %s;\n  <%s {...props} />\nReact keys must be passed directly to JSX without using spread:\n  let props = %s;\n  <%s key={someKey} {...props} />', beforeExample, componentName, afterExample, componentName);
-                didWarnAboutKeySpread[componentName + beforeExample] = true;
-            }
-        }
-        if (type === REACT_FRAGMENT_TYPE) validateFragmentProps(element);
-        else validatePropTypes(element);
-        return element;
-    } // These two functions exist to still get child warnings in dev
-    // even with the prod transform. This means that jsxDEV is purely
-    // opt-in behavior for better messages but that we won't stop
-    // giving you warnings if you use production apis.
-    function jsxWithValidationStatic(type, props, key) {
-        return jsxWithValidation(type, props, key, true);
-    }
-    function jsxWithValidationDynamic(type, props, key) {
-        return jsxWithValidation(type, props, key, false);
-    }
-    var jsx = jsxWithValidationDynamic; // we may want to special case jsxs internally to take advantage of static children.
-    // for now we can ship identical prod functions
-    var jsxs = jsxWithValidationStatic;
-    exports.Fragment = REACT_FRAGMENT_TYPE;
-    exports.jsx = jsx;
-    exports.jsxs = jsxs;
-})();
-
-},{"593632ccebda0d3a":"21dqq"}],"5GewO":[function(require,module,exports,__globalThis) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5GewO":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$6924 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$6924.prelude(module);
 
 try {
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = void 0;
-var _react = require("53ee6cdc515d0379");
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _s = $RefreshSig$();
 const NetworkStatus = ()=>{
+    _s();
     const [networkStatus, setNetWorkStatus] = (0, _react.useState)(true);
     const handleOnline = ()=>{
         setNetWorkStatus(true);
@@ -36112,8 +36107,9 @@ const NetworkStatus = ()=>{
     return networkStatus;
 // it return boolean value
 };
+_s(NetworkStatus, "LHYAIchIJmH5F+4q6Z3Qb+K/dWk=");
 _c = NetworkStatus;
-var _default = exports.default = NetworkStatus;
+exports.default = NetworkStatus;
 var _c;
 $RefreshReg$(_c, "NetworkStatus");
 
@@ -36122,29 +36118,25 @@ $RefreshReg$(_c, "NetworkStatus");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"53ee6cdc515d0379":"21dqq","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"19tXb":[function(require,module,exports,__globalThis) {
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"19tXb":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$06db = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$06db.prelude(module);
 
 try {
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = void 0;
-var _reactRouterDom = require("9d49e63ba26d2967");
-var _ProfileClasses = _interopRequireDefault(require("3879486eb09624bc"));
-var _Profile = _interopRequireDefault(require("b9a8596c1daf8f6d"));
-var _react = _interopRequireDefault(require("bf700f53e967ae08"));
-var _jsxRuntime = require("23d856fb707d9eab");
-function _interopRequireDefault(e) {
-    return e && e.__esModule ? e : {
-        default: e
-    };
-}
-class About extends _react.default.Component {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _reactRouterDom = require("react-router-dom");
+var _profileClasses = require("./ProfileClasses");
+var _profileClassesDefault = parcelHelpers.interopDefault(_profileClasses);
+var _profile = require("./Profile");
+var _profileDefault = parcelHelpers.interopDefault(_profile);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _constant = require("./constant");
+class About extends (0, _reactDefault.default).Component {
     constructor(props){
         super(props);
         console.log("parent - constructor");
@@ -36154,19 +36146,450 @@ class About extends _react.default.Component {
     }
     render() {
         console.log("parent - Render");
-        return /*#__PURE__*/ (0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
-            children: [
-                /*#__PURE__*/ (0, _jsxRuntime.jsx)("h1", {
-                    children: "This is an a about us page"
-                }),
-                /*#__PURE__*/ (0, _jsxRuntime.jsx)(_ProfileClasses.default, {
-                    name: "First Child"
-                })
-            ]
-        });
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "mt-24 w-full bg-gray-100",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "m-auto w-4/5  bg-gray-100",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                        className: " text-center text-4xl font-bold pt-20 ",
+                                        children: "ABOUT US"
+                                    }, void 0, false, {
+                                        fileName: "src/Components/About.js",
+                                        lineNumber: 36,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: "text-center text-2xl text-gray-500 mt-4 mb-4",
+                                        children: "Swiggy is a new-age consumer-first organization offering an easy-to-use convenience platform, accessible through a unified app."
+                                    }, void 0, false, {
+                                        fileName: "src/Components/About.js",
+                                        lineNumber: 40,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/About.js",
+                                lineNumber: 35,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "w-6/12 justify-evenly bg-gray-100 flex m-auto relative  ",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        src: (0, _constant.C_1),
+                                        className: "aspect-square  h-48 mt-28  "
+                                    }, void 0, false, {
+                                        fileName: "src/Components/About.js",
+                                        lineNumber: 47,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        src: (0, _constant.C_2),
+                                        className: "aspect-square h-48   "
+                                    }, void 0, false, {
+                                        fileName: "src/Components/About.js",
+                                        lineNumber: 48,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        src: (0, _constant.C_3),
+                                        className: "aspect-square   h-48 mt-28 "
+                                    }, void 0, false, {
+                                        fileName: "src/Components/About.js",
+                                        lineNumber: 49,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/About.js",
+                                lineNumber: 46,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "w-6/12 bg-gray-100 flex m-auto justify-center ",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    src: (0, _constant.CENTER_LOGO),
+                                    className: "aspect-square  h-40 "
+                                }, void 0, false, {
+                                    fileName: "src/Components/About.js",
+                                    lineNumber: 52,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "src/Components/About.js",
+                                lineNumber: 51,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "w-6/12 bg-gray-100 flex m-auto justify-around ",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        src: (0, _constant.C_4),
+                                        className: "aspect-square  h-48  "
+                                    }, void 0, false, {
+                                        fileName: "src/Components/About.js",
+                                        lineNumber: 55,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        src: (0, _constant.C_5),
+                                        className: "aspect-square  h-48 "
+                                    }, void 0, false, {
+                                        fileName: "src/Components/About.js",
+                                        lineNumber: 56,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/About.js",
+                                lineNumber: 54,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Components/About.js",
+                        lineNumber: 34,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "w-full  m-auto flex flex-col items-center mt-20",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                className: "text-4xl font-extrabold text-gray-700 mb-20",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "text-orange-600",
+                                        children: "\u2500\u2500\u2500\u2500\u22C6\u22C5\u2606\u22C5\u22C6\u2500\u2500"
+                                    }, void 0, false, {
+                                        fileName: "src/Components/About.js",
+                                        lineNumber: 62,
+                                        columnNumber: 15
+                                    }, this),
+                                    " IPO Delivered - November 2024",
+                                    " ",
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "text-orange-600",
+                                        children: "\u2500\u2500\u2500\u2500\u22C6\u22C5\u2606\u22C5\u22C6\u2500\u2500"
+                                    }, void 0, false, {
+                                        fileName: "src/Components/About.js",
+                                        lineNumber: 64,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/About.js",
+                                lineNumber: 61,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "flex items-center ",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("video", {
+                                    // autoPlay
+                                    controls: true,
+                                    src: (0, _constant.VIDEO),
+                                    className: " rounded-3xl m-auto w-3/4 items-center "
+                                }, void 0, false, {
+                                    fileName: "src/Components/About.js",
+                                    lineNumber: 67,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "src/Components/About.js",
+                                lineNumber: 66,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Components/About.js",
+                        lineNumber: 60,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "w-4/5  m-auto flex flex-col items-center mt-20 mb-20",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                className: "text-4xl font-extrabold text-gray-700 mb-20",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "text-orange-600",
+                                        children: "\u2500\u2500\u2500\u2500\u22C6\u22C5\u2606\u22C5\u22C6\u2500\u2500"
+                                    }, void 0, false, {
+                                        fileName: "src/Components/About.js",
+                                        lineNumber: 80,
+                                        columnNumber: 15
+                                    }, this),
+                                    " get to know us ",
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "text-orange-600",
+                                        children: "\u2500\u2500\u2500\u2500\u22C6\u22C5\u2606\u22C5\u22C6\u2500\u2500"
+                                    }, void 0, false, {
+                                        fileName: "src/Components/About.js",
+                                        lineNumber: 81,
+                                        columnNumber: 18
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/About.js",
+                                lineNumber: 79,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "grid grid-cols-4 gap-4 items-center py-20 ",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                            className: " flex justify-between flex-col ",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                    className: "text-orange-600 text-2xl font-bold",
+                                                    children: [
+                                                        "Mission \u279C",
+                                                        " "
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/Components/About.js",
+                                                    lineNumber: 86,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                    className: "text-2xl text-gray-400 hover:text-orange-600 font-bold mt-7 cursor-pointer",
+                                                    children: [
+                                                        "Vision",
+                                                        " "
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/Components/About.js",
+                                                    lineNumber: 89,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                    className: "text-2xl text-gray-400 hover:text-orange-600 font-bold mt-7 cursor-pointer",
+                                                    children: "value"
+                                                }, void 0, false, {
+                                                    fileName: "src/Components/About.js",
+                                                    lineNumber: 92,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/Components/About.js",
+                                            lineNumber: 85,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "src/Components/About.js",
+                                        lineNumber: 84,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "col-span-2 text-gray-500   text-lg ",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                            children: "Our mission is to elevate the quality of life of the urban consumer by offering unparalleled convenience. Convenience is what makes us tick. It\u2019s what makes us get out of bed and say, \u201CLet\u2019s do this."
+                                        }, void 0, false, {
+                                            fileName: "src/Components/About.js",
+                                            lineNumber: 98,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "src/Components/About.js",
+                                        lineNumber: 97,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            src: (0, _constant.MISSION)
+                                        }, void 0, false, {
+                                            fileName: "src/Components/About.js",
+                                            lineNumber: 106,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "src/Components/About.js",
+                                        lineNumber: 105,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/About.js",
+                                lineNumber: 83,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Components/About.js",
+                        lineNumber: 78,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "w-4/5  m-auto flex flex-col items-center mt-20",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                className: "text-4xl font-extrabold text-gray-700 mb-20",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "text-orange-600",
+                                        children: "\u2500\u2500\u2500\u2500\u22C6\u22C5\u2606\u22C5\u22C6\u2500\u2500"
+                                    }, void 0, false, {
+                                        fileName: "src/Components/About.js",
+                                        lineNumber: 115,
+                                        columnNumber: 15
+                                    }, this),
+                                    " industry pioneer ",
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "text-orange-600",
+                                        children: "\u2500\u2500\u2500\u2500\u22C6\u22C5\u2606\u22C5\u22C6\u2500\u2500"
+                                    }, void 0, false, {
+                                        fileName: "src/Components/About.js",
+                                        lineNumber: 116,
+                                        columnNumber: 23
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/About.js",
+                                lineNumber: 114,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "grid grid-cols-2 gap-4 items-center py-12 ",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: " text-gray-500   text-lg ",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                            children: "Being among the first few entrants, Swiggy has successfully pioneered the hyperlocal commerce industry in India, launching Food Delivery in 2014 and Quick Commerce in 2020. Due to the pioneering status of Swiggy, it is well-recognised as a leader in innovation in hyperlocal commerce and as a brand synonymous with the categories it is present in."
+                                        }, void 0, false, {
+                                            fileName: "src/Components/About.js",
+                                            lineNumber: 120,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "src/Components/About.js",
+                                        lineNumber: 119,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            src: (0, _constant.MAN),
+                                            className: "ml-8"
+                                        }, void 0, false, {
+                                            fileName: "src/Components/About.js",
+                                            lineNumber: 130,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "src/Components/About.js",
+                                        lineNumber: 129,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/About.js",
+                                lineNumber: 118,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Components/About.js",
+                        lineNumber: 113,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "w-4/5  m-auto flex flex-col items-center mt-20 mb-20",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                className: "text-4xl font-extrabold text-gray-700 mb-20",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "text-orange-600",
+                                        children: "\u2500\u2500\u2500\u2500\u22C6\u22C5\u2606\u22C5\u22C6\u2500\u2500"
+                                    }, void 0, false, {
+                                        fileName: "src/Components/About.js",
+                                        lineNumber: 139,
+                                        columnNumber: 15
+                                    }, this),
+                                    " Careers at swiggy ",
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "text-orange-600",
+                                        children: "\u2500\u2500\u2500\u2500\u22C6\u22C5\u2606\u22C5\u22C6\u2500\u2500"
+                                    }, void 0, false, {
+                                        fileName: "src/Components/About.js",
+                                        lineNumber: 140,
+                                        columnNumber: 22
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/About.js",
+                                lineNumber: 138,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "grid grid-cols-2 gap-4 items-center py-12 ",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: " text-gray-500   text-lg ",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                                children: "When you work at Swiggy, you\u2019re joining a culture of innovation, teamwork, and endless possibilities. We believe in empowering our employees to take charge of their careers and make a real impact. Whether you\u2019re a software engineer, a marketing guru, a logistics expert, or someone who loves delivering exceptional customer experiences, there\u2019s a place for you at Swiggy. If you\u2019re excited about making a difference and want to be part of a team that\u2019s transforming the way people live, then we want to hear from you! Explore our current openings and embark on your next career adventure with Swiggy. Let\u2019s deliver unparalleled convenience together!"
+                                            }, void 0, false, {
+                                                fileName: "src/Components/About.js",
+                                                lineNumber: 144,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                className: "mt-10 px-5 py-2 bg-orange-600 font-semibold text-white rounded-md ",
+                                                children: "Know More \u2192"
+                                            }, void 0, false, {
+                                                fileName: "src/Components/About.js",
+                                                lineNumber: 158,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/Components/About.js",
+                                        lineNumber: 143,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            src: (0, _constant.PEOPLES),
+                                            className: "ml-8 rounded-3xl"
+                                        }, void 0, false, {
+                                            fileName: "src/Components/About.js",
+                                            lineNumber: 163,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "src/Components/About.js",
+                                        lineNumber: 162,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/About.js",
+                                lineNumber: 142,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Components/About.js",
+                        lineNumber: 137,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/About.js",
+                lineNumber: 33,
+                columnNumber: 9
+            }, this)
+        }, void 0, false);
     }
 }
-var _default = exports.default = About; /* 
+exports.default = About; /* 
 parent - constructor
 About.js:17 parent - Render
 ProfileClasses.js:10  constructor -First Child
@@ -36183,26 +36606,19 @@ About.js:14 parent - DidMount
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"9d49e63ba26d2967":"9xmpe","3879486eb09624bc":"7Tolj","b9a8596c1daf8f6d":"g4h0w","bf700f53e967ae08":"21dqq","23d856fb707d9eab":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7Tolj":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","./ProfileClasses":"7Tolj","./Profile":"g4h0w","react":"21dqq","./constant":"bV0CE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7Tolj":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$039f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$039f.prelude(module);
 
 try {
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = void 0;
-var _react = _interopRequireDefault(require("dababb82beabe6a3"));
-var _jsxRuntime = require("99f74aa5631470a6");
-function _interopRequireDefault(e) {
-    return e && e.__esModule ? e : {
-        default: e
-    };
-}
-class Profile extends _react.default.Component {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+class Profile extends (0, _reactDefault.default).Component {
     constructor(props){
         super(props);
         this.state = {
@@ -36239,34 +36655,50 @@ class Profile extends _react.default.Component {
     render() {
         console.log("first child -Render ");
         // console.log("Render -" + this.props.name);
-        return /*#__PURE__*/ (0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
             children: [
-                /*#__PURE__*/ (0, _jsxRuntime.jsx)("h1", {
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                     children: "class Base Profile"
-                }),
-                /*#__PURE__*/ (0, _jsxRuntime.jsxs)("h2", {
+                }, void 0, false, {
+                    fileName: "src/Components/ProfileClasses.js",
+                    lineNumber: 60,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                     children: [
                         " Name :",
                         this.state.userInfo.name
                     ]
-                }),
-                /*#__PURE__*/ (0, _jsxRuntime.jsxs)("h2", {
+                }, void 0, true, {
+                    fileName: "src/Components/ProfileClasses.js",
+                    lineNumber: 61,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                     children: [
                         "location : ",
                         this.state.userInfo.location
                     ]
-                }),
-                /*#__PURE__*/ (0, _jsxRuntime.jsx)("img", {
+                }, void 0, true, {
+                    fileName: "src/Components/ProfileClasses.js",
+                    lineNumber: 62,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                     src: this.state.userInfo.avatar_url,
                     style: {
                         borderRadius: "50%"
                     }
-                })
+                }, void 0, false, {
+                    fileName: "src/Components/ProfileClasses.js",
+                    lineNumber: 63,
+                    columnNumber: 9
+                }, this)
             ]
-        });
+        }, void 0, true);
     }
 }
-var _default = exports.default = Profile; /* 
+exports.default = Profile; /* 
  constructor -First Child
 ProfileClasses.js:36 Render -First Child
 ProfileClasses.js:18  constructor -second Child
@@ -36288,57 +36720,81 @@ ProfileClasses.js:36 Render -second Child
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"dababb82beabe6a3":"21dqq","99f74aa5631470a6":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"g4h0w":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"g4h0w":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$99e2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$99e2.prelude(module);
 
 try {
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = void 0;
-var _react = require("2375ae31d8e50f13");
-var _jsxRuntime = require("dda77f9ccfc1b22d");
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _s = $RefreshSig$();
 const Profile = (props)=>{
+    _s();
     const [count1, setCount1] = (0, _react.useState)(0);
     const [count2, setCount2] = (0, _react.useState)(0);
-    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
-            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h1", {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: "Profile "
-            }),
-            /*#__PURE__*/ (0, _jsxRuntime.jsxs)("h2", {
+            }, void 0, false, {
+                fileName: "src/Components/Profile.js",
+                lineNumber: 8,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 children: [
                     " Name : ",
                     props.name
                 ]
-            }),
-            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h3", {
+            }, void 0, true, {
+                fileName: "src/Components/Profile.js",
+                lineNumber: 9,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 children: count1
-            }),
-            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h3", {
+            }, void 0, false, {
+                fileName: "src/Components/Profile.js",
+                lineNumber: 11,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 children: count2
-            }),
-            /*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
+            }, void 0, false, {
+                fileName: "src/Components/Profile.js",
+                lineNumber: 12,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                 onClick: ()=>{
                     setCount1(1);
                 },
                 children: "count1"
-            }),
-            /*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
+            }, void 0, false, {
+                fileName: "src/Components/Profile.js",
+                lineNumber: 14,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                 onClick: ()=>{
                     setCount2(1);
                 },
                 children: "count2"
-            })
+            }, void 0, false, {
+                fileName: "src/Components/Profile.js",
+                lineNumber: 22,
+                columnNumber: 7
+            }, undefined)
         ]
-    });
+    }, void 0, true);
 };
+_s(Profile, "Au8fyW5wzjHClKn3HRlUVv4pnjI=");
 _c = Profile;
-var _default = exports.default = Profile;
+exports.default = Profile;
 var _c;
 $RefreshReg$(_c, "Profile");
 
@@ -36347,20 +36803,13 @@ $RefreshReg$(_c, "Profile");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"2375ae31d8e50f13":"21dqq","dda77f9ccfc1b22d":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iQH4s":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iQH4s":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$24a5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$24a5.prelude(module);
 
 try {
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = void 0;
-var _reactRouterDom = require("8acdca91aa31f488");
-var _jsxRuntime = require("acf7d39bbe90eab1");
 // import { useRouteError } from "react-router-dom";
 // const Error = () => {
 //   const err = useRouteError();
@@ -36373,35 +36822,62 @@ var _jsxRuntime = require("acf7d39bbe90eab1");
 //   );
 // };
 // export default Error;
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _reactRouterDom = require("react-router-dom");
+var _s = $RefreshSig$();
 const Error = ()=>{
+    _s();
     const err = (0, _reactRouterDom.useRouteError)(); // Capture the error
     // Check if `err` exists and has properties; otherwise, use defaults
     const status = err?.status || "Unknown Error";
     const statusText = err?.statusText || "An unexpected error occurred";
-    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         style: {
             textAlign: "center",
             marginTop: "50px",
             color: "red"
         },
         children: [
-            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h2", {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 children: "Oops!! Something went wrong"
-            }),
-            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h2", {
+            }, void 0, false, {
+                fileName: "src/Components/Error.js",
+                lineNumber: 27,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 children: `${status} : ${statusText}`
-            }),
-            err?.message && /*#__PURE__*/ (0, _jsxRuntime.jsxs)("p", {
+            }, void 0, false, {
+                fileName: "src/Components/Error.js",
+                lineNumber: 28,
+                columnNumber: 7
+            }, undefined),
+            err?.message && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: [
                     "Error Message: ",
                     err.message
                 ]
-            })
+            }, void 0, true, {
+                fileName: "src/Components/Error.js",
+                lineNumber: 30,
+                columnNumber: 24
+            }, undefined)
         ]
-    });
+    }, void 0, true, {
+        fileName: "src/Components/Error.js",
+        lineNumber: 26,
+        columnNumber: 5
+    }, undefined);
 };
+_s(Error, "U5GmGaAmh0j0MVy+E8WdBnjlm7s=", false, function() {
+    return [
+        (0, _reactRouterDom.useRouteError)
+    ];
+});
 _c = Error;
-var _default = exports.default = Error;
+exports.default = Error;
 var _c;
 $RefreshReg$(_c, "Error");
 
@@ -36410,29 +36886,65 @@ $RefreshReg$(_c, "Error");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"8acdca91aa31f488":"9xmpe","acf7d39bbe90eab1":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eUZ6J":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eUZ6J":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$fbbd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$fbbd.prelude(module);
 
 try {
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = void 0;
-var _jsxRuntime = require("ffd379b0155f250b");
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _constant = require("./constant");
 const Footer = ()=>{
-    return /*#__PURE__*/ (0, _jsxRuntime.jsx)(_jsxRuntime.Fragment, {
-        children: /*#__PURE__*/ (0, _jsxRuntime.jsx)("p", {
-            className: "footer bg-gray-300 ",
-            children: "All CopyRight Reserved 2024"
-        })
-    });
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "flex justify-center gap-7 p-3 bg-slate-100 items-center w-full  ",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "font-bold md:text-2xl text-gray-600  ",
+                    children: "For better experience, download the Swiggy app now"
+                }, void 0, false, {
+                    fileName: "src/Components/Footer.js",
+                    lineNumber: 7,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "gap-2 md:flex",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: (0, _constant.APPLE_STORE),
+                            className: "w-32"
+                        }, void 0, false, {
+                            fileName: "src/Components/Footer.js",
+                            lineNumber: 11,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: (0, _constant.PLAY_STORE),
+                            className: "w-32"
+                        }, void 0, false, {
+                            fileName: "src/Components/Footer.js",
+                            lineNumber: 12,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Components/Footer.js",
+                    lineNumber: 10,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/Components/Footer.js",
+            lineNumber: 6,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false);
 };
 _c = Footer;
-var _default = exports.default = Footer;
+exports.default = Footer;
 var _c;
 $RefreshReg$(_c, "Footer");
 
@@ -36441,37 +36953,38 @@ $RefreshReg$(_c, "Footer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"ffd379b0155f250b":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"66EYZ":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","./constant":"bV0CE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"66EYZ":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$84fc = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$84fc.prelude(module);
 
 try {
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = void 0;
-var _FAQ = _interopRequireDefault(require("c64b532513c6c043"));
-var _jsxRuntime = require("9b8591930f3c53d5");
-function _interopRequireDefault(e) {
-    return e && e.__esModule ? e : {
-        default: e
-    };
-}
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _faq = require("./FAQ");
+var _faqDefault = parcelHelpers.interopDefault(_faq);
 const Contact = ()=>{
-    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
-            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h1", {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: "Contact Us | Food Villa"
-            }),
-            /*#__PURE__*/ (0, _jsxRuntime.jsx)(_FAQ.default, {})
+            }, void 0, false, {
+                fileName: "src/Components/Contact.js",
+                lineNumber: 5,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _faqDefault.default), {}, void 0, false, {
+                fileName: "src/Components/Contact.js",
+                lineNumber: 6,
+                columnNumber: 7
+            }, undefined)
         ]
-    });
+    }, void 0, true);
 };
 _c = Contact;
-var _default = exports.default = Contact;
+exports.default = Contact;
 var _c;
 $RefreshReg$(_c, "Contact");
 
@@ -36480,86 +36993,176 @@ $RefreshReg$(_c, "Contact");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"c64b532513c6c043":"1v5Pl","9b8591930f3c53d5":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1v5Pl":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","./FAQ":"1v5Pl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1v5Pl":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$5365 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$5365.prelude(module);
 
 try {
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = void 0;
-var _react = require("75246bc1a03c2e17");
-var _jsxRuntime = require("5a3ce20ec1453f48");
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _s = $RefreshSig$();
 const Section = ({ question, answer, isVisible, setIsVisible })=>{
     // const [isVisible, setIsVisible] = useState(false);
-    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "border border-orange-400 mb-4 rounded-lg shadow-md",
         children: [
-            /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "flex justify-between items-center bg-gray-100 p-4 rounded-t-lg",
                 children: [
-                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("h3", {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                         className: "text-lg font-semibold text-black",
                         children: question
-                    }),
-                    isVisible ? /*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
-                        onClick: ()=>setIsVisible(false),
-                        className: "text-blue-500 hover:text-blue-700 font-medium",
-                        children: "Hide"
-                    }) : /*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
+                    }, void 0, false, {
+                        fileName: "src/Components/FAQ.js",
+                        lineNumber: 8,
+                        columnNumber: 9
+                    }, undefined),
+                    isVisible ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: " px-5 py-2 bg-orange-400 font-semibold text-white rounded-md ",
                         onClick: ()=>setIsVisible(true),
-                        className: "text-blue-500 hover:text-blue-700 font-medium",
-                        children: "Show"
-                    })
+                        children: "\u25B2"
+                    }, void 0, false, {
+                        fileName: "src/Components/FAQ.js",
+                        lineNumber: 11,
+                        columnNumber: 11
+                    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: " px-5 py-2 bg-orange-400 font-semibold text-white rounded-md ",
+                        onClick: ()=>setIsVisible(true),
+                        children: "\u25BC"
+                    }, void 0, false, {
+                        fileName: "src/Components/FAQ.js",
+                        lineNumber: 18,
+                        columnNumber: 11
+                    }, undefined)
                 ]
-            }),
-            isVisible && /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
+            }, void 0, true, {
+                fileName: "src/Components/FAQ.js",
+                lineNumber: 7,
+                columnNumber: 7
+            }, undefined),
+            isVisible && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "bg-gray-50 p-4 border-t border-gray-300 rounded-b-lg",
-                children: /*#__PURE__*/ (0, _jsxRuntime.jsx)("p", {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                     className: "text-black",
                     children: answer
-                })
-            })
+                }, void 0, false, {
+                    fileName: "src/Components/FAQ.js",
+                    lineNumber: 30,
+                    columnNumber: 11
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/Components/FAQ.js",
+                lineNumber: 29,
+                columnNumber: 9
+            }, undefined)
         ]
-    });
+    }, void 0, true, {
+        fileName: "src/Components/FAQ.js",
+        lineNumber: 6,
+        columnNumber: 5
+    }, undefined);
 };
 _c = Section;
 const FAQ = ()=>{
-    const [sectionsConfig, setSectionConfig] = (0, _react.useState)("color");
-    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
-        className: "max-w-2xl mx-auto p-6",
+    _s();
+    const [sectionsConfig, setSectionConfig] = (0, _react.useState)("");
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "w-2/3 mx-auto p-6  mt-36",
         children: [
-            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h2", {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 className: "text-2xl font-bold mb-6",
-                children: "FAQ Section"
-            }),
-            /*#__PURE__*/ (0, _jsxRuntime.jsx)(Section, {
-                question: "What is your name?",
-                answer: "Bhushan",
-                isVisible: sectionsConfig == "name",
-                setIsVisible: ()=>setSectionConfig("name")
-            }),
-            /*#__PURE__*/ (0, _jsxRuntime.jsx)(Section, {
-                question: "What is your favorite color?",
-                answer: "Blue",
-                isVisible: sectionsConfig == "color",
-                setIsVisible: ()=>setSectionConfig("color")
-            }),
-            /*#__PURE__*/ (0, _jsxRuntime.jsx)(Section, {
-                question: "What is your favorite pet?",
-                answer: "dog",
-                isVisible: sectionsConfig == "pet",
-                setIsVisible: ()=>setSectionConfig("pet")
-            })
+                children: "FAQ Section \u2500\u2500\u2500\u2500\u22C6\u22C5\u2606\u22C5\u22C6\u2500\u2500"
+            }, void 0, false, {
+                fileName: "src/Components/FAQ.js",
+                lineNumber: 41,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
+                question: " What is Swiggy?",
+                answer: "Swiggy is an online food delivery platform that connects customers with restaurants and delivers food to their doorstep quickly and efficiently.",
+                isVisible: sectionsConfig == "swiggy",
+                // isVisible value will be 1 because both the side have true
+                // now passing the value true mean 1
+                setIsVisible: ()=>setSectionConfig("swiggy")
+            }, void 0, false, {
+                fileName: "src/Components/FAQ.js",
+                lineNumber: 42,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
+                question: " How do I create an account on Swiggy?",
+                answer: "To create an account, download the Swiggy app or visit the Swiggy website, click on Sign Up  and enter your mobile number or email. You can also sign up using your Google or Facebook account.",
+                isVisible: sectionsConfig == "accont",
+                setIsVisible: ()=>setSectionConfig("accont")
+            }, void 0, false, {
+                fileName: "src/Components/FAQ.js",
+                lineNumber: 52,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
+                question: "What should I do if I forget my password?",
+                answer: "Click on the Forgot Password? link on the login page, and follow the instructions to reset your password.",
+                isVisible: sectionsConfig == "password",
+                setIsVisible: ()=>setSectionConfig("password")
+            }, void 0, false, {
+                fileName: "src/Components/FAQ.js",
+                lineNumber: 60,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
+                question: "What payment methods are accepted on Swiggy?",
+                answer: "Swiggy accepts multiple payment options, including:UPI (Google Pay, PhonePe, etc.)Net Banking",
+                isVisible: sectionsConfig == "payment",
+                setIsVisible: ()=>setSectionConfig("payment")
+            }, void 0, false, {
+                fileName: "src/Components/FAQ.js",
+                lineNumber: 68,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
+                question: "How can I apply a coupon or discount?",
+                answer: " At checkout, you can enter the coupon code in the Apply Coupon section. Valid discounts will be automatically deducted from the total amount.",
+                isVisible: sectionsConfig == "coupon",
+                setIsVisible: ()=>setSectionConfig("coupon")
+            }, void 0, false, {
+                fileName: "src/Components/FAQ.js",
+                lineNumber: 76,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
+                question: "How can I place an order on Swiggy?",
+                answer: "Log in to your account =>Enter your delivery address =>Browse the restaurant options or search for your favorite dish => Add items to your cart. =>Proceed to checkout and complete the payment. ",
+                isVisible: sectionsConfig == "order",
+                setIsVisible: ()=>setSectionConfig("order")
+            }, void 0, false, {
+                fileName: "src/Components/FAQ.js",
+                lineNumber: 84,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
+                question: " What is the average delivery time?",
+                answer: " The average delivery time depends on the restaurant's preparation time and your location. Swiggy usually provides an estimated delivery time when you place your order.",
+                isVisible: sectionsConfig == "time",
+                setIsVisible: ()=>setSectionConfig("time")
+            }, void 0, false, {
+                fileName: "src/Components/FAQ.js",
+                lineNumber: 92,
+                columnNumber: 7
+            }, undefined)
         ]
-    });
+    }, void 0, true, {
+        fileName: "src/Components/FAQ.js",
+        lineNumber: 40,
+        columnNumber: 5
+    }, undefined);
 };
+_s(FAQ, "T2TidkzJymka2kNkZ5etT+wGPXo=");
 _c1 = FAQ;
-var _default = exports.default = FAQ;
+exports.default = FAQ;
 var _c, _c1;
 $RefreshReg$(_c, "Section");
 $RefreshReg$(_c1, "FAQ");
@@ -36569,186 +37172,501 @@ $RefreshReg$(_c1, "FAQ");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"75246bc1a03c2e17":"21dqq","5a3ce20ec1453f48":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7pgwL":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7pgwL":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$2fbe = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$2fbe.prelude(module);
 
 try {
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = void 0;
-var _reactRouterDom = require("f1701e37c16a77e0");
-var _react = require("dc3336e921321bd8");
-var _Simmer = _interopRequireDefault(require("713bf16e160ca37e"));
-var _useRestaurant = _interopRequireDefault(require("e36f3ea25e847ffa"));
-var _useRestaurantCard = _interopRequireDefault(require("203ff117aa36ce94"));
-var _useOffer = _interopRequireDefault(require("8a1167399c1fe753"));
-var _CartSlice = require("7ac0f0e0a2171665");
-var _reactRedux = require("437a7bedcf60451b");
-var _jsxRuntime = require("f03999969e52a7fa");
-function _interopRequireDefault(e) {
-    return e && e.__esModule ? e : {
-        default: e
-    };
-}
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _reactRouterDom = require("react-router-dom");
+var _react = require("react");
+var _simmer = require("./Simmer");
+var _simmerDefault = parcelHelpers.interopDefault(_simmer);
+var _useRestaurant = require("../utils/useRestaurant");
+var _useRestaurantDefault = parcelHelpers.interopDefault(_useRestaurant);
+var _useRestaurantCard = require("../utils/useRestaurantCard");
+var _useRestaurantCardDefault = parcelHelpers.interopDefault(_useRestaurantCard);
+var _useOffer = require("../utils/useOffer");
+var _useOfferDefault = parcelHelpers.interopDefault(_useOffer);
+var _cartSlice = require("../utils/cartSlice");
+var _reactRedux = require("react-redux");
+var _constant = require("./constant");
+var _s = $RefreshSig$();
 const RestaurantMenu = ()=>{
+    _s();
     const img = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
     const { id } = (0, _reactRouterDom.useParams)();
     // this is for the dynamic id
     // restaurant  use param is responsible to find out the id
-    const restaurant = (0, _useRestaurant.default)(id);
-    const restaurantCard = (0, _useRestaurantCard.default)([], id);
-    console.log(restaurant);
+    const restaurant = (0, _useRestaurantDefault.default)(id);
+    console.log(id);
+    const restaurantCard = (0, _useRestaurantCardDefault.default)([], id);
     console.log(restaurantCard);
+    // console.log(restaurant);
     // here use pass the [] and id because we want the data for the particular card
-    const offer = (0, _useOffer.default)(id, []);
+    const offer = (0, _useOfferDefault.default)(id, []);
     const dispatch = (0, _reactRedux.useDispatch)();
     const addFoodItem = (item)=>{
-        dispatch((0, _CartSlice.addItem)(item));
+        dispatch((0, _cartSlice.addItem)(item));
     };
     // when restaurant is not present then simmer will show otherwise restaurant will show
-    return !restaurant ? /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Simmer.default, {}) : /*#__PURE__*/ (0, _jsxRuntime.jsx)(_jsxRuntime.Fragment, {
-        children: /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
-            className: "m-auto max-w-screen-lg",
+    return !restaurant ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _simmerDefault.default), {}, void 0, false, {
+        fileName: "src/Components/RestaurantMenu.js",
+        lineNumber: 39,
+        columnNumber: 5
+    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "m-auto w-[60vw]",
             children: [
-                /*#__PURE__*/ (0, _jsxRuntime.jsx)("h2", {
-                    className: "mt-16 text-center font-bold text-2xl",
-                    children: restaurant.name
-                }),
-                /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
-                    className: "mb-12 border p-4 mt-12 h-auto flex flex-col md:flex-row rounded-lg shadow-lg bg-white items-center justify-center",
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    className: " text-start font-bold text-2xl mt-36",
                     children: [
-                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("img", {
-                            className: "w-full md:w-64 h-48 md:h-auto object-cover rounded-md mr-4",
-                            src: img + restaurant.cloudinaryImageId,
-                            alt: "Restaurant"
-                        }),
-                        /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
-                            className: "flex flex-col space-y-3 mt-4 md:mt-0",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxRuntime.jsxs)("h3", {
-                                    className: "text-xl font-semibold",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("span", {
-                                            className: "font-medium text-gray-600",
-                                            children: "Area Name: "
-                                        }),
-                                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("span", {
-                                            className: "text-gray-800",
-                                            children: restaurant.areaName
-                                        })
-                                    ]
-                                }),
-                                /*#__PURE__*/ (0, _jsxRuntime.jsxs)("h3", {
-                                    className: "text-xl font-semibold",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("span", {
-                                            className: "font-medium text-gray-600",
-                                            children: "City: "
-                                        }),
-                                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("span", {
-                                            className: "text-gray-800",
-                                            children: restaurant.city
-                                        })
-                                    ]
-                                }),
-                                /*#__PURE__*/ (0, _jsxRuntime.jsxs)("h3", {
-                                    className: "text-xl font-semibold",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("span", {
-                                            className: "font-medium text-gray-600",
-                                            children: "Rating: "
-                                        }),
-                                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("span", {
-                                            className: "text-gray-800",
-                                            children: restaurant.avgRating
-                                        })
-                                    ]
-                                }),
-                                /*#__PURE__*/ (0, _jsxRuntime.jsxs)("h3", {
-                                    className: "text-xl font-semibold",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("span", {
-                                            className: "font-medium text-gray-600",
-                                            children: "Cost for Two: "
-                                        }),
-                                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("span", {
-                                            className: "text-gray-800",
-                                            children: restaurant.costForTwoMessage
-                                        })
-                                    ]
-                                }),
-                                /*#__PURE__*/ (0, _jsxRuntime.jsxs)("h3", {
-                                    className: "text-xl font-semibold",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("span", {
-                                            className: "font-medium text-gray-600",
-                                            children: "Description:"
-                                        }),
-                                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
-                                            className: "mt-2 space-y-1",
-                                            children: restaurant?.aggregatedDiscountInfo?.descriptionList?.map((descriptionList, index)=>/*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
-                                                    className: "text-gray-700",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("p", {
-                                                            className: "font-medium",
-                                                            children: descriptionList?.discountType
-                                                        }),
-                                                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("p", {
-                                                            children: descriptionList?.meta
-                                                        })
-                                                    ]
-                                                }, index))
-                                        })
-                                    ]
-                                })
-                            ]
-                        })
+                        "\uD83C\uDF7D\uFE0F ",
+                        restaurant.name,
+                        " ",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            className: "text-gray-500 ml-2",
+                            children: " \u2500\u2500\u2500 \u22C6\u22C5\u2606\u22C5\u22C6 \u2500\u2500 "
+                        }, void 0, false, {
+                            fileName: "src/Components/RestaurantMenu.js",
+                            lineNumber: 45,
+                            columnNumber: 11
+                        }, undefined)
                     ]
-                }),
-                /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
-                    className: "mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-12 ",
-                    children: restaurantCard.map((item)=>/*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
-                            "data-testid": "menu",
-                            className: "p-6 border rounded-lg shadow-md hover:shadow-lg transition-shadow bg-slate-300 flex flex-col items-center",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxRuntime.jsx)("img", {
-                                    className: "w-32 h-32 object-cover rounded-md mb-4",
-                                    src: img + item?.card?.info?.imageId,
-                                    alt: item?.card?.info?.name
-                                }),
-                                /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
-                                    className: "text-center flex-grow",
+                }, void 0, true, {
+                    fileName: "src/Components/RestaurantMenu.js",
+                    lineNumber: 43,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "flex justify-between",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "/",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: "mt-10 px-5 py-2 bg-orange-600 font-semibold text-white rounded-md",
+                                children: "\u2B05 Home"
+                            }, void 0, false, {
+                                fileName: "src/Components/RestaurantMenu.js",
+                                lineNumber: 49,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/Components/RestaurantMenu.js",
+                            lineNumber: 48,
+                            columnNumber: 11
+                        }, undefined),
+                        " ",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "/cart",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: "mt-10 px-5 py-2 bg-orange-600 font-semibold text-white rounded-md",
+                                children: "Cart \u27A1"
+                            }, void 0, false, {
+                                fileName: "src/Components/RestaurantMenu.js",
+                                lineNumber: 54,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/Components/RestaurantMenu.js",
+                            lineNumber: 53,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Components/RestaurantMenu.js",
+                    lineNumber: 47,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "mb-12 border p-4 mt-12 h-auto flex flex-col md:flex-row rounded-lg shadow-lg bg-white items-center ",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "flex flex-col justify-start space-y-3 mt-4 md:mt-0",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "gap-2 flex justify-start ",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: "text-base font-semibold",
+                                        children: [
+                                            "\u2B50\uFE0F ",
+                                            restaurant?.avgRating,
+                                            " (",
+                                            restaurant?.totalRatingsString,
+                                            ")"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/Components/RestaurantMenu.js",
+                                        lineNumber: 63,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: "text-base font-semibold",
+                                        children: [
+                                            "\uD83D\uDCB8 ",
+                                            restaurant.costForTwoMessage
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/Components/RestaurantMenu.js",
+                                        lineNumber: 66,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/RestaurantMenu.js",
+                                lineNumber: 62,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "gap-2 flex justify-start ",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "text-orange-600  ",
                                     children: [
-                                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("p", {
+                                        "\uD83D\uDCCC ",
+                                        restaurant?.city
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/Components/RestaurantMenu.js",
+                                    lineNumber: 71,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/Components/RestaurantMenu.js",
+                                lineNumber: 70,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        children: [
+                                            " \uD81A\uDD23 outlate ",
+                                            restaurant?.locality
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/Components/RestaurantMenu.js",
+                                        lineNumber: 74,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        children: " \u2937 20-25 min \u23F1"
+                                    }, void 0, false, {
+                                        fileName: "src/Components/RestaurantMenu.js",
+                                        lineNumber: 75,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/RestaurantMenu.js",
+                                lineNumber: 73,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Components/RestaurantMenu.js",
+                        lineNumber: 61,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/Components/RestaurantMenu.js",
+                    lineNumber: 60,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                    className: "text-xl font-bold text-orange-600",
+                    children: "Deals for you"
+                }, void 0, false, {
+                    fileName: "src/Components/RestaurantMenu.js",
+                    lineNumber: 80,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "mb-12 border p-4 gap-4 mt-12 h-auto justify-between flex flex-col md:flex-row rounded-lg shadow-lg bg-white items-center ",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "flex p-2 items-center justify-start border border-gray-400 rounded-lg ",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    src: (0, _constant.OFFER),
+                                    className: "w-20"
+                                }, void 0, false, {
+                                    fileName: "src/Components/RestaurantMenu.js",
+                                    lineNumber: 83,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    children: restaurant?.aggregatedDiscountInfo?.header
+                                }, void 0, false, {
+                                    fileName: "src/Components/RestaurantMenu.js",
+                                    lineNumber: 84,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/Components/RestaurantMenu.js",
+                            lineNumber: 82,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "flex p-2 items-center justify-between border border-gray-400 rounded-lg ",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    src: (0, _constant.OFFER),
+                                    className: "w-20"
+                                }, void 0, false, {
+                                    fileName: "src/Components/RestaurantMenu.js",
+                                    lineNumber: 87,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    children: restaurant?.aggregatedDiscountInfo?.header
+                                }, void 0, false, {
+                                    fileName: "src/Components/RestaurantMenu.js",
+                                    lineNumber: 88,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/Components/RestaurantMenu.js",
+                            lineNumber: 86,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "flex p-2 items-center justify-between border border-gray-400 rounded-lg ",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    src: (0, _constant.OFFER),
+                                    className: "w-20"
+                                }, void 0, false, {
+                                    fileName: "src/Components/RestaurantMenu.js",
+                                    lineNumber: 91,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    children: restaurant?.aggregatedDiscountInfo?.header
+                                }, void 0, false, {
+                                    fileName: "src/Components/RestaurantMenu.js",
+                                    lineNumber: 92,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/Components/RestaurantMenu.js",
+                            lineNumber: 90,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "flex p-2 items-center justify-between border border-gray-400 rounded-lg ",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    src: (0, _constant.OFFER),
+                                    className: "w-20"
+                                }, void 0, false, {
+                                    fileName: "src/Components/RestaurantMenu.js",
+                                    lineNumber: 95,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    children: restaurant?.aggregatedDiscountInfo?.header
+                                }, void 0, false, {
+                                    fileName: "src/Components/RestaurantMenu.js",
+                                    lineNumber: 96,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/Components/RestaurantMenu.js",
+                            lineNumber: 94,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Components/RestaurantMenu.js",
+                    lineNumber: 81,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                    className: "text-center text-gray-600",
+                    children: [
+                        " ",
+                        "\u2500\u2500\u2500\u2500\u0B68\u09CE\u2500\u2500\u2500\u2500 MENU \u2500\u2500\u2500\u2500\u0B68\u09CE\u2500\u2500\u2500\u2500"
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Components/RestaurantMenu.js",
+                    lineNumber: 101,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                    to: "/",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "bg-slate-200 p-2 m-2 w-full flex justify-between rounded-lg cursor-pointer",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                className: "w-[90%] outline-none p-2 rounded-md",
+                                placeholder: "Search for dishes"
+                            }, void 0, false, {
+                                fileName: "src/Components/RestaurantMenu.js",
+                                lineNumber: 108,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: "bg-white p-1",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    src: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAW5JREFUSEvtlttNxEAMRb2VAJUAlQCVAJWwVAJUAlQCHCmWriYZP7SK9gdLq/1IMufesceeg50pDmfiWgd8aWb++zKz91NEZ2BA92b2OIEg4PXv2VNXRAS+MbO34oJtATMwDtTl0cy+l+0FQiDsetkR1/dcdb8FVqdAHpJ8eipIC3Fbyf8W+HMpIhbJasCdAiUt/CP2KkvRuPCLbF1JuQBwzvcEqWGnpjGC3S1HBXA3cE2qUtcj+GchoRbV3dCiZLu9EFfrKFi3KvwoUKOFGaZKwaq2WlSjBoqLdBHh0VJAWW3RcZguBZfVBuByuvaq6rQHROe4W9maqvY5HjsQlTk9ErLlmqbU7eyFsVdnY2+cYqnbSNnWdPpY3NPVfE5fDNOJNUsjMpvH9F6fOlEX8xsJVV2CZ43Cnd0FArRR6HEKnWdgdal3Lne1de8qwTvgzsBI4XuBEanwVd/eE+xw7mWrS8He4Gl6/sGdyj3p3V/QbV0fdavm6QAAAABJRU5ErkJggg=="
+                                }, void 0, false, {
+                                    fileName: "src/Components/RestaurantMenu.js",
+                                    lineNumber: 113,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/Components/RestaurantMenu.js",
+                                lineNumber: 112,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Components/RestaurantMenu.js",
+                        lineNumber: 107,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/Components/RestaurantMenu.js",
+                    lineNumber: 106,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "flex flex-col mt-12 ",
+                    children: restaurantCard.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            "data-testid": "menu",
+                            className: "flex justify-between border-b-2 px-2 py-8",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "pl-3 w-[80%]",
+                                    children: [
+                                        "\uD83D\uDD3A",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                             className: "text-xl font-semibold text-gray-800 mb-2",
                                             children: item?.card?.info?.name
-                                        }),
-                                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("p", {
-                                            className: "text-gray-600 mb-4",
+                                        }, void 0, false, {
+                                            fileName: "src/Components/RestaurantMenu.js",
+                                            lineNumber: 128,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: "text-black",
                                             children: item?.card?.info?.price ? `\u{20B9}${item.card.info.price / 100}` : "Price not available"
-                                        })
+                                        }, void 0, false, {
+                                            fileName: "src/Components/RestaurantMenu.js",
+                                            lineNumber: 131,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: "text-sm mt-3",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "text-green-700 font-semibold",
+                                                    children: [
+                                                        "\u2B50\uFE0F",
+                                                        item?.card?.info?.ratings?.aggregatedRating?.rating
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/Components/RestaurantMenu.js",
+                                                    lineNumber: 137,
+                                                    columnNumber: 19
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "ml-1 ",
+                                                    children: [
+                                                        "(",
+                                                        item?.card?.info?.ratings?.aggregatedRating?.ratingCountV2,
+                                                        ")"
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/Components/RestaurantMenu.js",
+                                                    lineNumber: 140,
+                                                    columnNumber: 19
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/Components/RestaurantMenu.js",
+                                            lineNumber: 136,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: " text-gray-500",
+                                            children: item?.card?.info?.description
+                                        }, void 0, false, {
+                                            fileName: "src/Components/RestaurantMenu.js",
+                                            lineNumber: 146,
+                                            columnNumber: 17
+                                        }, undefined)
                                     ]
-                                }),
-                                /*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
-                                    "data-testid": "addBtn",
-                                    onClick: ()=>addFoodItem(item),
-                                    className: "w-full py-2 bg-orange-600 text-white rounded-md hover:bg-orange-700 transition-colors",
-                                    children: "Add to Cart"
-                                })
+                                }, void 0, true, {
+                                    fileName: "src/Components/RestaurantMenu.js",
+                                    lineNumber: 126,
+                                    columnNumber: 15
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "flex flex-col items-center",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "w-40 h-36 object-cover rounded-md mb-4 ",
+                                            src: img + item?.card?.info?.imageId,
+                                            alt: item?.card?.info?.name
+                                        }, void 0, false, {
+                                            fileName: "src/Components/RestaurantMenu.js",
+                                            lineNumber: 151,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                            "data-testid": "addBtn",
+                                            onClick: ()=>addFoodItem(item),
+                                            className: "px-10 shadow-lg py-2 rounded-md -mt-8 bg-white border border-gray-300  font-bold items-center text-green-600 hover:bg-slate-100 cursor-pointer",
+                                            children: "ADD"
+                                        }, void 0, false, {
+                                            fileName: "src/Components/RestaurantMenu.js",
+                                            lineNumber: 156,
+                                            columnNumber: 17
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/Components/RestaurantMenu.js",
+                                    lineNumber: 150,
+                                    columnNumber: 15
+                                }, undefined)
                             ]
-                        }, item?.card?.info?.id))
-                })
+                        }, item?.card?.info?.id, true, {
+                            fileName: "src/Components/RestaurantMenu.js",
+                            lineNumber: 121,
+                            columnNumber: 13
+                        }, undefined))
+                }, void 0, false, {
+                    fileName: "src/Components/RestaurantMenu.js",
+                    lineNumber: 119,
+                    columnNumber: 9
+                }, undefined)
             ]
-        })
-    });
+        }, void 0, true, {
+            fileName: "src/Components/RestaurantMenu.js",
+            lineNumber: 42,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false);
 };
+_s(RestaurantMenu, "S9In0Xep7+093GRufMam94itkvo=", false, function() {
+    return [
+        (0, _reactRouterDom.useParams),
+        (0, _useRestaurantDefault.default),
+        (0, _useRestaurantCardDefault.default),
+        (0, _useOfferDefault.default),
+        (0, _reactRedux.useDispatch)
+    ];
+});
 _c = RestaurantMenu;
-var _default = exports.default = RestaurantMenu;
+exports.default = RestaurantMenu;
 var _c;
 $RefreshReg$(_c, "RestaurantMenu");
 
@@ -36757,124 +37675,204 @@ $RefreshReg$(_c, "RestaurantMenu");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"f1701e37c16a77e0":"9xmpe","dc3336e921321bd8":"21dqq","e36f3ea25e847ffa":"ewgpj","203ff117aa36ce94":"2OfXA","8a1167399c1fe753":"2Qebt","7ac0f0e0a2171665":"jOiMX","437a7bedcf60451b":"62sf7","f03999969e52a7fa":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","713bf16e160ca37e":"1Of73"}],"ewgpj":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","react":"21dqq","./Simmer":"1Of73","../utils/useRestaurant":"ewgpj","../utils/useRestaurantCard":"2OfXA","../utils/useOffer":"2Qebt","../utils/cartSlice":"5RXlr","react-redux":"62sf7","./constant":"bV0CE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1Of73":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$e45d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$e45d.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Simmer2", ()=>Simmer2);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const Simmer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "flex flex-wrap animate-pulse ",
+        children: Array(12).fill("").map((e, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "w-56 m-auto  bg-slate-100  p-2 rounded-lg shadow-lg",
+                "data-testid": "simmer",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "w-full bg-slate-100 h-52"
+                    }, void 0, false, {
+                        fileName: "src/Components/Simmer.js",
+                        lineNumber: 14,
+                        columnNumber: 13
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "p-2 m-2 bg-slate-200"
+                    }, void 0, false, {
+                        fileName: "src/Components/Simmer.js",
+                        lineNumber: 15,
+                        columnNumber: 13
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "p-2 m-2 bg-slate-300"
+                    }, void 0, false, {
+                        fileName: "src/Components/Simmer.js",
+                        lineNumber: 16,
+                        columnNumber: 13
+                    }, undefined)
+                ]
+            }, index, true, {
+                fileName: "src/Components/Simmer.js",
+                lineNumber: 9,
+                columnNumber: 11
+            }, undefined))
+    }, void 0, false, {
+        fileName: "src/Components/Simmer.js",
+        lineNumber: 5,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Simmer;
+const Simmer2 = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "flex flex-wrap",
+        children: Array(12).fill("").map((e, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "w-56 m-auto  bg-slate-100  p-2 rounded-lg shadow-lg",
+                "data-testid": "simmer",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "w-full bg-slate-100 h-52"
+                }, void 0, false, {
+                    fileName: "src/Components/Simmer.js",
+                    lineNumber: 33,
+                    columnNumber: 13
+                }, undefined)
+            }, index, false, {
+                fileName: "src/Components/Simmer.js",
+                lineNumber: 28,
+                columnNumber: 11
+            }, undefined))
+    }, void 0, false, {
+        fileName: "src/Components/Simmer.js",
+        lineNumber: 24,
+        columnNumber: 5
+    }, undefined);
+};
+_c1 = Simmer2;
+exports.default = Simmer;
+var _c, _c1;
+$RefreshReg$(_c, "Simmer");
+$RefreshReg$(_c1, "Simmer2");
+
+  $parcel$ReactRefreshHelpers$e45d.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ewgpj":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$5009 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$5009.prelude(module);
 
 try {
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = void 0;
-var _react = require("1dc3c79e5930d52b");
-var _constant = require("9ee0488c4f55c5c8");
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _constantJs = require("../Components/constant.js");
+var _s = $RefreshSig$();
 const useRestaurant = (id)=>{
+    _s();
     // we will take a id == because we will send the particular data to it
     const [restaurant, setRestaurant] = (0, _react.useState)(null);
     (0, _react.useEffect)(()=>{
         getRestaurantInfo();
     }, []);
     async function getRestaurantInfo() {
-        const data = await fetch(_constant.FETCH_MENU_URL + id);
+        const data = await fetch("https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=21.1458004&lng=79.0881546&restaurantId=79051&query=Biryani&submitAction=ENTER&source=collection" + id);
         const json = await data.json();
+        console.log(json);
         setRestaurant(json?.data?.cards?.[2]?.card?.card?.info || {});
     }
     // when all the data will fetch then wil we send the data to the component
     return restaurant;
 };
-var _default = exports.default = useRestaurant;
+_s(useRestaurant, "xTHIp85kevrNjFQ3g5ZiTLKWCkg=");
+exports.default = useRestaurant;
 
   $parcel$ReactRefreshHelpers$5009.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"1dc3c79e5930d52b":"21dqq","9ee0488c4f55c5c8":"bV0CE","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bV0CE":[function(require,module,exports,__globalThis) {
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.IMG_CDN_URL = exports.FETCH_MENU_URL_END = exports.FETCH_MENU_URL = void 0;
-const IMG_CDN_URL = exports.IMG_CDN_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
-const FETCH_MENU_URL = exports.FETCH_MENU_URL = "https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.5203896&lng=73.8567005&restaurantId=";
-const FETCH_MENU_URL_END = exports.FETCH_MENU_URL_END = "&submitAction=ENTER";
-
-},{}],"2OfXA":[function(require,module,exports,__globalThis) {
+},{"react":"21dqq","../Components/constant.js":"bV0CE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2OfXA":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$d7bd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$d7bd.prelude(module);
 
 try {
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = void 0;
-var _react = require("31c7b664d1b1788f");
-var _constant = require("c5e2c00d6bd02191");
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _constantJs = require("../Components/constant.js");
+var _s = $RefreshSig$();
 const useRestaurantCard = ([], id)=>{
+    _s();
     const [RestaurantCard, setRestaurantCard] = (0, _react.useState)([]);
     (0, _react.useEffect)(()=>{
         getRestaurantInfo();
     }, []);
     async function getRestaurantInfo() {
-        const data = await fetch(_constant.FETCH_MENU_URL + id + _constant.FETCH_MENU_URL_END);
+        const data = await fetch((0, _constantJs.FETCH_MENU_URL) + id + (0, _constantJs.FETCH_MENU_URL_END));
         const json = await data.json();
         setRestaurantCard(json?.data?.cards?.[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards[4]?.card?.card?.itemCards || []);
     }
     return RestaurantCard;
 };
-var _default = exports.default = useRestaurantCard;
+_s(useRestaurantCard, "PUBTzT+91PuAUDUtx2o4AxxTUrw=");
+exports.default = useRestaurantCard;
 
   $parcel$ReactRefreshHelpers$d7bd.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"31c7b664d1b1788f":"21dqq","c5e2c00d6bd02191":"bV0CE","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2Qebt":[function(require,module,exports,__globalThis) {
+},{"react":"21dqq","../Components/constant.js":"bV0CE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2Qebt":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$c2ee = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$c2ee.prelude(module);
 
 try {
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = void 0;
-var _react = require("8ae475b619ea394a");
-var _constant = require("2fdd3503f5fce0b");
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _constantJs = require("../Components/constant.js");
+var _s = $RefreshSig$();
 const useOffer = (id, [])=>{
+    _s();
     const [offer, setOffer] = (0, _react.useState)([]);
     (0, _react.useEffect)(()=>{
         getRestaurantInfo();
     }, []);
     async function getRestaurantInfo() {
-        const data = await fetch(_constant.FETCH_MENU_URL + id + _constant.FETCH_MENU_URL_END);
+        const data = await fetch((0, _constantJs.FETCH_MENU_URL) + id + (0, _constantJs.FETCH_MENU_URL_END));
         const json = await data.json();
         setOffer(json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.offers[0].info || []);
     }
     return offer;
 };
-var _default = exports.default = useOffer;
+_s(useOffer, "5YqHD+Kgcj2mCDNK21Gz9W6Il3s=");
+exports.default = useOffer;
 
   $parcel$ReactRefreshHelpers$c2ee.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"8ae475b619ea394a":"21dqq","2fdd3503f5fce0b":"bV0CE","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jOiMX":[function(require,module,exports,__globalThis) {
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.removeItems = exports.default = exports.clearCart = exports.addItem = void 0;
-var _toolkit = require("b11f02f17fd1bb15");
+},{"react":"21dqq","../Components/constant.js":"bV0CE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5RXlr":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "addItem", ()=>addItem);
+parcelHelpers.export(exports, "clearCart", ()=>clearCart);
+parcelHelpers.export(exports, "removeItems", ()=>removeItems);
+var _toolkit = require("@reduxjs/toolkit");
 const cartSlice = (0, _toolkit.createSlice)({
     name: "Cart",
     initialState: {
@@ -36893,15 +37891,11 @@ const cartSlice = (0, _toolkit.createSlice)({
         }
     }
 });
-var _default = exports.default = cartSlice.reducer;
-const { addItem, clearCart, removeItems } = cartSlice.actions;
-//src\utils\CartSlice.js
-// this is CartSlice File
-exports.removeItems = removeItems;
-exports.clearCart = clearCart;
-exports.addItem = addItem;
+exports.default = cartSlice.reducer;
+const { addItem, clearCart, removeItems } = cartSlice.actions; //src\utils\CartSlice.js
+ // this is CartSlice File
 
-},{"b11f02f17fd1bb15":"fuua8"}],"fuua8":[function(require,module,exports,__globalThis) {
+},{"@reduxjs/toolkit":"fuua8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fuua8":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "ReducerType", ()=>ReducerType);
@@ -37092,12 +38086,6 @@ It is disabled in production builds, so you don't need to worry about that.`);
         }
     };
 }
-function find(iterable, comparator) {
-    for (const entry of iterable){
-        if (comparator(entry)) return entry;
-    }
-    return void 0;
-}
 var Tuple = class _Tuple extends Array {
     constructor(...items){
         super(...items);
@@ -37117,19 +38105,9 @@ var Tuple = class _Tuple extends Array {
 function freezeDraftable(val) {
     return (0, _immer.isDraftable)(val) ? (0, _immer.produce)(val, ()=>{}) : val;
 }
-function emplace(map, key, handler) {
-    if (map.has(key)) {
-        let value = map.get(key);
-        if (handler.update) {
-            value = handler.update(value, key, map);
-            map.set(key, value);
-        }
-        return value;
-    }
-    if (!handler.insert) throw new Error("No insert provided for key not already in map");
-    const inserted = handler.insert(key, map);
-    map.set(key, inserted);
-    return inserted;
+function getOrInsertComputed(map, key, compute) {
+    if (map.has(key)) return map.get(key);
+    return map.set(key, compute(key)).get(key);
 }
 // src/immutableStateInvariantMiddleware.ts
 function isImmutableDefault(value) {
@@ -37357,7 +38335,6 @@ var createQueueWithTimer = (timeout)=>{
         setTimeout(notify, timeout);
     };
 };
-var rAF = typeof window !== "undefined" && window.requestAnimationFrame ? window.requestAnimationFrame : createQueueWithTimer(10);
 var autoBatchEnhancer = (options = {
     type: "raf"
 })=>(next)=>(...args)=>{
@@ -37366,7 +38343,8 @@ var autoBatchEnhancer = (options = {
             let shouldNotifyAtEndOfTick = false;
             let notificationQueued = false;
             const listeners = /* @__PURE__ */ new Set();
-            const queueCallback = options.type === "tick" ? queueMicrotask : options.type === "raf" ? rAF : options.type === "callback" ? options.queueNotification : createQueueWithTimer(options.timeout);
+            const queueCallback = options.type === "tick" ? queueMicrotask : options.type === "raf" ? // requestAnimationFrame won't exist in SSR environments. Fall back to a vague approximation just to keep from erroring.
+            typeof window !== "undefined" && window.requestAnimationFrame ? window.requestAnimationFrame : createQueueWithTimer(10) : options.type === "callback" ? options.queueNotification : createQueueWithTimer(options.timeout);
             const notifyListeners = ()=>{
                 notificationQueued = false;
                 if (shouldNotifyAtEndOfTick) {
@@ -37862,16 +38840,12 @@ function buildCreateSlice({ creators } = {}) {
                 return sliceState;
             }
             function getSelectors(selectState = selectSelf) {
-                const selectorCache = emplace(injectedSelectorCache, injected, {
-                    insert: ()=>/* @__PURE__ */ new WeakMap()
-                });
-                return emplace(selectorCache, selectState, {
-                    insert: ()=>{
-                        var _a2;
-                        const map = {};
-                        for (const [name2, selector] of Object.entries((_a2 = options.selectors) != null ? _a2 : {}))map[name2] = wrapSelector(selector, selectState, getInitialState, injected);
-                        return map;
-                    }
+                const selectorCache = getOrInsertComputed(injectedSelectorCache, injected, ()=>/* @__PURE__ */ new WeakMap());
+                return getOrInsertComputed(selectorCache, selectState, ()=>{
+                    var _a2;
+                    const map = {};
+                    for (const [name2, selector] of Object.entries((_a2 = options.selectors) != null ? _a2 : {}))map[name2] = wrapSelector(selector, selectState, getInitialState, injected);
+                    return map;
                 });
             }
             return {
@@ -38511,9 +39485,8 @@ var getListenerEntryPropsFrom = (options)=>{
 };
 var createListenerEntry = /* @__PURE__ */ assign((options)=>{
     const { type, predicate, effect } = getListenerEntryPropsFrom(options);
-    const id = nanoid();
     const entry = {
-        id,
+        id: nanoid(),
         effect,
         type,
         predicate,
@@ -38526,6 +39499,13 @@ var createListenerEntry = /* @__PURE__ */ assign((options)=>{
 }, {
     withTypes: ()=>createListenerEntry
 });
+var findListenerEntry = (listenerMap, options)=>{
+    const { type, effect, predicate } = getListenerEntryPropsFrom(options);
+    return Array.from(listenerMap.values()).find((entry)=>{
+        const matchPredicateOrType = typeof type === "string" ? entry.type === type : entry.predicate === predicate;
+        return matchPredicateOrType && entry.effect === effect;
+    });
+};
 var cancelActiveListeners = (entry)=>{
     entry.pending.forEach((controller)=>{
         abortControllerWithReason(controller, listenerCancelled);
@@ -38569,19 +39549,15 @@ var createListenerMiddleware = (middlewareOptions = {})=>{
         };
     };
     const startListening = (options)=>{
-        let entry = find(Array.from(listenerMap.values()), (existingEntry)=>existingEntry.effect === options.effect);
-        if (!entry) entry = createListenerEntry(options);
+        var _a;
+        const entry = (_a = findListenerEntry(listenerMap, options)) != null ? _a : createListenerEntry(options);
         return insertEntry(entry);
     };
     assign(startListening, {
         withTypes: ()=>startListening
     });
     const stopListening = (options)=>{
-        const { type, effect, predicate } = getListenerEntryPropsFrom(options);
-        const entry = find(Array.from(listenerMap.values()), (entry2)=>{
-            const matchPredicateOrType = typeof type === "string" ? entry2.type === type : entry2.predicate === predicate;
-            return matchPredicateOrType && entry2.effect === effect;
-        });
+        const entry = findListenerEntry(listenerMap, options);
         if (entry) {
             entry.unsubscribe();
             if (options.cancelActive) cancelActiveListeners(entry);
@@ -38684,7 +39660,6 @@ var createListenerMiddleware = (middlewareOptions = {})=>{
     };
 };
 var createMiddlewareEntry = (middleware)=>({
-        id: nanoid(),
         middleware,
         applied: /* @__PURE__ */ new Map()
     });
@@ -38705,17 +39680,13 @@ var createDynamicMiddleware = ()=>{
     });
     const addMiddleware = Object.assign(function addMiddleware2(...middlewares) {
         middlewares.forEach((middleware2)=>{
-            let entry = find(Array.from(middlewareMap.values()), (entry2)=>entry2.middleware === middleware2);
-            if (!entry) entry = createMiddlewareEntry(middleware2);
-            middlewareMap.set(entry.id, entry);
+            getOrInsertComputed(middlewareMap, middleware2, createMiddlewareEntry);
         });
     }, {
         withTypes: ()=>addMiddleware
     });
     const getFinalMiddleware = (api)=>{
-        const appliedMiddleware = Array.from(middlewareMap.values()).map((entry)=>emplace(entry.applied, api, {
-                insert: ()=>entry.middleware(api)
-            }));
+        const appliedMiddleware = Array.from(middlewareMap.values()).map((entry)=>getOrInsertComputed(entry.applied, api, entry.middleware));
         return (0, _redux.compose)(...appliedMiddleware);
     };
     const isWithMiddleware = isAllOf(withMiddleware, matchInstance(instanceId));
@@ -38743,25 +39714,23 @@ var getReducers = (slices)=>slices.flatMap((sliceOrMap)=>isSliceLike(sliceOrMap)
 var ORIGINAL_STATE = Symbol.for("rtk-state-proxy-original");
 var isStateProxy = (value)=>!!value && !!value[ORIGINAL_STATE];
 var stateProxyMap = /* @__PURE__ */ new WeakMap();
-var createStateProxy = (state, reducerMap)=>emplace(stateProxyMap, state, {
-        insert: ()=>new Proxy(state, {
-                get: (target, prop, receiver)=>{
-                    if (prop === ORIGINAL_STATE) return target;
-                    const result = Reflect.get(target, prop, receiver);
-                    if (typeof result === "undefined") {
-                        const reducer = reducerMap[prop.toString()];
-                        if (reducer) {
-                            const reducerResult = reducer(void 0, {
-                                type: nanoid()
-                            });
-                            if (typeof reducerResult === "undefined") throw new Error(`The slice reducer for key "${prop.toString()}" returned undefined when called for selector(). If the state passed to the reducer is undefined, you must explicitly return the initial state. The initial state may not be undefined. If you don't want to set a value for this reducer, you can use null instead of undefined.`);
-                            return reducerResult;
-                        }
+var createStateProxy = (state, reducerMap)=>getOrInsertComputed(stateProxyMap, state, ()=>new Proxy(state, {
+            get: (target, prop, receiver)=>{
+                if (prop === ORIGINAL_STATE) return target;
+                const result = Reflect.get(target, prop, receiver);
+                if (typeof result === "undefined") {
+                    const reducer = reducerMap[prop.toString()];
+                    if (reducer) {
+                        const reducerResult = reducer(void 0, {
+                            type: nanoid()
+                        });
+                        if (typeof reducerResult === "undefined") throw new Error(`The slice reducer for key "${prop.toString()}" returned undefined when called for selector(). If the state passed to the reducer is undefined, you must explicitly return the initial state. The initial state may not be undefined. If you don't want to set a value for this reducer, you can use null instead of undefined.`);
+                        return reducerResult;
                     }
-                    return result;
                 }
-            })
-    });
+                return result;
+            }
+        }));
 var original = (state)=>{
     if (!isStateProxy(state)) throw new Error("original must be used on state Proxy");
     return state[ORIGINAL_STATE];
@@ -40870,98 +41839,27 @@ function createThunkMiddleware(extraArgument) {
 var thunk = createThunkMiddleware();
 var withExtraArgument = createThunkMiddleware;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"1Of73":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$e45d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$e45d.prelude(module);
-
-try {
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = void 0;
-var _react = _interopRequireDefault(require("3aaae414f03ad23"));
-var _jsxRuntime = require("ee57794764df6c1c");
-function _interopRequireDefault(e) {
-    return e && e.__esModule ? e : {
-        default: e
-    };
-}
-const Simmer = ()=>{
-    return /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
-        className: "flex flex-wrap",
-        children: Array(12).fill("").map((e, index)=>/*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
-                className: "w-56 bg-slate-100 m-2 p-2 rounded-lg shadow-lg",
-                "data-testid": "simmer",
-                children: [
-                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
-                        className: "w-full bg-slate-300 h-52"
-                    }),
-                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("h1", {
-                        className: "p-2 m-2 bg-slate-400"
-                    }),
-                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("p", {
-                        className: "p-2 m-2 bg-slate-400"
-                    })
-                ]
-            }, index))
-    });
-};
-_c = Simmer;
-// const Simmer = () => {
-//   return (
-//     <div className="flex flex-wrap">
-//       {Array(12)
-//         .fill("")
-//         .map((e, index) => (
-//           <div
-//             key={index}
-//             className="w-56 bg-slate-100 m-2 p-2 rounded-lg shadow-lg"
-//             data-testid={`simmer-${index}`} // Unique test ID
-//           >
-//             <div className="w-full bg-slate-300 h-52"></div>
-//             <h1 className="p-2 m-2 bg-slate-400"></h1>
-//             <p className="p-2 m-2 bg-slate-400"></p>
-//           </div>
-//         ))}
-//     </div>
-//   );
-// };
-var _default = exports.default = Simmer;
-var _c;
-$RefreshReg$(_c, "Simmer");
-
-  $parcel$ReactRefreshHelpers$e45d.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"3aaae414f03ad23":"21dqq","ee57794764df6c1c":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bE5lv":[function(require,module,exports,__globalThis) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bE5lv":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$9275 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$9275.prelude(module);
 
 try {
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = void 0;
-var _formik = require("941fbfe924679e51");
-var _jsxRuntime = require("5f94f40b606bfe4");
-const Reg = ()=>/*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _formik = require("formik");
+var _reactRouterDom = require("react-router-dom");
+var _constant = require("./constant");
+var _s = $RefreshSig$();
+const Reg = ()=>{
+    _s();
+    const Navigate = (0, _reactRouterDom.useNavigate)();
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "flex w-full m-auto items-center ",
         children: [
-            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h1", {
-                style: {
-                    textAlign: "center",
-                    marginTop: "120px"
-                },
-                children: "Registration"
-            }),
-            /*#__PURE__*/ (0, _jsxRuntime.jsx)(_formik.Formik, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _formik.Formik), {
                 initialValues: {
                     email: "",
                     password: ""
@@ -40973,46 +41871,99 @@ const Reg = ()=>/*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
                     return errors;
                 },
                 onSubmit: (values, { setSubmitting })=>{
-                    setTimeout(()=>{
-                        alert(JSON.stringify(values, null, 2));
-                        setSubmitting(false);
-                    }, 400);
+                    // setTimeout(() => {
+                    //   alert(JSON.stringify(values, null, 2));
+                    //   setSubmitting(false);
+                    // }, 400);
+                    Navigate("/");
                 },
-                children: ({ values, errors, touched, handleChange, handleBlur, handleSubmit, isSubmitting })=>/*#__PURE__*/ (0, _jsxRuntime.jsxs)("form", {
+                children: ({ values, errors, touched, handleChange, handleBlur, handleSubmit, isSubmitting })=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
                         onSubmit: handleSubmit,
-                        className: "reg search-container ",
+                        className: "flex flex-col  w-1/3 rounded-lg justify-center m-auto border p-4 ",
                         children: [
-                            /*#__PURE__*/ (0, _jsxRuntime.jsx)("input", {
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                className: " text-lg text-center font-bold text-gray-500 ",
+                                children: "WelCome User..."
+                            }, void 0, false, {
+                                fileName: "src/Components/Reg.js",
+                                lineNumber: 44,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                                 type: "email",
                                 name: "email",
                                 onChange: handleChange,
                                 onBlur: handleBlur,
                                 value: values.email,
-                                className: "search-input"
-                            }),
+                                className: "w-full m-2 px-10 border border-orange-600 rounded-md py-2  "
+                            }, void 0, false, {
+                                fileName: "src/Components/Reg.js",
+                                lineNumber: 47,
+                                columnNumber: 13
+                            }, undefined),
                             errors.email && touched.email && errors.email,
-                            /*#__PURE__*/ (0, _jsxRuntime.jsx)("input", {
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                                 type: "password",
                                 name: "password",
                                 onChange: handleChange,
                                 onBlur: handleBlur,
                                 value: values.password,
-                                className: "search-input"
-                            }),
+                                className: "w-full m-2 px-10 border border-orange-600 rounded-md py-2  "
+                            }, void 0, false, {
+                                fileName: "src/Components/Reg.js",
+                                lineNumber: 56,
+                                columnNumber: 13
+                            }, undefined),
                             errors.password && touched.password && errors.password,
-                            /*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                 type: "submit",
                                 disabled: isSubmitting,
-                                className: "search-btn",
+                                className: "w-full m-2 px-10 border bg-orange-600 text-white border-orange-600 rounded-md py-2",
                                 children: "Submit"
-                            })
+                            }, void 0, false, {
+                                fileName: "src/Components/Reg.js",
+                                lineNumber: 65,
+                                columnNumber: 13
+                            }, undefined)
                         ]
-                    })
-            })
+                    }, void 0, true, {
+                        fileName: "src/Components/Reg.js",
+                        lineNumber: 40,
+                        columnNumber: 11
+                    }, undefined)
+            }, void 0, false, {
+                fileName: "src/Components/Reg.js",
+                lineNumber: 9,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: " animate-pulse",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: (0, _constant.EMTY_CART)
+                }, void 0, false, {
+                    fileName: "src/Components/Reg.js",
+                    lineNumber: 76,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/Components/Reg.js",
+                lineNumber: 75,
+                columnNumber: 7
+            }, undefined)
         ]
-    });
+    }, void 0, true, {
+        fileName: "src/Components/Reg.js",
+        lineNumber: 8,
+        columnNumber: 5
+    }, undefined);
+};
+_s(Reg, "BsdYp51khjvN8P3D7sGmxzWyV1E=", false, function() {
+    return [
+        (0, _reactRouterDom.useNavigate)
+    ];
+});
 _c = Reg;
-var _default = exports.default = Reg;
+exports.default = Reg;
 var _c;
 $RefreshReg$(_c, "Reg");
 
@@ -41021,7 +41972,7 @@ $RefreshReg$(_c, "Reg");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"941fbfe924679e51":"aefoQ","5f94f40b606bfe4":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aefoQ":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","formik":"aefoQ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe","./constant":"bV0CE"}],"aefoQ":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "ErrorMessage", ()=>ErrorMessage);
@@ -45938,52 +46889,150 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$f05c.prelude(module);
 
 try {
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = void 0;
-var _RestaurantCard = _interopRequireDefault(require("c403b53e1e1926cb"));
-var _Banner = _interopRequireDefault(require("1dcff29a9c2b5dba"));
-var _restaurantList = _interopRequireDefault(require("46844e5a36cd7332"));
-var _react = require("d4b9a78e5525d099");
-var _Simmer = _interopRequireDefault(require("b09b7d3dec58b1e1"));
-var _reactRouterDom = require("31e523face74fb0a");
-var _helper = require("a4c23311047932e8");
-var _useNetworkStatus = _interopRequireDefault(require("a2d03ae302c47476"));
-var _jsxRuntime = require("ed55966631e6f24b");
-function _interopRequireDefault(e) {
-    return e && e.__esModule ? e : {
-        default: e
-    };
-}
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _restaurantCard = require("./RestaurantCard");
+var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
+var _banner = require("./Banner");
+var _bannerDefault = parcelHelpers.interopDefault(_banner);
+var _restaurantList = require("./restaurantList");
+var _restaurantListDefault = parcelHelpers.interopDefault(_restaurantList);
+var _react = require("react");
+var _simmer = require("./Simmer");
+var _simmerDefault = parcelHelpers.interopDefault(_simmer);
+var _reactRouterDom = require("react-router-dom");
+var _helperJs = require("../utils/helper.js");
+var _useNetworkStatusJs = require("../utils/useNetworkStatus.js");
+var _useNetworkStatusJsDefault = parcelHelpers.interopDefault(_useNetworkStatusJs);
+var _constantJs = require("./constant.js");
+var _constant = require("./constant");
+var _s = $RefreshSig$();
 const MainBody = ({ user })=>{
+    _s();
     const [allRestaurants, setAllRestaurants] = (0, _react.useState)(null);
     const [filteredRestaurants, setFilteredRestaurants] = (0, _react.useState)([]);
+    const [category, setCategory] = (0, _react.useState)([]);
+    const [isVisible, setIsvisible] = (0, _react.useState)(false);
+    const [isLess, setIsLess] = (0, _react.useState)(false);
+    const [cityData, setCityData] = (0, _react.useState)([]);
+    const [cityData_Other, setCityData_Other] = (0, _react.useState)([]);
     const [searchInput, setSearchText] = (0, _react.useState)("");
-    console.log(allRestaurants);
+    // console.log(cityData);
+    // console.log(allRestaurants);
+    // console.log(category);
+    const handleMore = ()=>{
+        setIsvisible((prevState)=>!prevState);
+        setIsLess((prevState)=>!prevState);
+    };
     (0, _react.useEffect)(()=>{
         getRestaurants();
     }, []);
     async function getRestaurants() {
         const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=21.1458004&lng=79.0881546&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
         const json = await data.json();
+        // console.log(json);
+        setCityData(json.data?.cards[10]?.card?.card?.cities);
+        setCityData_Other(json.data?.cards[6]?.card?.card?.brands);
         const restaurants = json.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
+        setCategory(json.data?.cards[0]?.card?.card?.gridElements?.infoWithStyle?.info);
         setAllRestaurants(restaurants);
         setFilteredRestaurants(restaurants);
     }
-    const internetStatus = (0, _useNetworkStatus.default)();
-    if (internetStatus === false) return /*#__PURE__*/ (0, _jsxRuntime.jsx)("h1", {
+    const internetStatus = (0, _useNetworkStatusJsDefault.default)();
+    if (internetStatus === false) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
         children: " Please check your internet connection !!"
-    });
-    if (!allRestaurants) return /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Simmer.default, {});
-    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
+    }, void 0, false, {
+        fileName: "src/Components/MainBody.js",
+        lineNumber: 58,
+        columnNumber: 12
+    }, undefined);
+    if (!allRestaurants) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _simmerDefault.default), {}, void 0, false, {
+        fileName: "src/Components/MainBody.js",
+        lineNumber: 62,
+        columnNumber: 12
+    }, undefined);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
-            /*#__PURE__*/ (0, _jsxRuntime.jsx)(_Banner.default, {}),
-            /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bannerDefault.default), {}, void 0, false, {
+                fileName: "src/Components/MainBody.js",
+                lineNumber: 67,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "m-auto flex justify-center",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "md:flex -mt-64 items-center  hidden   m-auto absolute",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: (0, _constant.HERO_1),
+                            className: "w-60   "
+                        }, void 0, false, {
+                            fileName: "src/Components/MainBody.js",
+                            lineNumber: 70,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: (0, _constant.HERO_2),
+                            className: "w-60   "
+                        }, void 0, false, {
+                            fileName: "src/Components/MainBody.js",
+                            lineNumber: 71,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: (0, _constant.HERO_3),
+                            className: "w-60   "
+                        }, void 0, false, {
+                            fileName: "src/Components/MainBody.js",
+                            lineNumber: 72,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: (0, _constant.HERO_4),
+                            className: "w-60   "
+                        }, void 0, false, {
+                            fileName: "src/Components/MainBody.js",
+                            lineNumber: 73,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Components/MainBody.js",
+                    lineNumber: 69,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/Components/MainBody.js",
+                lineNumber: 68,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "w-[80vw] m-auto flex overflow-x-auto overflow-y-hidden flex-nowrap justify-start  py-11 scroll-auto    scroll-container transition-duration-300 transition-timing-function-ease transform transition-duration-300 transition-timing-function-ease box-shadow",
+                children: category.map((e)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "w-44 flex-shrink-0",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: (0, _constantJs.IMG_CDN_URL) + e.imageId,
+                            alt: ""
+                        }, void 0, false, {
+                            fileName: "src/Components/MainBody.js",
+                            lineNumber: 80,
+                            columnNumber: 13
+                        }, undefined)
+                    }, e.id, false, {
+                        fileName: "src/Components/MainBody.js",
+                        lineNumber: 78,
+                        columnNumber: 11
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/Components/MainBody.js",
+                lineNumber: 76,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "search-container",
                 children: [
-                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("input", {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                         type: "text",
                         className: "search-input",
                         placeholder: "Search Best Food on Food Villa",
@@ -45991,40 +47040,268 @@ const MainBody = ({ user })=>{
                         "data-testid": "search_input",
                         onInput: (e)=>{
                             setSearchText(e.target.value);
-                        // const data = filterData(e.target.value, allRestaurants);
-                        // setFilteredRestaurants(data);
+                            const data = (0, _helperJs.filterData)(e.target.value, allRestaurants);
+                            setFilteredRestaurants(data);
                         }
-                    }),
-                    /*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
+                    }, void 0, false, {
+                        fileName: "src/Components/MainBody.js",
+                        lineNumber: 87,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         className: "search-btn",
                         "data-testid": "search-btn",
                         onClick: ()=>{
-                            const data = (0, _helper.filterData)(searchInput, allRestaurants);
+                            const data = (0, _helperJs.filterData)(searchInput, allRestaurants);
                             setFilteredRestaurants(data);
                         },
                         children: "Search"
-                    })
+                    }, void 0, false, {
+                        fileName: "src/Components/MainBody.js",
+                        lineNumber: 99,
+                        columnNumber: 9
+                    }, undefined)
                 ]
-            }),
-            /*#__PURE__*/ (0, _jsxRuntime.jsx)("h2", {
-                children: "Restaurants with online food delivery"
-            }),
-            /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
+            }, void 0, true, {
+                fileName: "src/Components/MainBody.js",
+                lineNumber: 85,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                className: "text-2xl font-bold text-center m-10 text-gray-700",
+                children: "\u2500\u2500\u2500\u2500\u22C6\u22C5\u2606\u22C5\u22C6\u2500\u2500 Restaurants with online food delivery \u2500\u2500\u2500\u2500\u22C6\u22C5\u2606\u22C5\u22C6\u2500\u2500"
+            }, void 0, false, {
+                fileName: "src/Components/MainBody.js",
+                lineNumber: 111,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "restaurant-list",
                 "data-testid": "res-list",
-                children: filteredRestaurants.map((restaurant)=>/*#__PURE__*/ (0, _jsxRuntime.jsx)(_reactRouterDom.Link, {
+                children: filteredRestaurants.map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: `/restaurant/${restaurant.info.id}`,
-                        children: /*#__PURE__*/ (0, _jsxRuntime.jsx)(_RestaurantCard.default, {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
                             ...restaurant.info,
                             user: user
-                        })
-                    }, restaurant.info.id))
-            })
+                        }, void 0, false, {
+                            fileName: "src/Components/MainBody.js",
+                            lineNumber: 120,
+                            columnNumber: 13
+                        }, undefined)
+                    }, restaurant.info.id, false, {
+                        fileName: "src/Components/MainBody.js",
+                        lineNumber: 116,
+                        columnNumber: 11
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/Components/MainBody.js",
+                lineNumber: 114,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "my-20 w-full overflow-x-hidden ",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: (0, _constantJs.GET_APP)
+                }, void 0, false, {
+                    fileName: "src/Components/MainBody.js",
+                    lineNumber: 125,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/Components/MainBody.js",
+                lineNumber: 124,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "w-4/5 m-auto  ",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "text-2xl text-gray-900 font-bold mb-5 ",
+                        children: "Cities with food delivery"
+                    }, void 0, false, {
+                        fileName: "src/Components/MainBody.js",
+                        lineNumber: 128,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "grid grid-cols-4 w-full ",
+                        children: cityData_Other.slice(0, 16).map((city)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: city?.link,
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "border rounded-lg px-5 py-3 m-2 hover:bg-slate-100 cursor-pointer text-sm text-gray-700",
+                                    children: city?.text
+                                }, void 0, false, {
+                                    fileName: "src/Components/MainBody.js",
+                                    lineNumber: 134,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/Components/MainBody.js",
+                                lineNumber: 133,
+                                columnNumber: 13
+                            }, undefined))
+                    }, void 0, false, {
+                        fileName: "src/Components/MainBody.js",
+                        lineNumber: 131,
+                        columnNumber: 9
+                    }, undefined),
+                    isVisible && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "grid grid-cols-4 w-full ",
+                        children: cityData_Other.slice(19).map((city)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: city?.link,
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "border rounded-lg px-5 py-3 m-2 hover:bg-slate-100 cursor-pointer text-sm text-gray-700",
+                                    children: city?.text
+                                }, void 0, false, {
+                                    fileName: "src/Components/MainBody.js",
+                                    lineNumber: 144,
+                                    columnNumber: 17
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/Components/MainBody.js",
+                                lineNumber: 143,
+                                columnNumber: 15
+                            }, undefined))
+                    }, void 0, false, {
+                        fileName: "src/Components/MainBody.js",
+                        lineNumber: 141,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/MainBody.js",
+                lineNumber: 127,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: " float-end  mr-40",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    className: " px-5 py-2 bg-orange-400 font-semibold text-white rounded-md ",
+                    onClick: ()=>{
+                        handleMore();
+                    },
+                    children: isLess ? "\u25B2" : "\u25BC"
+                }, void 0, false, {
+                    fileName: "src/Components/MainBody.js",
+                    lineNumber: 153,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/Components/MainBody.js",
+                lineNumber: 152,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "w-4/5 m-auto  ",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "text-2xl text-gray-900 font-bold mb-5 mt-20 ",
+                        children: "Cities with grocery delivery"
+                    }, void 0, false, {
+                        fileName: "src/Components/MainBody.js",
+                        lineNumber: 164,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "grid grid-cols-5 w-full",
+                        children: cityData.slice(0, 30).map((city)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: city?.link,
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "border rounded-lg px-5 py-3 m-2 hover:bg-slate-100 cursor-pointer text-sm text-gray-700 fl",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: "text-sm text-gray-700",
+                                            children: "Order in "
+                                        }, void 0, false, {
+                                            fileName: "src/Components/MainBody.js",
+                                            lineNumber: 171,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        " ",
+                                        city?.text
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/Components/MainBody.js",
+                                    lineNumber: 170,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/Components/MainBody.js",
+                                lineNumber: 169,
+                                columnNumber: 13
+                            }, undefined))
+                    }, void 0, false, {
+                        fileName: "src/Components/MainBody.js",
+                        lineNumber: 167,
+                        columnNumber: 9
+                    }, undefined),
+                    isVisible && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "grid grid-cols-5 w-full ",
+                        children: cityData.slice(31).map((city)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: city?.link,
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "border rounded-lg px-5 py-3 m-2 hover:bg-slate-100 cursor-pointer text-sm text-gray-700",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: "text-sm text-gray-700",
+                                            children: "Order in "
+                                        }, void 0, false, {
+                                            fileName: "src/Components/MainBody.js",
+                                            lineNumber: 182,
+                                            columnNumber: 19
+                                        }, undefined),
+                                        " ",
+                                        city?.text
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/Components/MainBody.js",
+                                    lineNumber: 181,
+                                    columnNumber: 17
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/Components/MainBody.js",
+                                lineNumber: 180,
+                                columnNumber: 15
+                            }, undefined))
+                    }, void 0, false, {
+                        fileName: "src/Components/MainBody.js",
+                        lineNumber: 178,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/MainBody.js",
+                lineNumber: 163,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "  float-end  mr-40  ",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    className: " px-5 py-2 bg-orange-400 font-semibold text-white rounded-md ",
+                    onClick: ()=>{
+                        handleMore();
+                    },
+                    children: isLess ? "\u25B2" : "\u25BC"
+                }, void 0, false, {
+                    fileName: "src/Components/MainBody.js",
+                    lineNumber: 191,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/Components/MainBody.js",
+                lineNumber: 190,
+                columnNumber: 7
+            }, undefined)
         ]
-    });
+    }, void 0, true);
 };
+_s(MainBody, "9NXlqezUCSMxUhC7Z1khC/ChKy4=", false, function() {
+    return [
+        (0, _useNetworkStatusJsDefault.default)
+    ];
+});
 _c = MainBody;
-var _default = exports.default = MainBody;
+exports.default = MainBody;
 var _c;
 $RefreshReg$(_c, "MainBody");
 
@@ -46033,72 +47310,102 @@ $RefreshReg$(_c, "MainBody");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"c403b53e1e1926cb":"kZnAN","1dcff29a9c2b5dba":"6zUpG","46844e5a36cd7332":"iXaa5","d4b9a78e5525d099":"21dqq","31e523face74fb0a":"9xmpe","a4c23311047932e8":"3GF3D","a2d03ae302c47476":"5GewO","ed55966631e6f24b":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","b09b7d3dec58b1e1":"1Of73"}],"kZnAN":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","./RestaurantCard":"kZnAN","./Banner":"6zUpG","./restaurantList":"iXaa5","react":"21dqq","./Simmer":"1Of73","react-router-dom":"9xmpe","../utils/helper.js":"3GF3D","../utils/useNetworkStatus.js":"5GewO","./constant.js":"bV0CE","./constant":"bV0CE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kZnAN":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$bb0d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$bb0d.prelude(module);
 
 try {
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = void 0;
-var _constant = require("ab95b07248108f29");
-var _userContext = _interopRequireDefault(require("1c75ae475ce637bb"));
-var _jsxRuntime = require("59c554fcabe62faf");
-function _interopRequireDefault(e) {
-    return e && e.__esModule ? e : {
-        default: e
-    };
-}
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _constantJs = require("./constant.js");
+var _userContextJs = require("../utils/userContext.js");
+var _userContextJsDefault = parcelHelpers.interopDefault(_userContextJs);
 const RestaurantCard = ({ name, avgRating, sla, cuisines, cloudinaryImageId, user })=>{
     // this restaurant give the data as an object so we will destructuring the data
     // now we have a data stored in props
     // we will extract the data from the
     // console.log(props);
-    return /*#__PURE__*/ (0, _jsxRuntime.jsx)(_jsxRuntime.Fragment, {
-        children: /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "card",
             children: [
-                /*#__PURE__*/ (0, _jsxRuntime.jsx)("img", {
-                    src: _constant.IMG_CDN_URL + cloudinaryImageId,
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: (0, _constantJs.IMG_CDN_URL) + cloudinaryImageId,
                     alt: "restaurant image",
                     className: "restaurant-img"
-                }),
-                /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
+                }, void 0, false, {
+                    fileName: "src/Components/RestaurantCard.js",
+                    lineNumber: 20,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "restaurant-info",
                     children: [
-                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("h4", {
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                            className: "text-lg font-bold text-gray-800 ",
                             children: name
-                        }),
-                        /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
-                            className: "card-list",
+                        }, void 0, false, {
+                            fileName: "src/Components/RestaurantCard.js",
+                            lineNumber: 26,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "card-list flex justify-between ",
                             children: [
-                                /*#__PURE__*/ (0, _jsxRuntime.jsxs)("p", {
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                     children: [
+                                        " \u2B50\uFE0F",
                                         avgRating,
                                         " : rating"
                                     ]
-                                }),
-                                /*#__PURE__*/ (0, _jsxRuntime.jsx)("p", {
-                                    children: sla.slaString
-                                })
+                                }, void 0, true, {
+                                    fileName: "src/Components/RestaurantCard.js",
+                                    lineNumber: 28,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    children: [
+                                        "\uD83D\uDD52",
+                                        sla.slaString
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/Components/RestaurantCard.js",
+                                    lineNumber: 29,
+                                    columnNumber: 13
+                                }, undefined)
                             ]
-                        }),
-                        /*#__PURE__*/ (0, _jsxRuntime.jsx)("p", {
-                            className: "info",
+                        }, void 0, true, {
+                            fileName: "src/Components/RestaurantCard.js",
+                            lineNumber: 27,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "info ",
                             children: cuisines.join(", ")
-                        })
+                        }, void 0, false, {
+                            fileName: "src/Components/RestaurantCard.js",
+                            lineNumber: 31,
+                            columnNumber: 11
+                        }, undefined)
                     ]
-                })
+                }, void 0, true, {
+                    fileName: "src/Components/RestaurantCard.js",
+                    lineNumber: 25,
+                    columnNumber: 9
+                }, undefined)
             ]
-        })
-    });
+        }, void 0, true, {
+            fileName: "src/Components/RestaurantCard.js",
+            lineNumber: 19,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false);
 };
 _c = RestaurantCard;
-var _default = exports.default = RestaurantCard;
+exports.default = RestaurantCard;
 var _c;
 $RefreshReg$(_c, "RestaurantCard");
 
@@ -46107,43 +47414,58 @@ $RefreshReg$(_c, "RestaurantCard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"ab95b07248108f29":"bV0CE","59c554fcabe62faf":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","1c75ae475ce637bb":"eBA1b"}],"6zUpG":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","./constant.js":"bV0CE","../utils/userContext.js":"eBA1b","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6zUpG":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$65e7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$65e7.prelude(module);
 
 try {
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = void 0;
-var _jsxRuntime = require("b91b3998b10660c5");
-const Banner = ()=>/*#__PURE__*/ (0, _jsxRuntime.jsx)(_jsxRuntime.Fragment, {
-        children: /*#__PURE__*/ (0, _jsxRuntime.jsxs)("div", {
-            className: "banner-container",
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _constant = require("./constant");
+var _simmer = require("./Simmer");
+const Banner = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "banner-container w-full",
             children: [
-                /*#__PURE__*/ (0, _jsxRuntime.jsx)("img", {
-                    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQa0bQD8N7omyEHZdzSK08pINmSNm7ZkS71NMHc4jw5ZhJU9xrf-4uUEdGpSqdgr-SOck&usqp=CAU",
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: (0, _constant.BANNER_LEFT_IMG),
                     alt: "banner image",
                     className: "banner-img"
-                }),
-                /*#__PURE__*/ (0, _jsxRuntime.jsx)("img", {
-                    src: "https://images.unsplash.com/photo-1677175202036-0a0fede2f3c7?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGRhcmslMjBmb29kJTIwcGhvdG9ncmFwaHl8ZW58MHx8MHx8fDA%3D",
+                }, void 0, false, {
+                    fileName: "src/Components/Banner.js",
+                    lineNumber: 15,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    id: "title",
+                    className: "animate-pulse ",
+                    children: "Order food & groceries. Discover best restaurants. Swiggy it!"
+                }, void 0, false, {
+                    fileName: "src/Components/Banner.js",
+                    lineNumber: 21,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: (0, _constant.BANNER_RIGHT_IMG),
                     alt: "banner image",
                     className: "banner-img"
-                }),
-                /*#__PURE__*/ (0, _jsxRuntime.jsx)("img", {
-                    src: "https://i.pinimg.com/236x/c0/52/05/c05205ccb1f95ea9080168e241e5a92a.jpg",
-                    alt: "banner image",
-                    className: "banner-img"
-                })
+                }, void 0, false, {
+                    fileName: "src/Components/Banner.js",
+                    lineNumber: 25,
+                    columnNumber: 9
+                }, undefined)
             ]
-        })
-    });
+        }, void 0, true, {
+            fileName: "src/Components/Banner.js",
+            lineNumber: 14,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false);
 _c = Banner;
-var _default = exports.default = Banner;
+exports.default = Banner;
 var _c;
 $RefreshReg$(_c, "Banner");
 
@@ -46152,12 +47474,9 @@ $RefreshReg$(_c, "Banner");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"b91b3998b10660c5":"6AEwr","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iXaa5":[function(require,module,exports,__globalThis) {
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = void 0;
+},{"react/jsx-dev-runtime":"iTorj","./constant":"bV0CE","./Simmer":"1Of73","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iXaa5":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
 const restaurantList = [
     {
         info: {
@@ -48041,42 +49360,164 @@ const restaurantList = [
         }
     }
 ];
-var _default = exports.default = restaurantList;
+exports.default = restaurantList;
 
-},{}],"3GF3D":[function(require,module,exports,__globalThis) {
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.filterData = void 0;
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3GF3D":[function(require,module,exports,__globalThis) {
 // Function to filter restaurants based on search input
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "filterData", ()=>filterData);
 const filterData = (searchInput, restaurantList)=>{
     const filteredCards = restaurantList.filter((restaurantList)=>restaurantList?.info?.name?.toLowerCase().includes(searchInput.toLowerCase()) // Making the search case-insensitive
     );
     return filteredCards;
 };
-exports.filterData = filterData;
 
-},{}],"kN9jh":[function(require,module,exports,__globalThis) {
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = void 0;
-var _toolkit = require("cb9b9027fb371a08");
-var _CartSlice = _interopRequireDefault(require("43f3e7084caf2f64"));
-function _interopRequireDefault(e) {
-    return e && e.__esModule ? e : {
-        default: e
-    };
-}
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kN9jh":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _toolkit = require("@reduxjs/toolkit");
+var _cartSlice = require("./CartSlice");
+var _cartSliceDefault = parcelHelpers.interopDefault(_cartSlice);
 const store = (0, _toolkit.configureStore)({
     reducer: {
-        cart: _CartSlice.default
+        cart: (0, _cartSliceDefault.default)
     }
 });
-var _default = exports.default = store; // this is Store.js file src\utils\Store.js
+exports.default = store; // this is Store.js file src\utils\Store.js
 
-},{"cb9b9027fb371a08":"fuua8","43f3e7084caf2f64":"jOiMX"}]},["aQL8O","cLDdI","bNKaB"], "bNKaB", "parcelRequire94c2")
+},{"@reduxjs/toolkit":"fuua8","./CartSlice":"jOiMX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jOiMX":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "addItem", ()=>addItem);
+parcelHelpers.export(exports, "clearCart", ()=>clearCart);
+parcelHelpers.export(exports, "removeItems", ()=>removeItems);
+var _toolkit = require("@reduxjs/toolkit");
+const cartSlice = (0, _toolkit.createSlice)({
+    name: "Cart",
+    initialState: {
+        items: []
+    },
+    reducers: {
+        addItem: (state, action)=>{
+            state.items.push(action.payload);
+        },
+        // ()=>{} when some one will click on the add item it call the function so its is an those function
+        clearCart: (state)=>{
+            state.items = [];
+        },
+        removeItems: (state, action)=>{
+            state.items.pop();
+        }
+    }
+});
+exports.default = cartSlice.reducer;
+const { addItem, clearCart, removeItems } = cartSlice.actions; //src\utils\CartSlice.js
+ // this is CartSlice File
+
+},{"@reduxjs/toolkit":"fuua8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eUuB8":[function(require,module,exports,__globalThis) {
+module.exports = require("27d955aa4f4e8e29")(require("9b26381e843107ca").getBundleURL('lPpKD') + "Cart.a0ad8882.js" + "?" + Date.now()).catch((err)=>{
+    delete module.bundle.cache[module.id];
+    throw err;
+}).then(()=>module.bundle.root('c9G2d'));
+
+},{"27d955aa4f4e8e29":"61B45","9b26381e843107ca":"lgJ39"}],"61B45":[function(require,module,exports,__globalThis) {
+"use strict";
+var cacheLoader = require("ca2a84f7fa4a3bb0");
+module.exports = cacheLoader(function(bundle) {
+    return new Promise(function(resolve, reject) {
+        // Don't insert the same script twice (e.g. if it was already in the HTML)
+        var existingScripts = document.getElementsByTagName('script');
+        if ([].concat(existingScripts).some(function(script) {
+            return script.src === bundle;
+        })) {
+            resolve();
+            return;
+        }
+        var preloadLink = document.createElement('link');
+        preloadLink.href = bundle;
+        preloadLink.rel = 'preload';
+        preloadLink.as = 'script';
+        document.head.appendChild(preloadLink);
+        var script = document.createElement('script');
+        script.async = true;
+        script.type = 'text/javascript';
+        script.src = bundle;
+        script.onerror = function(e) {
+            var error = new TypeError("Failed to fetch dynamically imported module: ".concat(bundle, ". Error: ").concat(e.message));
+            script.onerror = script.onload = null;
+            script.remove();
+            reject(error);
+        };
+        script.onload = function() {
+            script.onerror = script.onload = null;
+            resolve();
+        };
+        document.getElementsByTagName('head')[0].appendChild(script);
+    });
+});
+
+},{"ca2a84f7fa4a3bb0":"j49pS"}],"j49pS":[function(require,module,exports,__globalThis) {
+"use strict";
+var cachedBundles = {};
+var cachedPreloads = {};
+var cachedPrefetches = {};
+function getCache(type) {
+    switch(type){
+        case 'preload':
+            return cachedPreloads;
+        case 'prefetch':
+            return cachedPrefetches;
+        default:
+            return cachedBundles;
+    }
+}
+module.exports = function(loader, type) {
+    return function(bundle) {
+        var cache = getCache(type);
+        if (cache[bundle]) return cache[bundle];
+        return cache[bundle] = loader.apply(null, arguments).catch(function(e) {
+            delete cache[bundle];
+            throw e;
+        });
+    };
+};
+
+},{}],"lgJ39":[function(require,module,exports,__globalThis) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ('' + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return '/';
+}
+function getBaseURL(url) {
+    return ('' + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
+}
+// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ('' + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error('Origin not found');
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}]},["aQL8O","cLDdI","bNKaB"], "bNKaB", "parcelRequire94c2")
 
 //# sourceMappingURL=index.0641b553.js.map

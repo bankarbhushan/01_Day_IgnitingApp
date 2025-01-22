@@ -7,25 +7,21 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica;
-  /* background: #212121; */
-  background-color: black;
-  color: white;
-  /* width: 100vw; */
+  background-color: white;
+  color: black;
 }
 /* -------------------------------------  nav -bar ------------------------------------- */
 
 h1 {
-  color: white;
+  color: black;
   margin-top: 100px;
 }
 .logo {
   width: 200px;
-  height: 70px;
   margin-left: 20px;
 }
 .nav-bar {
   position: fixed;
-  background-color: rgb(0, 0, 0);
   top: 0;
   width: 100%;
   display: flex;
@@ -34,8 +30,8 @@ h1 {
   color: white !important;
   z-index: 10;
   padding: 20px;
-  box-shadow: 2px 2px 12px rgb(170, 170, 170);
   margin-bottom: 30px;
+  background-color: #ff5200;
 }
 
 .nav-bar > ul {
@@ -44,40 +40,43 @@ h1 {
   align-items: center;
 }
 .nav-bar ul > li {
+  color: white;
   margin: 15px;
   list-style: none;
 }
-
+.nav-bar ul > li > a {
+  color: white;
+  font-weight: 600;
+}
 .search-container {
+  margin-top: 4em;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto;
-  margin-top: 30px;
 }
 .search-input {
   padding: 10px;
-  width: 350px;
+  width: 450px;
   border-radius: 5px;
   border: 1px solid #ccc;
   outline: none;
   font-size: 16px;
-  border: 1px solid #5d5d5d;
-  color: #d77600;
   font-weight: 600;
-  box-shadow: 2px 2px 5px rgb(75, 74, 74) inset;
-  margin-bottom: 10px;
+  color: #5d5d5d;
 }
 
 .search-btn {
-  padding: 10px 15px;
-  margin: 10px;
+  padding: 10px;
+  margin-left: 10px;
   border: none !important;
   border-radius: 5px;
   background-color: #df7f09;
   color: white !important;
-  font-size: 14px;
+  font-size: 16px;
   cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 700;
 }
 
 .cart-btn {
@@ -85,48 +84,35 @@ h1 {
   padding: 7px 16px;
   border-radius: 3px;
   background-color: #df7f09;
-  color: white;
+  color: black;
   cursor: pointer;
 }
 .link {
   text-decoration: none;
-  color: white;
+  color: black;
   cursor: pointer;
 }
 /* -------------------------------------  Banner ------------------------------------- */
 
 .banner-container {
-  /* width: 100%; */
+  width: auto;
   display: flex;
-  background-color: #5d5d5d;
   align-items: center;
-  justify-content: center;
-  padding: 20px;
-  margin-top: 120px;
+  justify-content: space-between;
+  background-color: #ff5200;
+  overflow-x: hidden;
+}
+#title {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  font-weight: 900;
+}
+.banner-img {
+  width: 20%;
+  margin-top: 130px;
 }
 
-.banner-img {
-  width: 200px;
-  aspect-ratio: 1;
-  padding: 5px;
-  box-shadow: 2px 2px 10px white inset;
-  margin: 10px;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
-.banner-img:hover {
-  transform: scale(1.02);
-  /*transform: skewY(7deg);
-  */
-  -webkit-transform: scale(7deg);
-  -moz-transform: scale(1.02);
-  -ms-transform: scale(1.02);
-  -o-transform: scale(1.02);
-  -webkit-transform: scale(1.02);
-}
 /* -------------------------------------  card ------------------------------------- */
 h2 {
   color: #df7f09;
@@ -137,28 +123,53 @@ h2 {
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 250px;
+  width: 280px;
   border-radius: 15px;
-  margin: 5px;
-  padding: 10px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
-  box-shadow: 2px 2px 12px rgb(0, 0, 0);
-  height: 350px;
-}
-.card:hover {
-  transform: scale(1.01);
-  scale: 2px;
-  background-color: #292929;
-  -webkit-transform: scale(1.01);
-  -moz-transform: scale(1.01);
-  -ms-transform: scale(1.01);
-  -o-transform: scale(1.01);
+  margin: 10px;
+  padding: 15px;
+  color: black;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /*Smoothtransitions*/
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -moz-transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -ms-transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -o-transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.card:hover {
+  transform: scale(1.1); /* Zoom-in effect */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Elevate shadow on hover */
+}
+
+.card img {
+  border-radius: 10px; /* Add rounded corners to images */
+  object-fit: cover;
+  max-height: 200px; /* Prevent images from being too large */
+  width: 100%;
+}
+
+.card .content {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.card:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+button {
+  color: white;
+}
 .card > img {
   width: 100%;
   aspect-ratio: 1;
@@ -172,7 +183,7 @@ h2 {
 .restaurant-info {
   margin: 0px;
   padding: 0;
-  color: white;
+  color: black;
   text-transform: none;
 }
 .card-list {
@@ -186,8 +197,8 @@ h2 {
   overflow-y: hidden;
 }
 .info {
-  font-size: 14px;
-  color: #bebebe;
+  font-size: 16px;
+  color: gray;
 }
 .restaurant-list {
   width: 85%;
@@ -203,7 +214,7 @@ h2 {
   padding: 10px;
   align-self: self-end;
   background-color: #d07200;
-  color: rgb(255, 255, 255);
+  color: black;
   border: none;
   border-radius: 5px;
   outline: none;
@@ -292,19 +303,4 @@ h2 {
 
 .list {
   list-style: none;
-}
-
-/* reg */
-
-.reg {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  border: 1px solid #d07200;
-  width: fit-content;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
 }

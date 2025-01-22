@@ -7,9 +7,9 @@ import useNetworkStatus from "../utils/useNetworkStatus";
 
 const HeaderComponent = () => {
   const cartItems = useSelector((store) => store.cart.items);
-  console.log(cartItems);
+  // console.log(cartItems);
   const { user } = useContext(userContext);
-
+  const { id } = useParams();
   const isOnline = useNetworkStatus();
   // we destructure the object extracting the user obj from userContext
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -32,7 +32,7 @@ const HeaderComponent = () => {
           </li>
           <li>
             <Link to="/Contact" className="link">
-              Contact
+              FAQ
             </Link>
           </li>
 
@@ -49,14 +49,24 @@ const HeaderComponent = () => {
           </li>
         </ul>
 
-        <div>
+        <div className="text-white font-bold">
           {isLoggedIn ? (
             <Link to="/reg" className="link">
-              <button onClick={() => setIsLoggedIn(false)}>LogOut</button>
+              <button
+                onClick={() => setIsLoggedIn(false)}
+                className="text-white"
+              >
+                LogOut
+              </button>
             </Link>
           ) : (
             <Link to="/reg" className="link">
-              <button onClick={() => setIsLoggedIn(true)}>LogIn</button>
+              <button
+                onClick={() => setIsLoggedIn(true)}
+                className="text-white"
+              >
+                LogIn
+              </button>
             </Link>
           )}
         </div>

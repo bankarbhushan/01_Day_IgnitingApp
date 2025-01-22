@@ -70,7 +70,7 @@ const AppRouter = createBrowserRouter([
       },
 
       {
-        path: "/cart",
+        path: "/cart/",
 
         element: (
           <Suspense fallback={<Simmer />}>

@@ -9,8 +9,12 @@ const useRestaurant = (id) => {
   }, []);
 
   async function getRestaurantInfo() {
-    const data = await fetch(FETCH_MENU_URL + id);
+    const data = await fetch(
+      "https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=21.1458004&lng=79.0881546&restaurantId=79051&query=Biryani&submitAction=ENTER&source=collection" +
+        id
+    );
     const json = await data.json();
+    console.log(json);
 
     setRestaurant(json?.data?.cards?.[2]?.card?.card?.info || {});
   }
