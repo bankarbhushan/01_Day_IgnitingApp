@@ -37194,7 +37194,7 @@ var _useOffer = require("../utils/useOffer");
 var _useOfferDefault = parcelHelpers.interopDefault(_useOffer);
 var _reactRedux = require("react-redux");
 var _constant = require("./constant");
-var _cartSlice = require("../utils/cartSlice");
+var _newCartSlice = require("../utils/NewCartSlice");
 var _s = $RefreshSig$();
 const RestaurantMenu = ()=>{
     _s();
@@ -37211,7 +37211,7 @@ const RestaurantMenu = ()=>{
     const offer = (0, _useOfferDefault.default)(id, []);
     const dispatch = (0, _reactRedux.useDispatch)();
     const addFoodItem = (item)=>{
-        dispatch((0, _cartSlice.addItem)(item));
+        dispatch((0, _newCartSlice.addItem)(item));
     };
     // when restaurant is not present then simmer will show otherwise restaurant will show
     return !restaurant ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _simmerDefault.default), {}, void 0, false, {
@@ -37675,7 +37675,7 @@ $RefreshReg$(_c, "RestaurantMenu");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","react":"21dqq","./Simmer":"1Of73","../utils/useRestaurant":"ewgpj","../utils/useRestaurantCard":"2OfXA","../utils/useOffer":"2Qebt","../utils/cartSlice":"5RXlr","react-redux":"62sf7","./constant":"bV0CE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1Of73":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","react":"21dqq","./Simmer":"1Of73","../utils/useRestaurant":"ewgpj","../utils/useRestaurantCard":"2OfXA","../utils/useOffer":"2Qebt","react-redux":"62sf7","./constant":"bV0CE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/NewCartSlice":"8YYl8"}],"1Of73":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$e45d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -37866,14 +37866,14 @@ exports.default = useOffer;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"21dqq","../Components/constant.js":"bV0CE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5RXlr":[function(require,module,exports,__globalThis) {
+},{"react":"21dqq","../Components/constant.js":"bV0CE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8YYl8":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "addItem", ()=>addItem);
 parcelHelpers.export(exports, "clearCart", ()=>clearCart);
 parcelHelpers.export(exports, "removeItems", ()=>removeItems);
 var _toolkit = require("@reduxjs/toolkit");
-const cartSlice = (0, _toolkit.createSlice)({
+const NewCartSlice = (0, _toolkit.createSlice)({
     name: "Cart",
     initialState: {
         items: []
@@ -37891,8 +37891,8 @@ const cartSlice = (0, _toolkit.createSlice)({
         }
     }
 });
-exports.default = cartSlice.reducer;
-const { addItem, clearCart, removeItems } = cartSlice.actions; //src\utils\CartSlice.js
+exports.default = NewCartSlice.reducer;
+const { addItem, clearCart, removeItems } = NewCartSlice.actions; //src\utils\CartSlice.js
  // this is CartSlice File
 
 },{"@reduxjs/toolkit":"fuua8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fuua8":[function(require,module,exports,__globalThis) {
@@ -49393,36 +49393,7 @@ const store = (0, _toolkit.configureStore)({
 });
 exports.default = store;
 
-},{"@reduxjs/toolkit":"fuua8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./NewCartSlice":"8YYl8"}],"8YYl8":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "addItem", ()=>addItem);
-parcelHelpers.export(exports, "clearCart", ()=>clearCart);
-parcelHelpers.export(exports, "removeItems", ()=>removeItems);
-var _toolkit = require("@reduxjs/toolkit");
-const NewCartSlice = (0, _toolkit.createSlice)({
-    name: "Cart",
-    initialState: {
-        items: []
-    },
-    reducers: {
-        addItem: (state, action)=>{
-            state.items.push(action.payload);
-        },
-        // ()=>{} when some one will click on the add item it call the function so its is an those function
-        clearCart: (state)=>{
-            state.items = [];
-        },
-        removeItems: (state, action)=>{
-            state.items.pop();
-        }
-    }
-});
-exports.default = NewCartSlice.reducer;
-const { addItem, clearCart, removeItems } = NewCartSlice.actions; //src\utils\CartSlice.js
- // this is CartSlice File
-
-},{"@reduxjs/toolkit":"fuua8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eUuB8":[function(require,module,exports,__globalThis) {
+},{"@reduxjs/toolkit":"fuua8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./NewCartSlice":"8YYl8"}],"eUuB8":[function(require,module,exports,__globalThis) {
 module.exports = require("27d955aa4f4e8e29")(require("9b26381e843107ca").getBundleURL('lPpKD') + "Cart.a0ad8882.js" + "?" + Date.now()).catch((err)=>{
     delete module.bundle.cache[module.id];
     throw err;
